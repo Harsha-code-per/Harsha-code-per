@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="30" viewBox="0 0 180 30" fill="none">
+  <style>
+    .wave {
+      stroke-width: 1.5;
+      stroke-linecap: round;
+    }
+    .wave-cyan {
+      stroke: #00f2fe;
+      opacity: 0.85;
+      animation: wave-slide-1 3s linear infinite;
+    }
+    .wave-indigo {
+      stroke: #5e6ad2;
+      opacity: 0.6;
+      animation: wave-slide-2 4.2s linear infinite;
+    }
+    .wave-zinc {
+      stroke: rgba(255, 255, 255, 0.25);
+      stroke-width: 1;
+      stroke-dasharray: 2 4;
+      animation: wave-slide-1 5s linear infinite reverse;
+    }
+    @keyframes wave-slide-1 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-60px); }
+    }
+    @keyframes wave-slide-2 {
+      0% { transform: translateX(-60px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+  <defs>
+    <clipPath id="wave-clip">
+      <rect width="180" height="30" rx="4" />
+    </clipPath>
+  </defs>
+  
+  <g clip-path="url(#wave-clip)">
+    <path d="M 0 15 Q 15 5, 30 15 T 60 15 T 90 15 T 120 15 T 150 15 T 180 15 T 210 15 T 240 15" class="wave wave-cyan" />
+    <path d="M 0 15 Q 15 25, 30 15 T 60 15 T 90 15 T 120 15 T 150 15 T 180 15 T 210 15 T 240 15" class="wave wave-indigo" />
+    <path d="M 0 15 Q 15 9, 30 15 T 60 15 T 90 15 T 120 15 T 150 15 T 180 15 T 210 15 T 240 15" class="wave wave-zinc" />
+  </g>
+</svg>

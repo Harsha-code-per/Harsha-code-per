@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    @keyframes rotateHUD {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(200px); }
+    }
+    .terminal-bg {
+      fill: #050508;
+      stroke: rgba(255, 255, 255, 0.06);
+      stroke-width: 1;
+      rx: 8px;
+    }
+    .grid-pattern {
+      fill: url(#grid);
+    }
+    .text-line {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      fill: #a1a1aa;
+      opacity: 0;
+      animation: fadeIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+    .l1 { animation-delay: 0.2s; }
+    .l2 { animation-delay: 0.8s; }
+    .l3 { animation-delay: 1.4s; }
+    .l4 { animation-delay: 2.0s; }
+    .l5 { animation-delay: 2.6s; }
+    
+    .status-ok {
+      fill: #00f2fe;
+      font-weight: bold;
+    }
+    .status-link {
+      fill: #5e6ad2;
+      font-weight: bold;
+    }
+    .cursor {
+      animation: blink 1s step-end infinite;
+      fill: #00f2fe;
+    }
+    .hud-circle {
+      transform-origin: 650px 100px;
+      animation: rotateHUD 20s linear infinite;
+    }
+    .hud-circle-reverse {
+      transform-origin: 650px 100px;
+      animation: rotateHUD 12s linear infinite reverse;
+    }
+    .hud-glow {
+      filter: drop-shadow(0px 0px 8px rgba(0, 242, 254, 0.3));
+    }
+    .scanner {
+      animation: scanline 4s linear infinite;
+      stroke: rgba(0, 242, 254, 0.05);
+      stroke-width: 2;
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255, 255, 255, 0.015)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="200" class="terminal-bg" />
+  <rect width="800" height="200" class="grid-pattern" rx="8" />
+  
+  <!-- Scanning Line -->
+  <line x1="0" y1="0" x2="800" y2="0" class="scanner" />
+  
+  <!-- Terminal Window Header -->
+  <rect x="0" y="0" width="800" height="28" fill="rgba(255, 255, 255, 0.02)" rx="8" />
+  <circle cx="16" cy="14" r="4" fill="#ef4444" opacity="0.5" />
+  <circle cx="28" cy="14" r="4" fill="#eab308" opacity="0.5" />
+  <circle cx="40" cy="14" r="4" fill="#22c55e" opacity="0.5" />
+  <text x="70" y="18" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10px" fill="#71717a" letter-spacing="1">HARSHA_OS // STACK_BOOT_LOADER</text>
+  
+  <!-- Terminal content -->
+  <text x="24" y="60" class="text-line l1">> INITIALIZING HARSHA_OS v4.11.0 ...</text>
+  <text x="24" y="80" class="text-line l2">> CONNECTING TO ML_MODEL_PIPELINE ..... <tspan class="status-ok">[ ACTIVE ]</tspan></text>
+  <text x="24" y="100" class="text-line l3">> SPINNING UP REALTIME_WEBSOCKET ...... <tspan class="status-ok">[ ACTIVE ]</tspan></text>
+  <text x="24" y="120" class="text-line l4">> HOOKING INTERACTION_ENGINE .......... <tspan class="status-ok">[ ACTIVE ]</tspan></text>
+  <text x="24" y="140" class="text-line l5">> HOST_ESTABLISHED: PORT_443 .......... <tspan class="status-link">SECURE // SECURE_SHELL</tspan></text>
+  
+  <!-- Blinking command prompt cursor -->
+  <g class="text-line l5">
+    <text x="24" y="165" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11px" fill="#00f2fe">> root@harsha:~# <tspan class="cursor">_</tspan></text>
+  </g>
+
+  <!-- HUD/Radar Graphics -->
+  <circle cx="650" cy="100" r="60" stroke="rgba(94, 106, 210, 0.15)" stroke-width="1" stroke-dasharray="4 8" />
+  <circle cx="650" cy="100" r="50" class="hud-circle-reverse" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1.5" stroke-dasharray="40 180" />
+  <circle cx="650" cy="100" r="40" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+  
+  <g class="hud-circle hud-glow">
+    <line x1="650" y1="50" x2="650" y2="150" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" stroke-dasharray="10 10 30 10" />
+    <line x1="600" y1="100" x2="700" y2="100" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" stroke-dasharray="10 10 30 10" />
+    <circle cx="650" cy="100" r="20" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1" stroke-dasharray="12 25" />
+  </g>
+  <circle cx="650" cy="100" r="5" fill="#00f2fe" opacity="0.8" />
+  
+  <text x="560" y="55" font-family="ui-monospace, SFMono-Regular, monospace" font-size="8px" fill="rgba(255, 255, 255, 0.2)" letter-spacing="1">RADAR_SWEEP</text>
+  <text x="560" y="155" font-family="ui-monospace, SFMono-Regular, monospace" font-size="8px" fill="rgba(0, 242, 254, 0.4)">FREQ: 98.4 GHz</text>
+  <text x="705" y="103" font-family="ui-monospace, SFMono-Regular, monospace" font-size="8px" fill="rgba(255, 255, 255, 0.2)">TGT_LOCK</text>
+</svg>

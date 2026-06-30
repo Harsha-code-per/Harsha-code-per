@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="6" viewBox="0 0 800 6" fill="none">
+  <style>
+    .base-line {
+      stroke: rgba(255, 255, 255, 0.08);
+      stroke-width: 1;
+    }
+    .pulse-line {
+      stroke: url(#pulse-glow);
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      animation: pulse-move 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes pulse-move {
+      0% {
+        stroke-dashoffset: 960;
+      }
+      100% {
+        stroke-dashoffset: -960;
+      }
+    }
+  </style>
+  <defs>
+    <linearGradient id="pulse-glow" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="10%" stop-color="#5e6ad2" stop-opacity="0" />
+      <stop offset="35%" stop-color="#5e6ad2" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="65%" stop-color="#5e6ad2" stop-opacity="0.3" />
+      <stop offset="90%" stop-color="#5e6ad2" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="3" x2="800" y2="3" class="base-line" />
+  <line x1="0" y1="3" x2="800" y2="3" class="pulse-line" stroke-dasharray="240 960" />
+</svg>
