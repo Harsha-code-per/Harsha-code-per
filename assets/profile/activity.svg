@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">324 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">326 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -108,15 +108,15 @@
     <text x="90" y="8" class="legend-text">More</text>
   </g>
   <!-- Column 0 -->
-  <g class="col-group c-0" style="--pulse-color: #26a641;">
-    <polygon points="283.9,34.79999999999998 292.9,39.29999999999998 292.9,57.29999999999998 283.9,52.79999999999998" fill="#1b752e" />
-    <polygon points="292.9,39.29999999999998 301.9,34.79999999999998 301.9,52.79999999999998 292.9,57.29999999999998" fill="#135220" />
-    <polygon points="292.9,30.299999999999983 301.9,34.79999999999998 292.9,39.29999999999998 283.9,34.79999999999998" fill="#26a641" />
-  </g>
   <g class="col-group c-0" style="--pulse-color: #006d32;">
-    <polygon points="274.1,50.59999999999999 283.1,55.099999999999994 283.1,67.1 274.1,62.59999999999999" fill="#004d23" />
-    <polygon points="283.1,55.099999999999994 292.1,50.59999999999999 292.1,62.59999999999999 283.1,67.1" fill="#003317" />
-    <polygon points="283.1,46.09999999999999 292.1,50.59999999999999 283.1,55.099999999999994 274.1,50.59999999999999" fill="#006d32" />
+    <polygon points="283.9,40.79999999999998 292.9,45.29999999999998 292.9,57.29999999999998 283.9,52.79999999999998" fill="#004d23" />
+    <polygon points="292.9,45.29999999999998 301.9,40.79999999999998 301.9,52.79999999999998 292.9,57.29999999999998" fill="#003317" />
+    <polygon points="292.9,36.29999999999998 301.9,40.79999999999998 292.9,45.29999999999998 283.9,40.79999999999998" fill="#006d32" />
+  </g>
+  <g class="col-group c-0" style="--pulse-color: #0e4429;">
+    <polygon points="274.1,56.59999999999999 283.1,61.099999999999994 283.1,67.1 274.1,62.59999999999999" fill="#0a301d" />
+    <polygon points="283.1,61.099999999999994 292.1,56.59999999999999 292.1,62.59999999999999 283.1,67.1" fill="#072214" />
+    <polygon points="283.1,52.09999999999999 292.1,56.59999999999999 283.1,61.099999999999994 274.1,56.59999999999999" fill="#0e4429" />
   </g>
   <g class="col-group c-0" style="--pulse-color: #0e4429;">
     <polygon points="264.3,66.39999999999999 273.3,70.89999999999999 273.3,76.89999999999999 264.3,72.39999999999999" fill="#0a301d" />
@@ -252,10 +252,10 @@
     <polygon points="292.6,119.80000000000001 301.6,124.30000000000001 292.6,128.8 283.6,124.30000000000001" fill="#161b22" />
   </g>
   <!-- Column 4 -->
-  <g class="col-group c-4" style="--pulse-color: #006d32;">
-    <polygon points="361.9,60.39999999999999 370.9,64.89999999999999 370.9,76.89999999999999 361.9,72.39999999999999" fill="#004d23" />
-    <polygon points="370.9,64.89999999999999 379.9,60.39999999999999 379.9,72.39999999999999 370.9,76.89999999999999" fill="#003317" />
-    <polygon points="370.9,55.89999999999999 379.9,60.39999999999999 370.9,64.89999999999999 361.9,60.39999999999999" fill="#006d32" />
+  <g class="col-group c-4" style="--pulse-color: #0e4429;">
+    <polygon points="361.9,66.39999999999999 370.9,70.89999999999999 370.9,76.89999999999999 361.9,72.39999999999999" fill="#0a301d" />
+    <polygon points="370.9,70.89999999999999 379.9,66.39999999999999 379.9,72.39999999999999 370.9,76.89999999999999" fill="#072214" />
+    <polygon points="370.9,61.89999999999999 379.9,66.39999999999999 370.9,70.89999999999999 361.9,66.39999999999999" fill="#0e4429" />
   </g>
   <g class="col-group c-4" style="--pulse-color: #0e4429;">
     <polygon points="352.1,76.19999999999999 361.1,80.69999999999999 361.1,86.69999999999999 352.1,82.19999999999999" fill="#0a301d" />
@@ -622,10 +622,10 @@
     <polygon points="556.1,133.70000000000002 565.1,129.20000000000002 565.1,131.20000000000002 556.1,135.70000000000002" fill="#0b0d12" />
     <polygon points="556.1,124.70000000000002 565.1,129.20000000000002 556.1,133.70000000000002 547.1,129.20000000000002" fill="#161b22" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #006d32;">
-    <polygon points="537.3,129.0 546.3,133.5 546.3,145.5 537.3,141.0" fill="#004d23" />
-    <polygon points="546.3,133.5 555.3,129.0 555.3,141.0 546.3,145.5" fill="#003317" />
-    <polygon points="546.3,124.5 555.3,129.0 546.3,133.5 537.3,129.0" fill="#006d32" />
+  <g class="col-group c-14" style="--pulse-color: #0e4429;">
+    <polygon points="537.3,135.0 546.3,139.5 546.3,145.5 537.3,141.0" fill="#0a301d" />
+    <polygon points="546.3,139.5 555.3,135.0 555.3,141.0 546.3,145.5" fill="#072214" />
+    <polygon points="546.3,130.5 555.3,135.0 546.3,139.5 537.3,135.0" fill="#0e4429" />
   </g>
   <g class="col-group c-14" style="--pulse-color: #39d353;">
     <polygon points="527.5,126.80000000000001 536.5,131.3 536.5,155.3 527.5,150.8" fill="#28943a" />
@@ -662,32 +662,32 @@
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">Harsha-code-per</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="116" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">25 commits</text>
+  <rect x="230" y="258" width="121" height="6" rx="3" fill="#10b981" />
+  <text x="382" y="266" class="timeline-count" text-anchor="start">26 commits</text>
   <!-- Repo 2 Progress -->
   <text x="60" y="290" class="timeline-repo">Harshavardhan.portfolio</text>
   <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="282" width="23" height="6" rx="3" fill="#6366f1" />
-  <text x="382" y="290" class="timeline-count" text-anchor="start">5 commits</text>
+  <rect x="230" y="282" width="18" height="6" rx="3" fill="#6366f1" />
+  <text x="382" y="290" class="timeline-count" text-anchor="start">4 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[104d13f]</text>
-    <text x="65" y="8" class="commit-msg">Revert README layout back to sim...</text>
+    <text x="15" y="8" class="commit-sha">[ed6273f]</text>
+    <text x="65" y="8" class="commit-msg">Optimize Engineering Philosophy ...</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[4b2b2e1]</text>
+    <text x="15" y="8" class="commit-sha">[69b4376]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[8ec8f65]</text>
-    <text x="65" y="8" class="commit-msg">Fix markdown rendering error by ...</text>
+    <text x="15" y="8" class="commit-sha">[104d13f]</text>
+    <text x="65" y="8" class="commit-msg">Revert README layout back to sim...</text>
   </g>
 
   <!-- Technical border decorations -->
