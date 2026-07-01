@@ -2,7 +2,8 @@ name: Update Profile Activity
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 * * * *' # Run hourly to sync cross-repo contributions
+  workflow_dispatch:     # Allows manual triggering from Actions UI
   push:
     branches:
       - main
