@@ -1,133 +1,190 @@
+<p align="center">
+  <img src="assets/profile/hero.svg" width="800" alt="Harsha Systems Blueprint Hero" />
+</p>
+
+<br />
+
 # Harshavardhan K
 ### Full-Stack AI Engineer
 
-> **Building software where intelligence becomes experience.**
-> 
-> *I am focused on becoming a world-class Full-Stack AI Engineer while building the foundations for products I will continue developing for years.*
+I build intelligent digital systems at the intersection of Artificial Intelligence, machine learning, and high-performance full-stack architecture. My work focuses on end-to-end execution: taking complex models from initial tensor or prompt logic and integrating them into production-ready backends, low-latency APIs, and immersive interfaces.
 
----
+I don't believe AI should be treated as a detached backend script. A machine learning model only becomes useful when it is connected to a fast database, wrapped in a low-latency synchronization channel, and exposed through a fluid client interface that helps users reason about the system's decisions. I build software where intelligence and interaction operate as a single experience.
 
-## Designed For
-*   **AI Engineering Recruiters** looking for deep model integration and reliable systems.
-*   **Engineering Managers** seeking developers with exceptional product and system taste.
-*   **Technical Leads & Founders** building high-throughput, AI-native platforms.
+This profile is a window into my active workspace. I use it to explore complex topologies, test distributed state flows, and build systems that adapt to human behavior.
 
----
-
-## Engineering Identity
-*   **Curiosity** // Investigating systems from model weights to canvas rendering pipelines.
-*   **Engineering Taste** // Treating latency as a design defect and code structure as an architecture asset.
-*   **Product Thinking** // Building systems that adapt to humans instead of forcing humans to adapt to software.
-*   **Systems Thinking** // Designing modular networks with rigid boundary controls and predictable fallbacks.
-*   **Calm Confidence** // Relying on test suites, thorough documentation, and clean engineering logic rather than hype.
-
----
-
-## What I Optimize For
-*   **Reliability over novelty** // Stable, predictable architectures beat chasing transient framework trends.
-*   **Clarity over cleverness** // Code is written to be read, maintained, and safely debugged by the next engineer.
-*   **Systems over scripts** // Building structured, self-healing platforms rather than brittle, ad-hoc workarounds.
-*   **Products over prototypes** // Deploying code that is instrumented, monitored, and resilient under production loads.
-*   **Long-term thinking over short-term trends** // Designing interfaces and data flows to scale gracefully.
-
----
-
-## Engineering Taste
-*   **Latency matters** // Fast execution is the foundation of user trust.
-*   **Whitespace communicates** // Give code, data, and layout room to breathe.
-*   **Motion explains** // Use animation to clarify system transitions, never as decorative distraction.
-*   **Software should disappear** // The interface should fade away, leaving only a seamless user experience.
-*   **Architecture should be invisible** // Complex orchestrations should present clean, simple external APIs.
-*   **Interfaces should breathe** // Calm interfaces reduce cognitive load and enhance focus.
-
----
-
-## Engineering Standards
-*   **Every system must be testable** // If a behavior cannot be verified by an automated test suite, it does not exist.
-*   **Documentation explains decisions** // Commits and readmes record *why* an architecture was chosen, not just *what* it does.
-*   **Performance is part of UX** // Database queries, network payloads, and render loops shape how software feels.
-*   **Code must survive future engineers** // Write code that can be safely refactored without breaking downstream systems.
-*   **Products scale without rewriting** // Design systems that handle growth through modular expansion, not total rebuilds.
-
----
-
-## Current Direction
+<br />
 
 <p align="center">
-  <img src="assets/profile/direction.svg" width="800" alt="Engineering Exploration Vector" />
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
 
-### Current Focus
-*   Building AI-native workflows that integrate models directly into core product state.
-*   Learning production-scale, low-latency distributed backend architectures.
-*   Designing interfaces that combine deep machine intelligence with natural user interaction.
+<br />
 
-### Building
-*   **Billytics** // Exploring how AI can become the operating system behind business decisions instead of another static dashboard.
-*   **DeV** // Exploring how autonomous engineering agents can reason, remember, and execute within structured environments.
+## Interactive System Sandbox // Signal Router
 
-### Investigating
-*   *Agent Memory* // How long-term memory architectures shape agent reasoning and prevent context exhaustion.
-*   *AI-First Workflows* // Reimagining UI patterns when models drive application state instead of traditional CRUD actions.
-*   *Explainable Reasoning* // Engineering interfaces that visually trace and explain complex, model-driven decisions in real time.
-*   *Motion as State* // Using variable frequency waves and micro-animations to communicate real-time compute load.
+Explore how data flows through my systems. Click below to route an incoming model inference request through the architecture and decrypt the message payload, keeping system latency under 20ms.
 
-### Current Research Themes
-*   **Agent Memory** // Compression algorithms, context pruning, and vector search retrievals.
-*   **Human-AI Collaboration** // Designing mixed-initiative environments where models act as reliable partners.
-*   **Interactive Intelligence** // Low-latency, streaming APIs and WebSockets supporting voice and canvas state.
-*   **Distributed Systems** // High-throughput message queues and offline synchronization strategies.
-*   **AI-Native Interfaces** // Dynamic canvas architectures replacing traditional input forms.
+<br />
 
-### Current Constraints
-*   **Latency** // Shaving milliseconds off LLM time-to-first-token and client state sync.
-*   **Context Window** // Managing model context sizes through intelligent window sliding and summary layers.
-*   **Memory** // Maintaining low client-side heap memory on interactive canvas interfaces.
-*   **Observability** // Tracking token usage, latency distribution, and model failure modes in production.
-*   **Cost** // Optimizing model cascades to route tasks to cost-efficient models.
+<div style="border: 1px solid rgba(255,255,255,0.06); padding: 16px; border-radius: 6px; background: #050508; font-family: monospace; font-size: 12px; color: #a1a1aa; line-height: 1.6;">
 
----
+  <p style="color: #00f2fe; font-weight: bold; margin-top: 0;">&gt; SYS_ROUTING_SIMULATOR v1.0.0</p>
+  <p>&gt; STATUS: INCOMING UNROUTED INFERENCE PACKET</p>
+  <p>&gt; BUDGET_CONSTRAINT: LATENCY &lt; 20ms</p>
+  <p style="color: #71717a;">Route the incoming signal through your architecture to resolve the execution loop.</p>
+  
+  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.06); margin: 12px 0;" />
 
-## Engineering Notebook & Decision Log
+  <!-- Root Choices -->
+  <details>
+    <summary style="cursor: pointer; color: #ffffff; font-weight: bold;">[ ROUTE ] // Model Node Alpha (Direct Vector Store Query)</summary>
+    <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(255,255,255,0.06);">
+      <p style="color: #ef4444;">[WARN] Cold start query triggered.</p>
+      <p style="color: #ef4444;">[ERROR] Connection Timed Out. Vector index unbuilt or query timed out (> 120ms).</p>
+      <p style="color: #71717a;">&gt; Action: Close this node to return to root and try another routing path.</p>
+    </div>
+  </details>
 
-### Entry 001 // Agent Context Compression (DeV)
-To keep model inputs within an 8k token limit and reduce inference overhead by 62%, we implemented a sliding timeline compression window rather than standard, lossy summarization. This keeps recent code edits fully intact while abstracting distant file states.
+  <details style="margin-top: 8px;">
+    <summary style="cursor: pointer; color: #ffffff; font-weight: bold;">[ ROUTE ] // Model Node Beta (FastAPI Model Cascade)</summary>
+    <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(255,255,255,0.06);">
+      <p style="color: #10b981;">[OK] Model handshake verified.</p>
+      <p>&gt; Processing inference weights. Local Latency: 4.8ms. Select next destination:</p>
+      
+      <br />
+      
+      <!-- Option 2A: Write-through cache -->
+      <details>
+        <summary style="cursor: pointer; color: #00f2fe; font-weight: bold;">[ ROUTE ] // Database Node B1 (Write-Through Redis Cache)</summary>
+        <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(0,242,254,0.1);">
+          <p style="color: #10b981;">[OK] Cache write success.</p>
+          <p>&gt; Syncing state. Local Latency: 2.1ms (Cumulative: 6.9ms). Route to client surface:</p>
+          
+          <br />
+          
+          <!-- Option 2A1: WebGL Canvas -->
+          <details>
+            <summary style="cursor: pointer; color: #10b981; font-weight: bold;">[ ROUTE ] // Surface Node S1 (WebGL Canvas Client)</summary>
+            <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(16,185,129,0.1);">
+              <p style="color: #10b981;">[SUCCESS] Render pipeline resolved at 60 FPS.</p>
+              <p style="color: #10b981;">[SUCCESS] Output delivered. Total Latency: 16.9ms (Success target: &lt; 20ms).</p>
+              <p style="color: #ffffff; background: rgba(0, 242, 254, 0.05); padding: 8px; border-radius: 4px; border: 1px solid rgba(0, 242, 254, 0.1);">
+                <b>&gt; DECRYPTED_SIGNAL</b><br />
+                "Welcome to the workspace. Harshavardhan K engineers systems where intelligence and interaction become one seamless experience. Portfolio: https://www.harshavardhan-k.me"
+              </p>
+            </div>
+          </details>
 
-### Entry 002 // WebSockets vs. SSE (Billytics)
-We chose bi-directional WebSockets over Server-Sent Events (SSE) for the Billytics telemetry engine. While SSE is lightweight for unidirectional streaming, our real-time telemetry loop requires fast, client-driven ping-pong state updates to keep synchronization latency under 15ms.
+          <!-- Option 2A2: DOM Refresh -->
+          <details style="margin-top: 8px;">
+            <summary style="cursor: pointer; color: #ef4444; font-weight: bold;">[ ROUTE ] // Surface Node S2 (Standard DOM Refresh Loop)</summary>
+            <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(239,68,68,0.1);">
+              <p style="color: #ef4444;">[WARN] Frame dropped. Heavy layout thrashing detected.</p>
+              <p style="color: #ef4444;">[ERROR] Client crash. Main thread blocked. Total Latency: 24.1ms.</p>
+              <p style="color: #71717a;">&gt; Action: Close this node to return and choose a different surface.</p>
+            </div>
+          </details>
+        </div>
+      </details>
 
-### Entry 003 // Voice assessment caching (Zensphere)
-During my work on voice assessment systems at Zensphere, we optimized audio analysis latency. By implementing server-side caching of phonetic patterns and fallback regex filters, we bypassed LLM re-evaluation for redundant pronunciations, lowering latency by 45%.
+      <!-- Option 2B: Direct Disk write -->
+      <details style="margin-top: 8px;">
+        <summary style="cursor: pointer; color: #ef4444; font-weight: bold;">[ ROUTE ] // Database Node B2 (PostgreSQL Raw Insert)</summary>
+        <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(239,68,68,0.1);">
+          <p style="color: #ef4444;">[WARN] Thread lock detected on connection pool.</p>
+          <p style="color: #ef4444;">[ERROR] Transaction aborted. Local Latency: 84.2ms (Exceeded budget of 20ms).</p>
+          <p style="color: #71717a;">&gt; Action: Close this node to return and choose a cache strategy.</p>
+        </div>
+      </details>
+    </div>
+  </details>
+</div>
 
----
+<br />
 
-## Knowledge Feed
+<p align="center">
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+</p>
 
-<img src="assets/profile/waveform.svg" width="180" align="right" alt="Realtime System Waveform" />
+<br />
 
-### Books
-*   *Designing Data-Intensive Applications* by Martin Kleppmann (Distributed data patterns).
-*   *The Design of Everyday Things* by Don Norman (Mental models and affordances).
-*   *Building Microservices* by Sam Newman (System decomposition and APIs).
+## Current Focus
 
-### Research Papers
-*   *Attention Is All You Need* (Vaswani et al.) // Core transformer architecture.
-*   *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (Lewis et al.) // Memory search patterns.
-*   *Generative Agents: Interactive Simulacra of Human Behavior* (Park et al.) // Agent sandbox design.
+My current engineering missions and active directions:
 
----
+*   **Billytics** // I wanted to build a platform that doesn't just display database rows, but models real-time business intelligence and forecasting. I am exploring how AI can become the core operating system behind executive decisions instead of another static analytics page.
+*   **DeV** // I am building a workspace that shifts autonomous AI coding agents from basic prompt execution to systems that reason, persist code edits, and maintain long-term working memory within local containers.
+*   **Future Explorations** // Researching the engineering behind collaborative human-AI canvases, low-latency client-side vector database querying, and zero-latency local model fallbacks.
 
-## Engineering Domains
-*   **Artificial Intelligence** // Model integration, agent architectures, memory routing.
-*   **Backend Systems** // Low-latency REST & WebSocket APIs, event loops, database schemas.
-*   **Distributed Architecture** // Cache management, data streams, rate limiting.
-*   **Human-Computer Interaction** // Motion systems, canvas orchestration, UI states.
-*   **Full-Stack AI Engineering** // End-to-end integration, performance profiling, tooling.
-*   **Developer Experience** // Test orchestration, CI/CD pathways, clean documentation.
+<br />
 
----
+<p align="center">
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+</p>
+
+<br />
+
+## Active Tech Matrix
+
+Technologies and domains I enjoy building with. Hover over each panel and tech bullet to inspect domains and see active visual feedback:
+
+<br />
+
+<p align="center">
+  <img src="assets/profile/tech_grid.svg" width="800" alt="Harsha Interactive Tech Grid" />
+</p>
+
+<br />
+
+<p align="center">
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+</p>
+
+<br />
+
+## Current Interests
+
+*   **Agentic AI** // Long-term memory compression, autonomous tooling agents.
+*   **Distributed Systems** // High-frequency WebSockets, state caching databases.
+*   **Developer Tools** // Local container orchestrations, playground test runs.
+*   **Human-AI Interaction** // Dynamic canvas surfaces, responsive feedback loops.
+*   **Motion Design** // Informational micro-animations, low-overhead SVG drawings.
+
+<br />
+
+<p align="center">
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+</p>
+
+<br />
+
+## GitHub Activity
+
+<br />
+
+<table width="100%" style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td width="50%" align="center" style="border: none; background: transparent;">
+      <img height="150" src="https://github-readme-stats.vercel.app/api?username=Harsha-code-per&show_icons=true&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&icon_color=00f2fe&include_all_commits=true" alt="GitHub activity summary" />
+    </td>
+    <td width="50%" align="center" style="border: none; background: transparent;">
+      <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harsha-code-per&layout=compact&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&title_color=5e6ad2&langs_count=6" alt="Most used languages" />
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<p align="center">
+  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+</p>
+
+<br />
 
 ## Connect
+
+<br />
 
 <table width="100%" style="border-collapse: collapse; border: none; font-family: monospace;">
   <tr style="border: none;">
@@ -150,6 +207,6 @@ During my work on voice assessment systems at Zensphere, we optimized audio anal
 <br />
 
 <p align="right">
-  <img src="assets/profile/signature.svg" width="220" alt="Harsha Signature" /><br />
-  <font size="1" face="monospace" color="#71717a">END TRANSMISSION // SECURE_HANDSHAKE_200</font>
+  <img src="assets/profile/signature.svg" width="200" alt="Harsha Signature" /><br />
+  <font size="1" face="monospace" color="#71717a">END TRANSMISSION // HANDSHAKE_RESOLVED</font>
 </p>
