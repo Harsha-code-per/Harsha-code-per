@@ -1,120 +1,133 @@
-<p align="center">
-  <img src="assets/profile/header_boot.svg" width="800" alt="Harsha OS Boot Sequence" />
-</p>
+# Harshavardhan K
+### Full-Stack AI Engineer
+
+> **Building software where intelligence becomes experience.**
+> 
+> *I am focused on becoming a world-class Full-Stack AI Engineer while building the foundations for products I will continue developing for years.*
+
+---
+
+## Designed For
+*   **AI Engineering Recruiters** looking for deep model integration and reliable systems.
+*   **Engineering Managers** seeking developers with exceptional product and system taste.
+*   **Technical Leads & Founders** building high-throughput, AI-native platforms.
+
+---
+
+## Engineering Identity
+*   **Curiosity** // Investigating systems from model weights to canvas rendering pipelines.
+*   **Engineering Taste** // Treating latency as a design defect and code structure as an architecture asset.
+*   **Product Thinking** // Building systems that adapt to humans instead of forcing humans to adapt to software.
+*   **Systems Thinking** // Designing modular networks with rigid boundary controls and predictable fallbacks.
+*   **Calm Confidence** // Relying on test suites, thorough documentation, and clean engineering logic rather than hype.
+
+---
+
+## What I Optimize For
+*   **Reliability over novelty** // Stable, predictable architectures beat chasing transient framework trends.
+*   **Clarity over cleverness** // Code is written to be read, maintained, and safely debugged by the next engineer.
+*   **Systems over scripts** // Building structured, self-healing platforms rather than brittle, ad-hoc workarounds.
+*   **Products over prototypes** // Deploying code that is instrumented, monitored, and resilient under production loads.
+*   **Long-term thinking over short-term trends** // Designing interfaces and data flows to scale gracefully.
+
+---
+
+## Engineering Taste
+*   **Latency matters** // Fast execution is the foundation of user trust.
+*   **Whitespace communicates** // Give code, data, and layout room to breathe.
+*   **Motion explains** // Use animation to clarify system transitions, never as decorative distraction.
+*   **Software should disappear** // The interface should fade away, leaving only a seamless user experience.
+*   **Architecture should be invisible** // Complex orchestrations should present clean, simple external APIs.
+*   **Interfaces should breathe** // Calm interfaces reduce cognitive load and enhance focus.
+
+---
+
+## Engineering Standards
+*   **Every system must be testable** // If a behavior cannot be verified by an automated test suite, it does not exist.
+*   **Documentation explains decisions** // Commits and readmes record *why* an architecture was chosen, not just *what* it does.
+*   **Performance is part of UX** // Database queries, network payloads, and render loops shape how software feels.
+*   **Code must survive future engineers** // Write code that can be safely refactored without breaking downstream systems.
+*   **Products scale without rewriting** // Design systems that handle growth through modular expansion, not total rebuilds.
+
+---
+
+## Current Direction
 
 <p align="center">
-  <img src="assets/profile/animated_horizon.svg" width="800" alt="Cinematic Horizon Grid" />
+  <img src="assets/profile/direction.svg" width="800" alt="Engineering Exploration Vector" />
 </p>
 
-<br />
+### Current Focus
+*   Building AI-native workflows that integrate models directly into core product state.
+*   Learning production-scale, low-latency distributed backend architectures.
+*   Designing interfaces that combine deep machine intelligence with natural user interaction.
 
-# 01 // WELCOME
+### Building
+*   **Billytics** // Exploring how AI can become the operating system behind business decisions instead of another static dashboard.
+*   **DeV** // Exploring how autonomous engineering agents can reason, remember, and execute within structured environments.
 
-> **"Designing systems people do not notice — only experiences they remember."**
+### Investigating
+*   *Agent Memory* // How long-term memory architectures shape agent reasoning and prevent context exhaustion.
+*   *AI-First Workflows* // Reimagining UI patterns when models drive application state instead of traditional CRUD actions.
+*   *Explainable Reasoning* // Engineering interfaces that visually trace and explain complex, model-driven decisions in real time.
+*   *Motion as State* // Using variable frequency waves and micro-animations to communicate real-time compute load.
 
-I write backend architectures for intelligence and interfaces that feel alive. Where deep engineering meets cinematic movement. I build software where machine intelligence, robust backend systems, and high-fidelity interaction work together as a single, fluid product surface.
+### Current Research Themes
+*   **Agent Memory** // Compression algorithms, context pruning, and vector search retrievals.
+*   **Human-AI Collaboration** // Designing mixed-initiative environments where models act as reliable partners.
+*   **Interactive Intelligence** // Low-latency, streaming APIs and WebSockets supporting voice and canvas state.
+*   **Distributed Systems** // High-throughput message queues and offline synchronization strategies.
+*   **AI-Native Interfaces** // Dynamic canvas architectures replacing traditional input forms.
 
-<br />
+### Current Constraints
+*   **Latency** // Shaving milliseconds off LLM time-to-first-token and client state sync.
+*   **Context Window** // Managing model context sizes through intelligent window sliding and summary layers.
+*   **Memory** // Maintaining low client-side heap memory on interactive canvas interfaces.
+*   **Observability** // Tracking token usage, latency distribution, and model failure modes in production.
+*   **Cost** // Optimizing model cascades to route tasks to cost-efficient models.
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
+---
 
-<br />
+## Engineering Notebook & Decision Log
 
-# 02 // TARGET PARAMETERS
+### Entry 001 // Agent Context Compression (DeV)
+To keep model inputs within an 8k token limit and reduce inference overhead by 62%, we implemented a sliding timeline compression window rather than standard, lossy summarization. This keeps recent code edits fully intact while abstracting distant file states.
 
-I build for teams and products that require:
-* **Production-Grade Intelligence**: Implementing AI agents and neural models with strict guardrails, reliable evaluation pipelines, and robust memory management rather than basic prompt wrappers.
-* **Low-Latency Architecture**: Designing real-time synchronization flows, WebRTC stream management, and high-frequency communication protocols built for speed and stability.
-* **Immersive Visual Logic**: Shaping frontend interfaces that communicate state change through intentional micro-interactions, scroll-bound shaders, and optimized rendering pipelines.
+### Entry 002 // WebSockets vs. SSE (Billytics)
+We chose bi-directional WebSockets over Server-Sent Events (SSE) for the Billytics telemetry engine. While SSE is lightweight for unidirectional streaming, our real-time telemetry loop requires fast, client-driven ping-pong state updates to keep synchronization latency under 15ms.
 
-<br />
+### Entry 003 // Voice assessment caching (Zensphere)
+During my work on voice assessment systems at Zensphere, we optimized audio analysis latency. By implementing server-side caching of phonetic patterns and fallback regex filters, we bypassed LLM re-evaluation for redundant pronunciations, lowering latency by 45%.
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
+---
 
-<br />
+## Knowledge Feed
 
-# 03 // CORE LAWS
+<img src="assets/profile/waveform.svg" width="180" align="right" alt="Realtime System Waveform" />
 
-* **Performance is empathy.** Latency is the physical friction of software. A fast interface respects the person behind the screen and values their time.
-* **Good architecture is invisible.** A system should remain clean and predictable from the outside, hiding complex orchestrations behind self-documenting interfaces.
-* **Interaction must explain.** Motion is not decoration. It is a visual vector that guides user focus, explains state transitions, and makes complex systems legible.
-* **Abstractions must pay for themselves.** Every extra layer of system complexity should make a codebase easier to debug and scale, never harder to reason about.
+### Books
+*   *Designing Data-Intensive Applications* by Martin Kleppmann (Distributed data patterns).
+*   *The Design of Everyday Things* by Don Norman (Mental models and affordances).
+*   *Building Microservices* by Sam Newman (System decomposition and APIs).
 
-<br />
+### Research Papers
+*   *Attention Is All You Need* (Vaswani et al.) // Core transformer architecture.
+*   *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (Lewis et al.) // Memory search patterns.
+*   *Generative Agents: Interactive Simulacra of Human Behavior* (Park et al.) // Agent sandbox design.
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
+---
 
-<br />
+## Engineering Domains
+*   **Artificial Intelligence** // Model integration, agent architectures, memory routing.
+*   **Backend Systems** // Low-latency REST & WebSocket APIs, event loops, database schemas.
+*   **Distributed Architecture** // Cache management, data streams, rate limiting.
+*   **Human-Computer Interaction** // Motion systems, canvas orchestration, UI states.
+*   **Full-Stack AI Engineering** // End-to-end integration, performance profiling, tooling.
+*   **Developer Experience** // Test orchestration, CI/CD pathways, clean documentation.
 
-# 04 // ACTIVE TRANSMISSION
+---
 
-<img src="assets/profile/waveform.svg" width="180" align="right" alt="Realtime Waveform Signal" />
-
-* **BUILDING** // Next-generation orbital intelligence engines ([Spectravein](https://spectravein.vercel.app)) and encrypted communication nodes ([SecureChat](https://securechat18.app)).
-* **RESEARCHING** // Multi-agent model cascades, memory strategies, and automated E2E model evaluation workflows.
-* **OPTIMIZING** // Offline-first client synchronizations, WebGL shader execution curves, and client-side database caching.
-* **EXPLORING** // Distributed state networks, real-time voice assessment pipelines, and canvas choreography.
-
-<br />
-
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-<br />
-
-# 05 // SYSTEM TOOLCHAIN
-
-| DOMAIN | ACTIVE TOOLCHAIN |
-| :--- | :--- |
-| **AI Engineering** | Large Language Models (LLMs), Agentic Frameworks, RAG, Prompt Pipelines, Model Evaluation |
-| **Machine Learning** | Python, PyTorch, scikit-learn, Data Pipelines |
-| **Backend Systems** | Node.js, TypeScript, Python, FastAPI, Django, WebSockets, WebRTC, REST |
-| **Data Layer** | PostgreSQL, MongoDB, Redis, IndexedDB, Vector Search |
-| **Interfaces & Motion** | React, Next.js, Tailwind CSS, Three.js, React Three Fiber, GSAP, Framer Motion |
-| **Architecture** | Real-time Systems, Distributed State, API Design, Latency Optimization |
-| **Engineering Practice** | Git, Docker, Playwright, Vitest, CI/CD, Observability & Telemetry |
-
-<br />
-
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-<br />
-
-# 06 // LIVE SYSTEM STATUS
-
-<table width="100%" style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td width="50%" align="center" style="border: none; background: transparent;">
-      <img height="156" src="https://github-readme-stats.vercel.app/api?username=Harsha-code-per&show_icons=true&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&icon_color=00f2fe&include_all_commits=true" alt="GitHub activity summary" />
-    </td>
-    <td width="50%" align="center" style="border: none; background: transparent;">
-      <img height="156" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harsha-code-per&layout=compact&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&title_color=5e6ad2&langs_count=6" alt="Most used languages" />
-    </td>
-  </tr>
-</table>
-
-<br />
-
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-<br />
-
-# 07 // CONNECT
-
-<p align="center">
-  <img src="assets/profile/terminal_prompt.svg" width="800" alt="Terminal Connection prompt" />
-</p>
+## Connect
 
 <table width="100%" style="border-collapse: collapse; border: none; font-family: monospace;">
   <tr style="border: none;">
@@ -137,6 +150,6 @@ I build for teams and products that require:
 <br />
 
 <p align="right">
-  <img src="assets/profile/signature.svg" width="220" alt="Harsha Signature Sign-Off" /><br />
-  <font size="1" face="monospace" color="#4b5563">END TRANSMISSION // STATUS 200</font>
+  <img src="assets/profile/signature.svg" width="220" alt="Harsha Signature" /><br />
+  <font size="1" face="monospace" color="#71717a">END TRANSMISSION // SECURE_HANDSHAKE_200</font>
 </p>
