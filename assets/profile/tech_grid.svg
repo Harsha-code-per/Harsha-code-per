@@ -1,115 +1,267 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" fill="none">
   <style>
     .grid { stroke: rgba(255, 255, 255, 0.015); stroke-width: 0.8; }
-    
-    .panel-group {
-      cursor: pointer;
-      pointer-events: all;
-    }
+    .blueprint-border { stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; }
     
     .panel-bg {
       fill: #050508;
       stroke: rgba(255, 255, 255, 0.08);
-      stroke-width: 1;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      stroke-width: 1.2;
+      transition: stroke 0.3s ease;
     }
     
     .title {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
       fill: #94a3b8;
       letter-spacing: 1px;
-      transition: fill 0.3s ease;
-      pointer-events: none;
     }
     
-    .item {
+    .descr {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 11px;
+      font-size: 10px;
       fill: #64748b;
-      transition: fill 0.2s ease, transform 0.2s ease;
-      pointer-events: all;
     }
+
+    .icon-box {
+      fill: #09090b;
+      stroke: #334155;
+      stroke-width: 1;
+      rx: 3px;
+    }
+    .icon-svg {
+      color: #64748b;
+    }
+
+    /* Auto-cycling timelines (15s loop, 3s per panel) */
+    .pg-1-bg { animation: c1-bg 15s linear infinite; }
+    .pg-1-lbl { animation: c1-lbl 15s linear infinite; }
+    .pg-1-ico { animation: c1-ico 15s linear infinite; }
     
-    .meta-text {
-      font-family: ui-monospace, SFMono-Regular, monospace;
-      font-size: 8px;
-      fill: rgba(255, 255, 255, 0.15);
-      transition: fill 0.3s ease;
-      pointer-events: none;
-    }
+    .pg-2-bg { animation: c2-bg 15s linear infinite; }
+    .pg-2-lbl { animation: c2-lbl 15s linear infinite; }
+    .pg-2-ico { animation: c2-ico 15s linear infinite; }
     
-    /* Hover states on the panel group */
-    .panel-group:hover .panel-bg {
-      stroke: var(--hover-stroke);
-      fill: rgba(255, 255, 255, 0.01);
-      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.05));
-    }
-    .panel-group:hover .title {
-      fill: var(--hover-title);
-    }
-    .panel-group:hover .item {
-      fill: #cbd5e1;
-    }
-    .panel-group:hover .meta-text {
-      fill: rgba(255, 255, 255, 0.4);
-    }
+    .pg-3-bg { animation: c3-bg 15s linear infinite; }
+    .pg-3-lbl { animation: c3-lbl 15s linear infinite; }
+    .pg-3-ico { animation: c3-ico 15s linear infinite; }
     
-    /* Interactive individual items within active panels */
-    .item:hover {
-      fill: var(--hover-item-glow, #00f2fe) !important;
-      transform: translateX(4px);
+    .pg-4-bg { animation: c4-bg 15s linear infinite; }
+    .pg-4-lbl { animation: c4-lbl 15s linear infinite; }
+    .pg-4-ico { animation: c4-ico 15s linear infinite; }
+    
+    .pg-5-bg { animation: c5-bg 15s linear infinite; }
+    .pg-5-lbl { animation: c5-lbl 15s linear infinite; }
+    .pg-5-ico { animation: c5-ico 15s linear infinite; }
+
+    /* Panel 1: AI & Data Science - Active 0% to 20% (Cyan) */
+    @keyframes c1-bg {
+      0%, 18% { stroke: #00f2fe; fill: rgba(0, 242, 254, 0.01); filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.15)); }
+      20%, 100% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+    }
+    @keyframes c1-lbl {
+      0%, 18% { fill: #00f2fe; }
+      20%, 100% { fill: #94a3b8; }
+    }
+    @keyframes c1-ico {
+      0%, 18% { color: #00f2fe; stroke: #00f2fe; }
+      20%, 100% { color: #64748b; stroke: #334155; }
+    }
+
+    /* Panel 2: Backend & Dev - Active 20% to 40% (Indigo) */
+    @keyframes c2-bg {
+      0%, 18% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+      20%, 38% { stroke: #6366f1; fill: rgba(99, 102, 241, 0.01); filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.15)); }
+      40%, 100% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+    }
+    @keyframes c2-lbl {
+      0%, 18% { fill: #94a3b8; }
+      20%, 38% { fill: #6366f1; }
+      40%, 100% { fill: #94a3b8; }
+    }
+    @keyframes c2-ico {
+      0%, 18% { color: #64748b; stroke: #334155; }
+      20%, 38% { color: #6366f1; stroke: #6366f1; }
+      40%, 100% { color: #64748b; stroke: #334155; }
+    }
+
+    /* Panel 3: Frontend Architecture - Active 40% to 60% (White) */
+    @keyframes c3-bg {
+      0%, 38% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+      40%, 58% { stroke: #ffffff; fill: rgba(255, 255, 255, 0.01); filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.15)); }
+      60%, 100% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+    }
+    @keyframes c3-lbl {
+      0%, 38% { fill: #94a3b8; }
+      40%, 58% { fill: #ffffff; }
+      60%, 100% { fill: #94a3b8; }
+    }
+    @keyframes c3-ico {
+      0%, 38% { color: #64748b; stroke: #334155; }
+      40%, 58% { color: #ffffff; stroke: #ffffff; }
+      60%, 100% { color: #64748b; stroke: #334155; }
+    }
+
+    /* Panel 4: Motion & Immersive - Active 60% to 80% (Cyan) */
+    @keyframes c4-bg {
+      0%, 58% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+      60%, 78% { stroke: #00f2fe; fill: rgba(0, 242, 254, 0.01); filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.15)); }
+      80%, 100% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+    }
+    @keyframes c4-lbl {
+      0%, 58% { fill: #94a3b8; }
+      60%, 78% { fill: #00f2fe; }
+      80%, 100% { fill: #94a3b8; }
+    }
+    @keyframes c4-ico {
+      0%, 58% { color: #64748b; stroke: #334155; }
+      60%, 78% { color: #00f2fe; stroke: #00f2fe; }
+      80%, 100% { color: #64748b; stroke: #334155; }
+    }
+
+    /* Panel 5: Cloud & Systems - Active 80% to 100% (Indigo) */
+    @keyframes c5-bg {
+      0%, 78% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+      80%, 98% { stroke: #6366f1; fill: rgba(99, 102, 241, 0.01); filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.15)); }
+      100% { stroke: rgba(255, 255, 255, 0.08); fill: #050508; filter: none; }
+    }
+    @keyframes c5-lbl {
+      0%, 78% { fill: #94a3b8; }
+      80%, 98% { fill: #6366f1; }
+      100% { fill: #94a3b8; }
+    }
+    @keyframes c5-ico {
+      0%, 78% { color: #64748b; stroke: #334155; }
+      80%, 98% { color: #6366f1; stroke: #6366f1; }
+      100% { color: #64748b; stroke: #334155; }
     }
   </style>
 
-  <rect width="800" height="220" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
+  <rect width="800" height="300" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
   
-  <line x1="200" y1="0" x2="200" y2="220" class="grid" stroke-dasharray="2 4" />
-  <line x1="400" y1="0" x2="400" y2="220" class="grid" stroke-dasharray="2 4" />
-  <line x1="600" y1="0" x2="600" y2="220" class="grid" stroke-dasharray="2 4" />
+  <line x1="266" y1="0" x2="266" y2="150" class="grid" stroke-dasharray="2 4" />
+  <line x1="532" y1="0" x2="532" y2="150" class="grid" stroke-dasharray="2 4" />
+  <line x1="0" y1="150" x2="800" y2="150" class="grid" stroke-dasharray="2 4" />
 
-  <!-- Column 1: AI & INTELLIGENCE -->
-  <g class="panel-group" id="pg-ai" style="--hover-stroke: #00f2fe; --hover-title: #00f2fe; --hover-item-glow: #00f2fe;">
-    <rect x="10" y="10" width="180" height="200" class="panel-bg" rx="4" />
-    <text x="25" y="38" class="title">01 // AI_SYSTEMS</text>
-    <text x="25" y="70" class="item">• PyTorch</text>
-    <text x="25" y="95" class="item">• Agentic Frameworks</text>
-    <text x="25" y="120" class="item">• Model Cascades</text>
-    <text x="25" y="145" class="item">• Vector Databases</text>
-    <text x="25" y="190" class="meta-text">TENSOR_COMPUTE: ACTIVE</text>
+  <!-- ROW 1 -->
+  <!-- Column 1: AI & DATA SCIENCE -->
+  <g class="panel-group" id="pg-ai">
+    <rect x="10" y="10" width="246" height="130" class="panel-bg pg-1-bg" rx="4" />
+    <text x="25" y="32" class="title pg-1-lbl">AI &amp; DATA SCIENCE</text>
+    <text x="25" y="50" class="descr">Model flows and logic pipelines</text>
+    
+    <!-- Technology Icons -->
+    <g class="pg-1-ico">
+      <!-- Icon 1: Python -->
+      <rect x="25" y="65" width="28" height="28" class="icon-box" />
+      <path d="M33 79 C33 75, 39 75, 39 79 C39 83, 45 83, 45 79" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none" class="icon-svg"/>
+      <!-- Icon 2: PyTorch -->
+      <rect x="61" y="65" width="28" height="28" class="icon-box" />
+      <path d="M75 73 A4 4 0 1 0 75 81" stroke="currentColor" stroke-width="1.5" fill="none" class="icon-svg"/>
+      <line x1="75" y1="73" x2="79" y2="73" stroke="currentColor" stroke-width="1.5" class="icon-svg"/>
+      <!-- Icon 3: Django -->
+      <rect x="97" y="65" width="28" height="28" class="icon-box" />
+      <text x="111" y="83" font-family="serif" font-size="12" font-weight="bold" fill="currentColor" text-anchor="middle" class="icon-svg">D</text>
+      <!-- Icon 4: RAG / Database representation -->
+      <rect x="133" y="65" width="28" height="28" class="icon-box" />
+      <ellipse cx="147" cy="74" rx="6" ry="2" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <path d="M141 74 L141 83 A6 2 0 0 0 153 83 L153 74" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+    </g>
+    <text x="25" y="115" class="descr" font-size="9px">Python · ML · LLMs · RAG · Django</text>
   </g>
 
-  <!-- Column 2: BACKEND SYSTEMS -->
-  <g class="panel-group" id="pg-backend" style="--hover-stroke: #6366f1; --hover-title: #6366f1; --hover-item-glow: #6366f1;">
-    <rect x="210" y="10" width="180" height="200" class="panel-bg" rx="4" />
-    <text x="225" y="38" class="title">02 // BACKEND</text>
-    <text x="225" y="70" class="item">• TypeScript / Node.js</text>
-    <text x="225" y="95" class="item">• Python / FastAPI</text>
-    <text x="225" y="120" class="item">• WebSockets / WebRTC</text>
-    <text x="225" y="145" class="item">• Distributed Streams</text>
-    <text x="225" y="190" class="meta-text">CONCURRENCY: OPTIMIZED</text>
+  <!-- Column 2: BACKEND & FLOW -->
+  <g class="panel-group" id="pg-backend">
+    <rect x="276" y="10" width="246" height="130" class="panel-bg pg-2-bg" rx="4" />
+    <text x="291" y="32" class="title pg-2-lbl">BACKEND &amp; DEV WORKFLOW</text>
+    <text x="291" y="50" class="descr">Distributed processing &amp; real-time</text>
+    
+    <!-- Technology Icons -->
+    <g class="pg-2-ico">
+      <!-- Icon 1: Node.js (Hexagon) -->
+      <rect x="291" y="65" width="28" height="28" class="icon-box" />
+      <polygon points="305,71 313,75 313,83 305,87 297,83 297,75" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <!-- Icon 2: WebSockets (Lightning Bolt/Wave) -->
+      <rect x="327" y="65" width="28" height="28" class="icon-box" />
+      <path d="M336 82 L343 73 L339 73 L344 68" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <!-- Icon 3: Git -->
+      <rect x="363" y="65" width="28" height="28" class="icon-box" />
+      <circle cx="373" cy="82" r="2" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <circle cx="381" cy="74" r="2" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <path d="M373 80 L373 76 Q373 74, 379 74" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+    </g>
+    <text x="291" y="115" class="descr" font-size="9px">Node.js · Java · APIs · WebSockets · Linux · Git</text>
   </g>
 
-  <!-- Column 3: SURFACES -->
-  <g class="panel-group" id="pg-ui" style="--hover-stroke: #ffffff; --hover-title: #ffffff; --hover-item-glow: #00f2fe;">
-    <rect x="410" y="10" width="180" height="200" class="panel-bg" rx="4" />
-    <text x="425" y="38" class="title">03 // INTERFACES</text>
-    <text x="425" y="70" class="item">• Next.js / React</text>
-    <text x="425" y="95" class="item">• Three.js / WebGL</text>
-    <text x="425" y="120" class="item">• GSAP / Framer Motion</text>
-    <text x="425" y="145" class="item">• Canvas Rendering</text>
-    <text x="425" y="190" class="meta-text">DRAW_PIPELINE: ACCEL</text>
+  <!-- Column 3: FRONTEND ARCHITECTURE -->
+  <g class="panel-group" id="pg-ui">
+    <rect x="542" y="10" width="246" height="130" class="panel-bg pg-3-bg" rx="4" />
+    <text x="557" y="32" class="title pg-3-lbl">FRONTEND ARCHITECTURE</text>
+    <text x="557" y="50" class="descr">Core layout and modular styling</text>
+    
+    <!-- Technology Icons -->
+    <g class="pg-3-ico">
+      <!-- Icon 1: TypeScript (TS box) -->
+      <rect x="557" y="65" width="28" height="28" class="icon-box" />
+      <text x="571" y="82" font-family="monospace" font-size="9" font-weight="bold" fill="currentColor" text-anchor="middle" class="icon-svg">TS</text>
+      <!-- Icon 2: Next.js -->
+      <rect x="593" y="65" width="28" height="28" class="icon-box" />
+      <circle cx="607" cy="79" r="6" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <path d="M604 82 L609 76 M608 76 L608 82" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <!-- Icon 3: React (Atom) -->
+      <rect x="629" y="65" width="28" height="28" class="icon-box" />
+      <ellipse cx="643" cy="79" rx="7" ry="2.2" transform="rotate(30 643 79)" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <ellipse cx="643" cy="79" rx="7" ry="2.2" transform="rotate(150 643 79)" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <circle cx="643" cy="79" r="1.5" fill="currentColor" class="icon-svg"/>
+    </g>
+    <text x="557" y="115" class="descr" font-size="9px">Next.js · React · TypeScript · Tailwind CSS · App Router</text>
   </g>
 
-  <!-- Column 4: DATA LAYER -->
-  <g class="panel-group" id="pg-infra" style="--hover-stroke: #6366f1; --hover-title: #6366f1; --hover-item-glow: #6366f1;">
-    <rect x="610" y="10" width="180" height="200" class="panel-bg" rx="4" />
-    <text x="625" y="38" class="title">04 // INFRASTRUCTURE</text>
-    <text x="625" y="70" class="item">• PostgreSQL</text>
-    <text x="625" y="95" class="item">• Redis Caching</text>
-    <text x="625" y="120" class="item">• IndexedDB Offline</text>
-    <text x="625" y="145" class="item">• Docker Containers</text>
-    <text x="625" y="190" class="meta-text">VOLUMETRIC_STORE: SECURE</text>
+  <!-- ROW 2 (Centered Panels) -->
+  <!-- Column 4: MOTION & IMMERSIVE UI -->
+  <g class="panel-group" id="pg-motion">
+    <rect x="142" y="160" width="246" height="130" class="panel-bg pg-4-bg" rx="4" />
+    <text x="157" y="182" class="title pg-4-lbl">MOTION &amp; IMMERSIVE UI</text>
+    <text x="157" y="200" class="descr">Choreographies and WebGL canvases</text>
+    
+    <!-- Technology Icons -->
+    <g class="pg-4-ico">
+      <!-- Icon 1: Three.js (Prism) -->
+      <rect x="157" y="215" width="28" height="28" class="icon-box" />
+      <polygon points="171,221 164,233 178,233" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <line x1="171" y1="221" x2="171" y2="233" stroke="currentColor" stroke-width="0.8" class="icon-svg"/>
+      <!-- Icon 2: WebGL (Wireframe Box) -->
+      <rect x="193" y="215" width="28" height="28" class="icon-box" />
+      <rect x="200" y="221" width="8" height="8" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <rect x="204" y="225" width="8" height="8" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <!-- Icon 3: GSAP/Framer (Pulsing Arrow/Speed vectors) -->
+      <rect x="229" y="215" width="28" height="28" class="icon-box" />
+      <path d="M236 229 L243 229 M240 225 L245 229 L240 233" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" class="icon-svg"/>
+    </g>
+    <text x="157" y="265" class="descr" font-size="9px">WebGL · Three.js · GSAP · Framer Motion · Lenis</text>
+  </g>
+
+  <!-- Column 5: CLOUD & SYSTEMS -->
+  <g class="panel-group" id="pg-systems">
+    <rect x="412" y="160" width="246" height="130" class="panel-bg pg-5-bg" rx="4" />
+    <text x="427" y="182" class="title pg-5-lbl">CLOUD, SYSTEMS &amp; INFRA</text>
+    <text x="427" y="200" class="descr">Container scaling and deployment</text>
+    
+    <!-- Technology Icons -->
+    <g class="pg-5-ico">
+      <!-- Icon 1: AWS (Cloud) -->
+      <rect x="427" y="215" width="28" height="28" class="icon-box" />
+      <path d="M435 231 A3 3 0 0 1 437 227 A4 4 0 0 1 445 228 A3 3 0 0 1 445 231 Z" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg" />
+      <!-- Icon 2: Docker (Stacked blocks) -->
+      <rect x="463" y="215" width="28" height="28" class="icon-box" />
+      <rect x="471" y="229" width="12" height="3" rx="0.5" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <rect x="473" y="225" width="8" height="3" rx="0.5" stroke="currentColor" stroke-width="1" fill="none" class="icon-svg"/>
+      <!-- Icon 3: Databases (Postgre/Redis cylinder) -->
+      <rect x="499" y="215" width="28" height="28" class="icon-box" />
+      <ellipse cx="513" cy="223" rx="5" ry="1.8" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+      <path d="M508 223 L508 231 A5 1.8 0 0 0 518 231 L518 223" stroke="currentColor" stroke-width="1.2" fill="none" class="icon-svg"/>
+    </g>
+    <text x="427" y="265" class="descr" font-size="9px">AWS · Azure · GCP · Docker · Kubernetes · CI/CD</text>
   </g>
 </svg>
