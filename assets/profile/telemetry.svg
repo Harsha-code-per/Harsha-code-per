@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260" fill="none">
+  <style>
+  <![CDATA[
+    .case-bg {
+      fill: #09090d;
+      stroke: #1e1e2f;
+      stroke-width: 3;
+    }
+    .plate-bg {
+      fill: #030305;
+      stroke: rgba(255, 255, 255, 0.03);
+      stroke-width: 1;
+    }
+    .key-base {
+      fill: #16161e;
+      rx: 4px;
+    }
+    .key-top {
+      fill: #272730;
+      rx: 3px;
+      transition: all 0.1s ease;
+    }
+    .key-top-accent {
+      fill: #1f2937;
+    }
+    .key-top-esc {
+      fill: #008b8b;
+    }
+    .key-top-enter {
+      fill: #4c1d95;
+    }
+    .key-legend {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 8px;
+      font-weight: bold;
+      fill: #71717a;
+      pointer-events: none;
+    }
+    .key-legend-accent {
+      fill: #00f2fe;
+    }
+    .key-legend-enter {
+      fill: #c084fc;
+    }
+    
+    /* RGB Underglow Backlight */
+    .switch-glow {
+      fill: url(#rgb-glow);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Animation Keyframes */
+    @keyframes press-key {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      1.5% {
+        transform: translateY(2px);
+      }
+      3% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes led-glow {
+      0%, 100% {
+        opacity: 0;
+      }
+      1.5% {
+        opacity: 0.85;
+      }
+      3% {
+        opacity: 0;
+      }
+    }
+
+    /* Assigning Delays to Keys to make a Typing Pattern */
+    .key-q-anim { animation: press-key 8s infinite 0.4s; }
+    .glow-q-anim { animation: led-glow 8s infinite 0.4s; }
+
+    .key-w-anim { animation: press-key 8s infinite 0.8s; }
+    .glow-w-anim { animation: led-glow 8s infinite 0.8s; }
+
+    .key-e-anim { animation: press-key 8s infinite 1.2s; }
+    .glow-e-anim { animation: led-glow 8s infinite 1.2s; }
+
+    .key-r-anim { animation: press-key 8s infinite 1.6s; }
+    .glow-r-anim { animation: led-glow 8s infinite 1.6s; }
+
+    .key-t-anim { animation: press-key 8s infinite 2.0s; }
+    .glow-t-anim { animation: led-glow 8s infinite 2.0s; }
+
+    .key-space-anim { animation: press-key 8s infinite 2.4s; }
+    .glow-space-anim { animation: led-glow 8s infinite 2.4s; }
+
+    .key-a-anim { animation: press-key 8s infinite 3.0s; }
+    .glow-a-anim { animation: led-glow 8s infinite 3.0s; }
+
+    .key-s-anim { animation: press-key 8s infinite 3.4s; }
+    .glow-s-anim { animation: led-glow 8s infinite 3.4s; }
+
+    .key-d-anim { animation: press-key 8s infinite 3.8s; }
+    .glow-d-anim { animation: led-glow 8s infinite 3.8s; }
+
+    .key-f-anim { animation: press-key 8s infinite 4.2s; }
+    .glow-f-anim { animation: led-glow 8s infinite 4.2s; }
+
+    .key-enter-anim { animation: press-key 8s infinite 4.8s; }
+    .glow-enter-anim { animation: led-glow 8s infinite 4.8s; }
+
+  ]]>
+  </style>
+
+  <defs>
+    <!-- Cyan-Blue RGB backlighting gradient -->
+    <radialGradient id="rgb-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="260" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
+
+  <!-- Keyboard Case Outer -->
+  <rect x="100" y="25" width="600" height="210" class="case-bg" rx="10" />
+  <!-- Keyboard Plate Inner -->
+  <rect x="108" y="33" width="584" height="194" class="plate-bg" rx="6" />
+
+  <g>
+    <rect x="112" y="39" width="34" height="32" class="key-base" />
+    <rect x="114" y="40" width="30" height="26" class="key-top key-top-esc" />
+    <text x="129.0" y="56" text-anchor="middle" class="key-legend key-legend-accent">ESC</text>
+  </g>
+  <g>
+    <rect x="150" y="39" width="34" height="32" class="key-base" />
+    <rect x="152" y="40" width="30" height="26" class="key-top" />
+    <text x="167.0" y="56" text-anchor="middle" class="key-legend">1</text>
+  </g>
+  <g>
+    <rect x="188" y="39" width="34" height="32" class="key-base" />
+    <rect x="190" y="40" width="30" height="26" class="key-top" />
+    <text x="205.0" y="56" text-anchor="middle" class="key-legend">2</text>
+  </g>
+  <g>
+    <rect x="226" y="39" width="34" height="32" class="key-base" />
+    <rect x="228" y="40" width="30" height="26" class="key-top" />
+    <text x="243.0" y="56" text-anchor="middle" class="key-legend">3</text>
+  </g>
+  <g>
+    <rect x="264" y="39" width="34" height="32" class="key-base" />
+    <rect x="266" y="40" width="30" height="26" class="key-top" />
+    <text x="281.0" y="56" text-anchor="middle" class="key-legend">4</text>
+  </g>
+  <g>
+    <rect x="302" y="39" width="34" height="32" class="key-base" />
+    <rect x="304" y="40" width="30" height="26" class="key-top" />
+    <text x="319.0" y="56" text-anchor="middle" class="key-legend">5</text>
+  </g>
+  <g>
+    <rect x="340" y="39" width="34" height="32" class="key-base" />
+    <rect x="342" y="40" width="30" height="26" class="key-top" />
+    <text x="357.0" y="56" text-anchor="middle" class="key-legend">6</text>
+  </g>
+  <g>
+    <rect x="378" y="39" width="34" height="32" class="key-base" />
+    <rect x="380" y="40" width="30" height="26" class="key-top" />
+    <text x="395.0" y="56" text-anchor="middle" class="key-legend">7</text>
+  </g>
+  <g>
+    <rect x="416" y="39" width="34" height="32" class="key-base" />
+    <rect x="418" y="40" width="30" height="26" class="key-top" />
+    <text x="433.0" y="56" text-anchor="middle" class="key-legend">8</text>
+  </g>
+  <g>
+    <rect x="454" y="39" width="34" height="32" class="key-base" />
+    <rect x="456" y="40" width="30" height="26" class="key-top" />
+    <text x="471.0" y="56" text-anchor="middle" class="key-legend">9</text>
+  </g>
+  <g>
+    <rect x="492" y="39" width="34" height="32" class="key-base" />
+    <rect x="494" y="40" width="30" height="26" class="key-top" />
+    <text x="509.0" y="56" text-anchor="middle" class="key-legend">0</text>
+  </g>
+  <g>
+    <rect x="530" y="39" width="34" height="32" class="key-base" />
+    <rect x="532" y="40" width="30" height="26" class="key-top" />
+    <text x="547.0" y="56" text-anchor="middle" class="key-legend">-</text>
+  </g>
+  <g>
+    <rect x="568" y="39" width="34" height="32" class="key-base" />
+    <rect x="570" y="40" width="30" height="26" class="key-top" />
+    <text x="585.0" y="56" text-anchor="middle" class="key-legend">=</text>
+  </g>
+  <g>
+    <rect x="606" y="39" width="74" height="32" class="key-base" />
+    <rect x="608" y="40" width="70" height="26" class="key-top key-top-accent" />
+    <text x="643.0" y="56" text-anchor="middle" class="key-legend">BACKSPACE</text>
+  </g>
+  <g>
+    <rect x="112" y="75" width="54" height="32" class="key-base" />
+    <rect x="114" y="76" width="50" height="26" class="key-top key-top-accent" />
+    <text x="139.0" y="92" text-anchor="middle" class="key-legend">TAB</text>
+  </g>
+  <g>
+    <rect x="154" y="59" width="66" height="64" class="switch-glow glow-q-anim" />
+    <rect x="170" y="75" width="34" height="32" class="key-base" />
+    <rect x="172" y="76" width="30" height="26" class="key-top key-q-anim" />
+    <text x="187.0" y="92" text-anchor="middle" class="key-legend key-q-anim">Q</text>
+  </g>
+  <g>
+    <rect x="192" y="59" width="66" height="64" class="switch-glow glow-w-anim" />
+    <rect x="208" y="75" width="34" height="32" class="key-base" />
+    <rect x="210" y="76" width="30" height="26" class="key-top key-w-anim" />
+    <text x="225.0" y="92" text-anchor="middle" class="key-legend key-w-anim">W</text>
+  </g>
+  <g>
+    <rect x="230" y="59" width="66" height="64" class="switch-glow glow-e-anim" />
+    <rect x="246" y="75" width="34" height="32" class="key-base" />
+    <rect x="248" y="76" width="30" height="26" class="key-top key-e-anim" />
+    <text x="263.0" y="92" text-anchor="middle" class="key-legend key-e-anim">E</text>
+  </g>
+  <g>
+    <rect x="268" y="59" width="66" height="64" class="switch-glow glow-r-anim" />
+    <rect x="284" y="75" width="34" height="32" class="key-base" />
+    <rect x="286" y="76" width="30" height="26" class="key-top key-r-anim" />
+    <text x="301.0" y="92" text-anchor="middle" class="key-legend key-r-anim">R</text>
+  </g>
+  <g>
+    <rect x="306" y="59" width="66" height="64" class="switch-glow glow-t-anim" />
+    <rect x="322" y="75" width="34" height="32" class="key-base" />
+    <rect x="324" y="76" width="30" height="26" class="key-top key-t-anim" />
+    <text x="339.0" y="92" text-anchor="middle" class="key-legend key-t-anim">T</text>
+  </g>
+  <g>
+    <rect x="360" y="75" width="34" height="32" class="key-base" />
+    <rect x="362" y="76" width="30" height="26" class="key-top" />
+    <text x="377.0" y="92" text-anchor="middle" class="key-legend">Y</text>
+  </g>
+  <g>
+    <rect x="398" y="75" width="34" height="32" class="key-base" />
+    <rect x="400" y="76" width="30" height="26" class="key-top" />
+    <text x="415.0" y="92" text-anchor="middle" class="key-legend">U</text>
+  </g>
+  <g>
+    <rect x="436" y="75" width="34" height="32" class="key-base" />
+    <rect x="438" y="76" width="30" height="26" class="key-top" />
+    <text x="453.0" y="92" text-anchor="middle" class="key-legend">I</text>
+  </g>
+  <g>
+    <rect x="474" y="75" width="34" height="32" class="key-base" />
+    <rect x="476" y="76" width="30" height="26" class="key-top" />
+    <text x="491.0" y="92" text-anchor="middle" class="key-legend">O</text>
+  </g>
+  <g>
+    <rect x="512" y="75" width="34" height="32" class="key-base" />
+    <rect x="514" y="76" width="30" height="26" class="key-top" />
+    <text x="529.0" y="92" text-anchor="middle" class="key-legend">P</text>
+  </g>
+  <g>
+    <rect x="550" y="75" width="34" height="32" class="key-base" />
+    <rect x="552" y="76" width="30" height="26" class="key-top" />
+    <text x="567.0" y="92" text-anchor="middle" class="key-legend">[</text>
+  </g>
+  <g>
+    <rect x="588" y="75" width="34" height="32" class="key-base" />
+    <rect x="590" y="76" width="30" height="26" class="key-top" />
+    <text x="605.0" y="92" text-anchor="middle" class="key-legend">]</text>
+  </g>
+  <g>
+    <rect x="626" y="75" width="54" height="32" class="key-base" />
+    <rect x="628" y="76" width="50" height="26" class="key-top key-top-accent" />
+    <text x="653.0" y="92" text-anchor="middle" class="key-legend">\</text>
+  </g>
+  <g>
+    <rect x="112" y="111" width="64" height="32" class="key-base" />
+    <rect x="114" y="112" width="60" height="26" class="key-top key-top-accent" />
+    <text x="144.0" y="128" text-anchor="middle" class="key-legend">CAPS</text>
+  </g>
+  <g>
+    <rect x="164" y="95" width="66" height="64" class="switch-glow glow-a-anim" />
+    <rect x="180" y="111" width="34" height="32" class="key-base" />
+    <rect x="182" y="112" width="30" height="26" class="key-top key-a-anim" />
+    <text x="197.0" y="128" text-anchor="middle" class="key-legend key-a-anim">A</text>
+  </g>
+  <g>
+    <rect x="202" y="95" width="66" height="64" class="switch-glow glow-s-anim" />
+    <rect x="218" y="111" width="34" height="32" class="key-base" />
+    <rect x="220" y="112" width="30" height="26" class="key-top key-s-anim" />
+    <text x="235.0" y="128" text-anchor="middle" class="key-legend key-s-anim">S</text>
+  </g>
+  <g>
+    <rect x="240" y="95" width="66" height="64" class="switch-glow glow-d-anim" />
+    <rect x="256" y="111" width="34" height="32" class="key-base" />
+    <rect x="258" y="112" width="30" height="26" class="key-top key-d-anim" />
+    <text x="273.0" y="128" text-anchor="middle" class="key-legend key-d-anim">D</text>
+  </g>
+  <g>
+    <rect x="278" y="95" width="66" height="64" class="switch-glow glow-f-anim" />
+    <rect x="294" y="111" width="34" height="32" class="key-base" />
+    <rect x="296" y="112" width="30" height="26" class="key-top key-f-anim" />
+    <text x="311.0" y="128" text-anchor="middle" class="key-legend key-f-anim">F</text>
+  </g>
+  <g>
+    <rect x="332" y="111" width="34" height="32" class="key-base" />
+    <rect x="334" y="112" width="30" height="26" class="key-top" />
+    <text x="349.0" y="128" text-anchor="middle" class="key-legend">G</text>
+  </g>
+  <g>
+    <rect x="370" y="111" width="34" height="32" class="key-base" />
+    <rect x="372" y="112" width="30" height="26" class="key-top" />
+    <text x="387.0" y="128" text-anchor="middle" class="key-legend">H</text>
+  </g>
+  <g>
+    <rect x="408" y="111" width="34" height="32" class="key-base" />
+    <rect x="410" y="112" width="30" height="26" class="key-top" />
+    <text x="425.0" y="128" text-anchor="middle" class="key-legend">J</text>
+  </g>
+  <g>
+    <rect x="446" y="111" width="34" height="32" class="key-base" />
+    <rect x="448" y="112" width="30" height="26" class="key-top" />
+    <text x="463.0" y="128" text-anchor="middle" class="key-legend">K</text>
+  </g>
+  <g>
+    <rect x="484" y="111" width="34" height="32" class="key-base" />
+    <rect x="486" y="112" width="30" height="26" class="key-top" />
+    <text x="501.0" y="128" text-anchor="middle" class="key-legend">L</text>
+  </g>
+  <g>
+    <rect x="522" y="111" width="34" height="32" class="key-base" />
+    <rect x="524" y="112" width="30" height="26" class="key-top" />
+    <text x="539.0" y="128" text-anchor="middle" class="key-legend">;</text>
+  </g>
+  <g>
+    <rect x="560" y="111" width="34" height="32" class="key-base" />
+    <rect x="562" y="112" width="30" height="26" class="key-top" />
+    <text x="577.0" y="128" text-anchor="middle" class="key-legend">'</text>
+  </g>
+  <g>
+    <rect x="582" y="95" width="114" height="64" class="switch-glow glow-enter-anim" />
+    <rect x="598" y="111" width="82" height="32" class="key-base" />
+    <rect x="600" y="112" width="78" height="26" class="key-top key-top-enter key-enter-anim" />
+    <text x="639.0" y="128" text-anchor="middle" class="key-legend key-legend-enter key-enter-anim">ENTER</text>
+  </g>
+  <g>
+    <rect x="112" y="147" width="82" height="32" class="key-base" />
+    <rect x="114" y="148" width="78" height="26" class="key-top key-top-accent" />
+    <text x="153.0" y="164" text-anchor="middle" class="key-legend">SHIFT</text>
+  </g>
+  <g>
+    <rect x="198" y="147" width="34" height="32" class="key-base" />
+    <rect x="200" y="148" width="30" height="26" class="key-top" />
+    <text x="215.0" y="164" text-anchor="middle" class="key-legend">Z</text>
+  </g>
+  <g>
+    <rect x="236" y="147" width="34" height="32" class="key-base" />
+    <rect x="238" y="148" width="30" height="26" class="key-top" />
+    <text x="253.0" y="164" text-anchor="middle" class="key-legend">X</text>
+  </g>
+  <g>
+    <rect x="274" y="147" width="34" height="32" class="key-base" />
+    <rect x="276" y="148" width="30" height="26" class="key-top" />
+    <text x="291.0" y="164" text-anchor="middle" class="key-legend">C</text>
+  </g>
+  <g>
+    <rect x="312" y="147" width="34" height="32" class="key-base" />
+    <rect x="314" y="148" width="30" height="26" class="key-top" />
+    <text x="329.0" y="164" text-anchor="middle" class="key-legend">V</text>
+  </g>
+  <g>
+    <rect x="350" y="147" width="34" height="32" class="key-base" />
+    <rect x="352" y="148" width="30" height="26" class="key-top" />
+    <text x="367.0" y="164" text-anchor="middle" class="key-legend">B</text>
+  </g>
+  <g>
+    <rect x="388" y="147" width="34" height="32" class="key-base" />
+    <rect x="390" y="148" width="30" height="26" class="key-top" />
+    <text x="405.0" y="164" text-anchor="middle" class="key-legend">N</text>
+  </g>
+  <g>
+    <rect x="426" y="147" width="34" height="32" class="key-base" />
+    <rect x="428" y="148" width="30" height="26" class="key-top" />
+    <text x="443.0" y="164" text-anchor="middle" class="key-legend">M</text>
+  </g>
+  <g>
+    <rect x="464" y="147" width="34" height="32" class="key-base" />
+    <rect x="466" y="148" width="30" height="26" class="key-top" />
+    <text x="481.0" y="164" text-anchor="middle" class="key-legend">,</text>
+  </g>
+  <g>
+    <rect x="502" y="147" width="34" height="32" class="key-base" />
+    <rect x="504" y="148" width="30" height="26" class="key-top" />
+    <text x="519.0" y="164" text-anchor="middle" class="key-legend">.</text>
+  </g>
+  <g>
+    <rect x="540" y="147" width="34" height="32" class="key-base" />
+    <rect x="542" y="148" width="30" height="26" class="key-top" />
+    <text x="557.0" y="164" text-anchor="middle" class="key-legend">/</text>
+  </g>
+  <g>
+    <rect x="578" y="147" width="102" height="32" class="key-base" />
+    <rect x="580" y="148" width="98" height="26" class="key-top key-top-accent" />
+    <text x="629.0" y="164" text-anchor="middle" class="key-legend">SHIFT</text>
+  </g>
+  <g>
+    <rect x="112" y="183" width="42" height="32" class="key-base" />
+    <rect x="114" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="133.0" y="200" text-anchor="middle" class="key-legend">CTRL</text>
+  </g>
+  <g>
+    <rect x="158" y="183" width="42" height="32" class="key-base" />
+    <rect x="160" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="179.0" y="200" text-anchor="middle" class="key-legend">WIN</text>
+  </g>
+  <g>
+    <rect x="204" y="183" width="42" height="32" class="key-base" />
+    <rect x="206" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="225.0" y="200" text-anchor="middle" class="key-legend">ALT</text>
+  </g>
+  <g>
+    <rect x="234" y="167" width="270" height="64" class="switch-glow glow-space-anim" />
+    <rect x="250" y="183" width="238" height="32" class="key-base" />
+    <rect x="252" y="184" width="234" height="26" class="key-top key-space-anim" />
+  </g>
+  <g>
+    <rect x="492" y="183" width="42" height="32" class="key-base" />
+    <rect x="494" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="513.0" y="200" text-anchor="middle" class="key-legend">ALT</text>
+  </g>
+  <g>
+    <rect x="538" y="183" width="42" height="32" class="key-base" />
+    <rect x="540" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="559.0" y="200" text-anchor="middle" class="key-legend">WIN</text>
+  </g>
+  <g>
+    <rect x="584" y="183" width="42" height="32" class="key-base" />
+    <rect x="586" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="605.0" y="200" text-anchor="middle" class="key-legend">MENU</text>
+  </g>
+  <g>
+    <rect x="630" y="183" width="42" height="32" class="key-base" />
+    <rect x="632" y="184" width="38" height="26" class="key-top key-top-accent" />
+    <text x="651.0" y="200" text-anchor="middle" class="key-legend">CTRL</text>
+  </g>
+</svg>

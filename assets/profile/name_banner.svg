@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="120" viewBox="0 0 800 120" fill="none">
+  <style>
+  <![CDATA[
+    .banner-bg {
+      fill: #050508;
+    }
+    
+    /* Name color shifting and glow */
+    .glowing-name {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      text-anchor: middle;
+      fill: #00f2fe;
+      animation: name-color-shift 12s infinite alternate;
+      filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4));
+    }
+    
+    @keyframes name-color-shift {
+      0% { fill: #00f2fe; filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.5)); }
+      33% { fill: #6366f1; filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.5)); }
+      66% { fill: #d946ef; filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.5)); }
+      100% { fill: #10b981; filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.5)); }
+    }
+
+    /* Role text transition styles */
+    .role-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      fill: #94a3b8;
+      letter-spacing: 4px;
+      text-anchor: middle;
+      opacity: 0;
+    }
+    
+    .role-1 {
+      animation: slide-fade-1 9s infinite;
+    }
+    .role-2 {
+      animation: slide-fade-2 9s infinite;
+    }
+    .role-3 {
+      animation: slide-fade-3 9s infinite;
+    }
+
+    @keyframes slide-fade-1 {
+      0% { opacity: 0; transform: translateY(8px); }
+      5%, 28% { opacity: 1; transform: translateY(0); }
+      33%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes slide-fade-2 {
+      0%, 33% { opacity: 0; transform: translateY(8px); }
+      38%, 61% { opacity: 1; transform: translateY(0); }
+      66%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes slide-fade-3 {
+      0%, 66% { opacity: 0; transform: translateY(8px); }
+      71%, 94% { opacity: 1; transform: translateY(0); }
+      99%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+  ]]>
+  </style>
+
+  <rect width="800" height="120" class="banner-bg" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
+
+  <!-- Name -->
+  <text x="400" y="58" class="glowing-name">HARSHAVARDHAN K</text>
+
+  <!-- Roles (Stacked in same position, animated sequentially) -->
+  <g>
+    <text x="400" y="90" class="role-text role-1">AI ENGINEER</text>
+    <text x="400" y="90" class="role-text role-2">FULL-STACK ARCHITECT</text>
+    <text x="400" y="90" class="role-text role-3">SYSTEMS BUILDER</text>
+  </g>
+</svg>
