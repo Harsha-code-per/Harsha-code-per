@@ -4,11 +4,11 @@
 
 <br />
 
-## 01 // Executive Summary &amp; Architectural Focus
+## 01 // Engineering Philosophy
 
-I build systems where machine learning models, distributed backends, and user interfaces operate as a single experience. I focus on taking AI models from experimental research notebooks and scaling them into production-grade pipelines that are fast, reliable, and built to last.
+I am an undergraduate focused on building software that integrates machine learning models, robust backend systems, and responsive user interfaces into complete products. Instead of isolating models in experimental notebooks, I believe in deploying them into production workflows that solve real-world problems.
 
-This workspace is a live window into my active development loop. I use it to explore complex topologies, test distributed state flows, and build systems that adapt to human behavior.
+My approach is grounded in learning by building. I believe clean code, structured APIs, and engineering discipline are just as critical to AI applications as the models themselves. I write code to explore how intelligent systems can be made robust, intuitive, and genuinely useful to people.
 
 <br />
 
@@ -32,9 +32,9 @@ This workspace is a live window into my active development loop. I use it to exp
 
 ## Current Focus
 
-*   **Billytics** // Building a telemetry engine to model real-time business intelligence forecasts. Exploring how AI can become the core operating system behind decisions instead of a static dashboard feed.
-*   **DeV** // Engineering a local, sandboxed workspace that shifts autonomous coding agents from single prompt wrappers to models with long-term memory and execution access.
-*   **Future Explorations** // Investigating mixed-initiative human-AI canvases, low-latency edge vector indexing, and zero-latency local model fallbacks.
+*   **Billytics** // An AI-assisted business operation system. Standard business dashboards are often passive. I am building Billytics to explore how active machine learning models can dynamically analyze and forecast operational data to help teams make decisions, rather than just displaying static charts.
+*   **DeV** // A sandboxed AI development workspace. Most coding assistants are simple chat wrappers with no execution access. I am building DeV to provide a secure local environment where AI agents can safely run commands, manage state, and maintain long-term memory to solve actual programming tasks.
+*   **Future Explorations** // Researching local vector database indexing for edge devices, structured output routing for LLMs, and secure sandboxing mechanisms for autonomous agents.
 
 <br />
 
@@ -44,9 +44,9 @@ This workspace is a live window into my active development loop. I use it to exp
 
 <br />
 
-## Active Tech Matrix
+## Technical Stack
 
-Overview of core systems, frameworks, and deployment tools in my stack:
+A visual map of the languages, frameworks, and tools I use to build systems:
 
 <br />
 
@@ -64,11 +64,11 @@ Overview of core systems, frameworks, and deployment tools in my stack:
 
 ## Current Interests
 
-*   **Agentic AI** // Long-term context memory compression and routing.
-*   **Distributed Systems** // Low-latency WebSocket connections and distributed caches.
-*   **Developer Tools** // Local container orchestrations and playground telemetry.
-*   **Human-AI Interaction** // Fluid canvas viewports and responsive user feedback loops.
-*   **Motion Design** // SVG geometry animations representing processing states.
+*   **AI Agents &amp; ML Systems** // Structuring memory, execution loops, and reliability pipelines for autonomous workflows.
+*   **Backend &amp; Distributed Systems** // Building reliable APIs, state management systems, and local development database architectures.
+*   **Developer Experience (DX)** // Designing sandboxed playgrounds, terminal-based tools, and robust automation pipelines.
+*   **Human-Computer Interaction (HCI)** // Creating clean, lightweight user interfaces that make complex data easily understandable.
+*   **Cloud Deployment** // Packaging applications securely using containerization and managing local vector database infrastructure.
 
 <br />
 
