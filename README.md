@@ -83,7 +83,7 @@ Overview of core systems, frameworks, and deployment tools in my stack:
 <br />
 
 <p align="center">
-  <img src="assets/profile/activity.svg" width="420" height="510" alt="Harsha GitHub Activity Console" />
+  <img src="assets/profile/activity.svg" width="800" height="360" alt="Harsha GitHub Activity Console" />
 </p>
 
 <br />

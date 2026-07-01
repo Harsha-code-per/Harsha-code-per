@@ -55,7 +55,7 @@ try:
 except Exception as e:
     print(f"HTML Calendar Fetch Failed: {e}")
 
-# Fallback: Query local Git dates (only profile commits)
+# Fallback: Query local Git dates
 if not calendar_fetched:
     print("Running local Git history query fallback...")
     commit_dates = run_cmd('git log --pretty=format:"%ad" --date=short')
@@ -82,7 +82,7 @@ if not calendar_fetched:
                 
     total_contributions = max(311, total_contributions)
 
-# Map matrix heights and colors (scaled down for vertical card)
+# Map matrix heights and colors
 grid_data = []
 for c in range(15):
     col_data = []
@@ -149,8 +149,8 @@ try:
                     for commit in event['payload']['commits']:
                         sha = commit['sha'][:7]
                         msg = commit['message'].split('\n')[0]
-                        if len(msg) > 30:
-                            msg = msg[:27] + "..."
+                        if len(msg) > 35:
+                            msg = msg[:32] + "..."
                         if len(recent_commits) < 3:
                             recent_commits.append((sha, msg))
 except Exception as e:
@@ -198,7 +198,7 @@ bar_colors = ["#10b981", "#6366f1", "#00f2fe"]
 
 # 3. Compile SVG
 svg_footer = "</svg>"
-svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="510" viewBox="0 0 420 510" fill="none">
+svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" fill="none">
   <style>
   <![CDATA[
     .bg-main {{ fill: #050508; }}
@@ -280,23 +280,25 @@ svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="51
   ]]>
   </style>
 
-  <rect width="420" height="510" class="bg-main" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
+  <rect width="800" height="360" class="bg-main" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
 
   <!-- Background Grid -->
   <g>
-    <line x1="70" y1="0" x2="70" y2="510" class="grid-lines" />
-    <line x1="140" y1="0" x2="140" y2="510" class="grid-lines" />
-    <line x1="210" y1="0" x2="210" y2="510" class="grid-lines" />
-    <line x1="280" y1="0" x2="280" y2="510" class="grid-lines" />
-    <line x1="350" y1="0" x2="350" y2="510" class="grid-lines" />
+    <line x1="100" y1="0" x2="100" y2="360" class="grid-lines" />
+    <line x1="200" y1="0" x2="200" y2="360" class="grid-lines" />
+    <line x1="300" y1="0" x2="300" y2="360" class="grid-lines" />
+    <line x1="400" y1="0" x2="400" y2="360" class="grid-lines" />
+    <line x1="500" y1="0" x2="500" y2="360" class="grid-lines" />
+    <line x1="600" y1="0" x2="600" y2="360" class="grid-lines" />
+    <line x1="700" y1="0" x2="700" y2="360" class="grid-lines" />
   </g>
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
   <text x="35" y="44" class="tech-sub">{total_contributions} CONTRIBUTIONS IN THE LAST YEAR</text>
 
-  <!-- Grid Legend (Centered) -->
-  <g transform="translate(130, 198)">
+  <!-- Grid Legend -->
+  <g transform="translate(620, 24)">
     <text x="0" y="8" class="legend-text">Less</text>
     <rect x="28" y="1" width="8" height="8" rx="1.5" fill="#161b22" />
     <rect x="40" y="1" width="8" height="8" rx="1.5" fill="#0e4429" />
@@ -307,8 +309,7 @@ svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="51
   </g>
 """
 
-# Render columns in isometric projection from back-left to front-right
-# Center shifted down to x=210, y=134 to prevent collisions with the titles
+# Render columns in isometric projection
 cubes_svg = []
 for c in range(15):
     cubes_svg.append(f'  <!-- Column {c} -->\n')
@@ -320,24 +321,24 @@ for c in range(15):
         right_color = cell["right"]
         glow_color = cell["glow"]
         
-        # Grid coordinates centered at y=134
-        x = 210 + (c - 7.0) * 13.0 - (r - 3.0) * 6.5
-        y = 134 + (c - 7.0) * 3.25 + (r - 3.0) * 6.5
+        # Grid coordinates centered at x=400, y=112
+        x = 400 + (c - 7.0) * 19.5 - (r - 3.0) * 9.8
+        y = 112 + (c - 7.0) * 4.9 + (r - 3.0) * 9.8
         
         t1_x, t1_y = x, y - h
-        t2_x, t2_y = x + 6, y + 3.0 - h
-        t3_x, t3_y = x, y + 6 - h
-        t4_x, t4_y = x - 6, y + 3.0 - h
+        t2_x, t2_y = x + 9, y + 4.5 - h
+        t3_x, t3_y = x, y + 9 - h
+        t4_x, t4_y = x - 9, y + 4.5 - h
         
-        l1_x, l1_y = x - 6, y + 3.0 - h
-        l2_x, l2_y = x, y + 6 - h
-        l3_x, l3_y = x, y + 6
-        l4_x, l4_y = x - 6, y + 3.0
+        l1_x, l1_y = x - 9, y + 4.5 - h
+        l2_x, l2_y = x, y + 9 - h
+        l3_x, l3_y = x, y + 9
+        l4_x, l4_y = x - 9, y + 4.5
         
-        r1_x, r1_y = x, y + 6 - h
-        r2_x, r2_y = x + 6, y + 3.0 - h
-        r3_x, r3_y = x + 6, y + 3.0
-        r4_x, r4_y = x, y + 6
+        r1_x, r1_y = x, y + 9 - h
+        r2_x, r2_y = x + 9, y + 4.5 - h
+        r3_x, r3_y = x + 9, y + 4.5
+        r4_x, r4_y = x, y + 9
 
         cubes_svg.append(f'  <g class="col-group c-{c}" style="--pulse-color: {glow_color};">\n')
         cubes_svg.append(f'    <polygon points="{l1_x},{l1_y} {l2_x},{l2_y} {l3_x},{l3_y} {l4_x},{l4_y}" fill="{left_color}" />\n')
@@ -345,69 +346,68 @@ for c in range(15):
         cubes_svg.append(f'    <polygon points="{t1_x},{t1_y} {t2_x},{t2_y} {t3_x},{t3_y} {t4_x},{t4_y}" fill="{top_color}" />\n')
         cubes_svg.append(f'  </g>\n')
 
-# SECTION 2: CONTRIBUTION ACTIVITY (y=220 to y=500)
+# SECTION 2: CONTRIBUTION ACTIVITY
 svg_divider = """
   <!-- Section Divider Line -->
-  <line x1="30" y1="220" x2="390" y2="220" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" stroke-dasharray="2 4" />
+  <line x1="35" y1="190" x2="765" y2="190" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" stroke-dasharray="2 4" />
 
   <!-- Timeline Section -->
-  <text x="35" y="243" class="tech-header">CONTRIBUTION ACTIVITY</text>
-  <text x="35" y="253" class="tech-sub">LOGGED COMMITS &amp; REPOSITORIES // ACTIVE TIMELINE</text>
+  <text x="35" y="212" class="tech-header">CONTRIBUTION ACTIVITY</text>
+  <text x="35" y="222" class="tech-sub">LOGGED COMMITS &amp; REPOSITORIES // ACTIVE TIMELINE</text>
 """
 
-# Build timeline content
+# Build timeline content (repos on left, commits on right)
 timeline_svg = []
 # Dynamic commit statement
 timeline_svg.append(f'  <!-- Timeline summary block -->\n')
-timeline_svg.append(f'  <g transform="translate(35, 267)">\n')
+timeline_svg.append(f'  <g transform="translate(35, 235)">\n')
 timeline_svg.append(f'    <circle cx="8" cy="8" r="4" fill="#10b981" filter="drop-shadow(0 0 3px #10b981)" />\n')
 timeline_svg.append(f'    <text x="20" y="11" class="timeline-title">Created {total_repo_commits} commits in {total_repos_count} repositories</text>\n')
 timeline_svg.append(f'  </g>\n')
 
 # Progress bars for top repos
-# Spacing shifted down to match y=290
+# Repos names at x=60.
+# Progress bars start at x=230.
+# Progress bars width: 140px.
+# Counts at x=382.
 for idx, repo in enumerate(sorted_repos):
     name, count = repo
     color = bar_colors[idx % len(bar_colors)]
     ratio = count / float(total_repo_commits) if total_repo_commits > 0 else 0
-    w = int(ratio * 100)
-    y_offset = 290 + idx * 24
+    w = int(ratio * 140)
+    y_offset = 258 + idx * 24
     
     timeline_svg.append(f'  <!-- Repo {idx+1} Progress -->\n')
-    timeline_svg.append(f'  <text x="45" y="{y_offset+8}" class="timeline-repo">{name}</text>\n')
+    timeline_svg.append(f'  <text x="60" y="{y_offset+8}" class="timeline-repo">{name}</text>\n')
     # Track
-    timeline_svg.append(f'  <rect x="220" y="{y_offset}" width="100" height="6" rx="3" fill="#161622" />\n')
+    timeline_svg.append(f'  <rect x="230" y="{y_offset}" width="140" height="6" rx="3" fill="#161622" />\n')
     # Fill
-    timeline_svg.append(f'  <rect x="220" y="{y_offset}" width="{w}" height="6" rx="3" fill="{color}" />\n')
+    timeline_svg.append(f'  <rect x="230" y="{y_offset}" width="{w}" height="6" rx="3" fill="{color}" />\n')
     # Count
-    timeline_svg.append(f'  <text x="328" y="{y_offset+8}" class="timeline-count" text-anchor="start">{count} commit{"s" if count > 1 else ""}</text>\n')
+    timeline_svg.append(f'  <text x="382" y="{y_offset+8}" class="timeline-count" text-anchor="start">{count} commit{"s" if count > 1 else ""}</text>\n')
 
-# Second Divider shifted to y=368
-timeline_svg.append(f'  <!-- Inner divider -->\n')
-timeline_svg.append(f'  <line x1="30" y1="368" x2="390" y2="368" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" stroke-dasharray="2 4" />\n')
-
-# Commit stream lists shifted down to match y=392
+# Commit stream lists shifted further right from x=440 to x=480 to prevent conflicts
 timeline_svg.append(f'  <!-- Commit List Header -->\n')
-timeline_svg.append(f'  <text x="35" y="392" class="timeline-title">// LATEST LOGGED MISSIONS</text>\n')
+timeline_svg.append(f'  <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>\n')
 
 for idx, commit in enumerate(recent_commits):
     sha, msg = commit
-    y_offset = 408 + idx * 24
+    y_offset = 262 + idx * 24
     
     timeline_svg.append(f'  <!-- Commit {idx+1} -->\n')
-    timeline_svg.append(f'  <g transform="translate(35, {y_offset})">\n')
+    timeline_svg.append(f'  <g transform="translate(480, {y_offset})">\n')
     timeline_svg.append(f'    <circle cx="5" cy="5" r="2.5" fill="#52525b" />\n')
     timeline_svg.append(f'    <text x="15" y="8" class="commit-sha">[{sha}]</text>\n')
     timeline_svg.append(f'    <text x="65" y="8" class="commit-msg">{msg}</text>\n')
     timeline_svg.append(f'  </g>\n')
 
-# Technical borders (adjusted to 420x510)
+# Technical borders
 svg_borders = """
   <!-- Technical border decorations -->
   <path d="M 8 8 L 18 8 M 8 8 L 8 18" class="blueprint-border" />
-  <path d="M 412 8 L 402 8 M 412 8 L 412 18" class="blueprint-border" />
-  <path d="M 8 502 L 18 502 M 8 502 L 8 492" class="blueprint-border" />
-  <path d="M 412 502 L 402 502 M 412 502 L 412 492" class="blueprint-border" />
+  <path d="M 792 8 L 782 8 M 792 8 L 792 18" class="blueprint-border" />
+  <path d="M 8 352 L 18 352 M 8 352 L 8 342" class="blueprint-border" />
+  <path d="M 792 352 L 782 352 M 792 352 L 792 342" class="blueprint-border" />
 """
 
 final_svg = svg_content + "".join(cubes_svg) + svg_divider + "".join(timeline_svg) + svg_borders + svg_footer
