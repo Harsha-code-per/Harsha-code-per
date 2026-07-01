@@ -7,11 +7,27 @@
       stroke-linejoin: round;
       stroke-dasharray: 800;
       stroke-dashoffset: 800;
-      animation: draw 2.8s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+      animation: draw-loop 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     }
-    @keyframes draw {
-      to {
+    @keyframes draw-loop {
+      0% {
+        stroke-dashoffset: 800;
+        opacity: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      40% {
         stroke-dashoffset: 0;
+        opacity: 1;
+      }
+      85% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+      95%, 100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
       }
     }
   </style>

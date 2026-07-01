@@ -123,8 +123,6 @@ Click Node Beta below to try routing an incoming model inference request through
 
 ## Active Tech Matrix
 
-Hover over cards and tech bullets to inspect active visual feedback:
-
 <br />
 
 <p align="center">
