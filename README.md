@@ -17,37 +17,37 @@ My approach is grounded in learning by building. I believe clean code, structure
 </p>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="60%" valign="top">
-      
-      <h2>Current Focus</h2>
-      
-      <h3>Billytics</h3>
-      <p>An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.</p>
+<tr>
+<td width="60%" valign="top">
 
-      <h3>SecureChat</h3>
-      <p>A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.</p>
+<h2>Current Focus</h2>
 
-      <h2>Architectural Preferences &amp; Principles</h2>
+<h3>Billytics</h3>
+<p>An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.</p>
 
-      <h3>Offline-First &amp; Sync</h3>
-      <p>Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.</p>
+<h3>SecureChat</h3>
+<p>A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.</p>
 
-      <h3>Security &amp; Privacy</h3>
-      <p>Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.</p>
+<h2>Architectural Preferences &amp; Principles</h2>
 
-      <h3>Production-Ready AI</h3>
-      <p>Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.</p>
+<h3>Offline-First &amp; Sync</h3>
+<p>Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.</p>
 
-      <h3>Simplicity &amp; Accessibility</h3>
-      <p>Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.</p>
+<h3>Security &amp; Privacy</h3>
+<p>Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.</p>
 
-    </td>
-    <td width="40%" valign="top" align="right">
-      <br /><br />
-      <img src="assets/profile/system_intelligence.svg" width="280" alt="Telemetry Console" />
-    </td>
-  </tr>
+<h3>Production-Ready AI</h3>
+<p>Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.</p>
+
+<h3>Simplicity &amp; Accessibility</h3>
+<p>Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.</p>
+
+</td>
+<td width="40%" valign="top" align="right">
+<br /><br />
+<img src="assets/profile/system_intelligence.svg" width="280" alt="Telemetry Console" />
+</td>
+</tr>
 </table>
 
 ## Technical Stack
