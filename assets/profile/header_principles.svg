@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 100 20" fill="none">
+  <style>
+  <![CDATA[
+    .track {
+      stroke: rgba(255, 255, 255, 0.05);
+      stroke-width: 1;
+    }
+    .packet {
+      fill: #00f2fe;
+      filter: drop-shadow(0 0 2px #00f2fe);
+    }
+  ]]>
+  </style>
+  <line x1="0" y1="10" x2="100" y2="10" class="track" />
+  <rect y="8" width="4" height="4" rx="1" class="packet">
+    <animate attributeName="x" from="0" to="100" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect y="8" width="4" height="4" rx="1" class="packet">
+    <animate attributeName="x" from="0" to="100" dur="2s" begin="0.66s" repeatCount="indefinite" />
+  </rect>
+  <rect y="8" width="4" height="4" rx="1" class="packet">
+    <animate attributeName="x" from="0" to="100" dur="2s" begin="1.33s" repeatCount="indefinite" />
+  </rect>
+</svg>

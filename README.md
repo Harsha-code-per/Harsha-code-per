@@ -13,18 +13,10 @@ I am an undergraduate focused on building software that integrates machine learn
 My approach is grounded in learning by building. I believe clean code, structured APIs, and engineering discipline are just as critical to AI applications as the models themselves. I write code to explore how intelligent systems can be made robust, intuitive, and genuinely useful to people.
 
 <p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-<p align="center">
   <img src="assets/profile/telemetry.svg" width="800" alt="Animated Keyboard Telemetry Feed" />
 </p>
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-## Current Focus
+## Current Focus <img src="assets/profile/header_focus.svg" height="20" />
 
 ### Billytics
 An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.
@@ -32,11 +24,7 @@ An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, e
 ### SecureChat
 A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-## Technical Stack
+## Technical Stack <img src="assets/profile/header_stack.svg" height="20" />
 
 A visual map of the languages, frameworks, and tools I use to build systems:
 
@@ -44,11 +32,7 @@ A visual map of the languages, frameworks, and tools I use to build systems:
   <img src="assets/profile/tech_grid.svg" width="800" alt="Harsha Interactive Tech Grid" />
 </p>
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-## Architectural Preferences &amp; Principles
+## Architectural Preferences &amp; Principles <img src="assets/profile/header_principles.svg" height="20" />
 
 ### Offline-First &amp; Sync
 Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.
@@ -62,11 +46,7 @@ Structuring low-footprint, specialized inference engines that provide structured
 ### Simplicity &amp; Accessibility
 Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
 
-<p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
-</p>
-
-## GitHub Activity
+## GitHub Activity <img src="assets/profile/header_activity.svg" height="20" />
 
 <p align="center">
   <img src="assets/profile/activity.svg" width="800" height="360" alt="Harsha GitHub Activity Console" />
