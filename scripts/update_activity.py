@@ -43,7 +43,8 @@ try:
                 
         # Setup 15 weeks * 7 days = 105 days timeline
         end_date = datetime.date.today()
-        start_date = end_date - datetime.timedelta(days=105 + (end_date.weekday() + 1) % 7)
+        current_sunday = end_date - datetime.timedelta(days=(end_date.weekday() + 1) % 7)
+        start_date = current_sunday - datetime.timedelta(weeks=14)
         
         for c in range(15):
             for r in range(7):
@@ -63,7 +64,8 @@ if not calendar_fetched:
     date_counts = collections.Counter(commit_dates.split('\n'))
     
     end_date = datetime.date.today()
-    start_date = end_date - datetime.timedelta(days=105 + (end_date.weekday() + 1) % 7)
+    current_sunday = end_date - datetime.timedelta(days=(end_date.weekday() + 1) % 7)
+    start_date = current_sunday - datetime.timedelta(weeks=14)
     
     for c in range(15):
         for r in range(7):
