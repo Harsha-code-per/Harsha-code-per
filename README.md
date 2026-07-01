@@ -2,10 +2,6 @@
   <img src="assets/profile/hero.svg" width="800" alt="Harshavardhan K Systems Console" />
 </p>
 
-<p align="center">
-  <img src="assets/profile/telemetry.svg" width="800" alt="Animated Keyboard Telemetry Feed" />
-</p>
-
 ## Engineering Philosophy
 
 <p align="center">
@@ -17,6 +13,10 @@ I am an undergraduate focused on building software that integrates machine learn
 
 My approach is grounded in learning by building. I believe clean code, structured APIs, and engineering discipline are just as critical to AI applications as the models themselves. I write code to explore how intelligent systems can be made robust, intuitive, and genuinely useful to people.
 </font>
+
+<p align="center">
+  <img src="assets/profile/telemetry.svg" width="800" alt="Animated Keyboard Telemetry Feed" />
+</p>
 
 ## Current Focus
 
