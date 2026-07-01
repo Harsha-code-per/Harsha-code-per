@@ -2,33 +2,27 @@
   <img src="assets/profile/hero.svg" width="800" alt="Harshavardhan K Systems Console" />
 </p>
 
-<br />
-
 ## Engineering Philosophy
+
+<p align="center">
+  <img src="assets/profile/status.svg" width="800" alt="Telemetry Status Monitor" />
+</p>
 
 I am an undergraduate focused on building software that integrates machine learning models, robust backend systems, and responsive user interfaces into complete products. Instead of isolating models in experimental notebooks, I believe in deploying them into production workflows that solve real-world problems.
 
 My approach is grounded in learning by building. I believe clean code, structured APIs, and engineering discipline are just as critical to AI applications as the models themselves. I write code to explore how intelligent systems can be made robust, intuitive, and genuinely useful to people.
 
-<br />
-
 <p align="center">
   <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
-
-<br />
 
 <p align="center">
   <img src="assets/profile/telemetry.svg" width="800" alt="Animated Keyboard Telemetry Feed" />
 </p>
 
-<br />
-
 <p align="center">
   <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
-
-<br />
 
 ## Current Focus
 
@@ -38,31 +32,21 @@ An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, e
 ### SecureChat
 A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
 
-<br />
-
 <p align="center">
   <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
-
-<br />
 
 ## Technical Stack
 
 A visual map of the languages, frameworks, and tools I use to build systems:
 
-<br />
-
 <p align="center">
   <img src="assets/profile/tech_grid.svg" width="800" alt="Harsha Interactive Tech Grid" />
 </p>
 
-<br />
-
 <p align="center">
   <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
-
-<br />
 
 ## Architectural Preferences &amp; Principles
 
@@ -78,23 +62,16 @@ Structuring low-footprint, specialized inference engines that provide structured
 ### Simplicity &amp; Accessibility
 Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
 
-<br />
-
 <p align="center">
   <img src="assets/profile/divider.svg" width="800" alt="divider" />
 </p>
 
-<br />
-
 ## GitHub Activity
-
-<br />
 
 <p align="center">
   <img src="assets/profile/activity.svg" width="800" height="360" alt="Harsha GitHub Activity Console" />
 </p>
 
-<br />
 <br />
 
 <p align="right">

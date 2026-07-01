@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="30" viewBox="0 0 800 30" fill="none">
+  <style>
+  <![CDATA[
+    .term-text {
+      font-family: monospace;
+      font-size: 11px;
+      fill: #71717a;
+      letter-spacing: 1px;
+    }
+    .pulse-dot {
+      fill: #10b981;
+      animation: blink 1.5s infinite;
+    }
+    .heartbeat {
+      stroke: #00f2fe;
+      stroke-width: 1.5;
+      stroke-dasharray: 80 800;
+      animation: move-pulse 3s linear infinite;
+      filter: drop-shadow(0 0 2px #00f2fe);
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+    @keyframes move-pulse {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -800; }
+    }
+  ]]>
+  </style>
+  <!-- Background grid monitor line -->
+  <path d="M 200 15 L 350 15 L 355 5 L 360 25 L 365 15 L 370 15 L 375 0 L 380 30 L 385 15 L 600 15" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+  <!-- Glowing sweeping heartbeat pulse -->
+  <path d="M 200 15 L 350 15 L 355 5 L 360 25 L 365 15 L 370 15 L 375 0 L 380 30 L 385 15 L 600 15" class="heartbeat" />
+  
+  <text x="10" y="18" class="term-text">SYS.PULSE // SECURE_CHANNEL</text>
+  
+  <circle cx="620" cy="14" r="3" class="pulse-dot" />
+  <text x="632" y="18" class="term-text">SYS_STATE // 200_OK</text>
+</svg>
