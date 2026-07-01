@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">317 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">320 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -133,10 +133,10 @@
     <polygon points="253.7,90.49999999999999 262.7,85.99999999999999 262.7,91.99999999999999 253.7,96.49999999999999" fill="#072214" />
     <polygon points="253.7,81.49999999999999 262.7,85.99999999999999 253.7,90.49999999999999 244.7,85.99999999999999" fill="#0e4429" />
   </g>
-  <g class="col-group c-0" style="--pulse-color: #39d353;">
-    <polygon points="234.9,77.79999999999998 243.9,82.29999999999998 243.9,106.29999999999998 234.9,101.79999999999998" fill="#28943a" />
-    <polygon points="243.9,82.29999999999998 252.9,77.79999999999998 252.9,101.79999999999998 243.9,106.29999999999998" fill="#1c6829" />
-    <polygon points="243.9,73.29999999999998 252.9,77.79999999999998 243.9,82.29999999999998 234.9,77.79999999999998" fill="#39d353" />
+  <g class="col-group c-0" style="--pulse-color: #26a641;">
+    <polygon points="234.9,83.79999999999998 243.9,88.29999999999998 243.9,106.29999999999998 234.9,101.79999999999998" fill="#1b752e" />
+    <polygon points="243.9,88.29999999999998 252.9,83.79999999999998 252.9,101.79999999999998 243.9,106.29999999999998" fill="#135220" />
+    <polygon points="243.9,79.29999999999998 252.9,83.79999999999998 243.9,88.29999999999998 234.9,83.79999999999998" fill="#26a641" />
   </g>
   <g class="col-group c-0" style="--pulse-color: #161b22;">
     <polygon points="225.1,109.6 234.1,114.1 234.1,116.1 225.1,111.6" fill="#0f131a" />
@@ -662,8 +662,8 @@
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">Harsha-code-per</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="88" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">19 commits</text>
+  <rect x="230" y="258" width="93" height="6" rx="3" fill="#10b981" />
+  <text x="382" y="266" class="timeline-count" text-anchor="start">20 commits</text>
   <!-- Repo 2 Progress -->
   <text x="60" y="290" class="timeline-repo">Harshavardhan.portfolio</text>
   <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
@@ -672,27 +672,27 @@
   <!-- Repo 3 Progress -->
   <text x="60" y="314" class="timeline-repo">Aura</text>
   <rect x="230" y="306" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="306" width="18" height="6" rx="3" fill="#00f2fe" />
-  <text x="382" y="314" class="timeline-count" text-anchor="start">4 commits</text>
+  <rect x="230" y="306" width="14" height="6" rx="3" fill="#00f2fe" />
+  <text x="382" y="314" class="timeline-count" text-anchor="start">3 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[8f1ebff]</text>
-    <text x="65" y="8" class="commit-msg">Update README with SecureChat de...</text>
+    <text x="15" y="8" class="commit-sha">[34f85e0]</text>
+    <text x="65" y="8" class="commit-msg">Enhance README typography format...</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[3c60395]</text>
+    <text x="15" y="8" class="commit-sha">[f3bfa07]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[53f9748]</text>
-    <text x="65" y="8" class="commit-msg">Rewrite profile content to refle...</text>
+    <text x="15" y="8" class="commit-sha">[8f1ebff]</text>
+    <text x="65" y="8" class="commit-msg">Update README with SecureChat de...</text>
   </g>
 
   <!-- Technical border decorations -->
