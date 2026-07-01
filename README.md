@@ -7,11 +7,9 @@
 # Harshavardhan K
 ### Full-Stack AI Engineer
 
-I build intelligent digital systems at the intersection of Artificial Intelligence, machine learning, and high-performance full-stack architecture. My work focuses on end-to-end execution: taking complex models from initial tensor or prompt logic and integrating them into production-ready backends, low-latency APIs, and immersive interfaces.
+I build systems where machine learning models, distributed backends, and user interfaces merge into a single experience. I focus on taking AI models from experimental notebooks and scaling them into production-grade applications that are fast, reliable, and built to last.
 
-I don't believe AI should be treated as a detached backend script. A machine learning model only becomes useful when it is connected to a fast database, wrapped in a low-latency synchronization channel, and exposed through a fluid client interface that helps users reason about the system's decisions. I build software where intelligence and interaction operate as a single experience.
-
-This profile is a window into my active workspace. I use it to explore complex topologies, test distributed state flows, and build systems that adapt to human behavior.
+This workspace details the systems I explore, my active development pipelines, and the engineering principles I use to build low-latency software.
 
 <br />
 
@@ -23,7 +21,7 @@ This profile is a window into my active workspace. I use it to explore complex t
 
 ## Interactive System Sandbox // Signal Router
 
-Explore how data flows through my systems. Click below to route an incoming model inference request through the architecture and decrypt the message payload, keeping system latency under 20ms.
+Click Node Beta below to try routing an incoming model inference request through the system. Keep execution latency under 20ms to decrypt the telemetry payload.
 
 <br />
 
@@ -111,11 +109,9 @@ Explore how data flows through my systems. Click below to route an incoming mode
 
 ## Current Focus
 
-My current engineering missions and active directions:
-
-*   **Billytics** // I wanted to build a platform that doesn't just display database rows, but models real-time business intelligence and forecasting. I am exploring how AI can become the core operating system behind executive decisions instead of another static analytics page.
-*   **DeV** // I am building a workspace that shifts autonomous AI coding agents from basic prompt execution to systems that reason, persist code edits, and maintain long-term working memory within local containers.
-*   **Future Explorations** // Researching the engineering behind collaborative human-AI canvases, low-latency client-side vector database querying, and zero-latency local model fallbacks.
+*   **Billytics** // Building a telemetry engine to model real-time business intelligence forecasts. Exploring how AI can become the core operating system behind decisions instead of a static dashboard feed.
+*   **DeV** // Engineering a local, sandboxed workspace that shifts autonomous coding agents from single prompt wrappers to models with long-term memory and execution access.
+*   **Future Explorations** // Investigating mixed-initiative human-AI canvases, low-latency edge vector indexing, and zero-latency local model fallbacks.
 
 <br />
 
@@ -127,7 +123,7 @@ My current engineering missions and active directions:
 
 ## Active Tech Matrix
 
-Technologies and domains I enjoy building with. Hover over each panel and tech bullet to inspect domains and see active visual feedback:
+Hover over cards and tech bullets to inspect active visual feedback:
 
 <br />
 
@@ -145,11 +141,11 @@ Technologies and domains I enjoy building with. Hover over each panel and tech b
 
 ## Current Interests
 
-*   **Agentic AI** // Long-term memory compression, autonomous tooling agents.
-*   **Distributed Systems** // High-frequency WebSockets, state caching databases.
-*   **Developer Tools** // Local container orchestrations, playground test runs.
-*   **Human-AI Interaction** // Dynamic canvas surfaces, responsive feedback loops.
-*   **Motion Design** // Informational micro-animations, low-overhead SVG drawings.
+*   **Agentic AI** // Long-term context memory compression and routing.
+*   **Distributed Systems** // Low-latency WebSocket connections and distributed caches.
+*   **Developer Tools** // Local container orchestrations and playground telemetry.
+*   **Human-AI Interaction** // Fluid canvas viewports and responsive user feedback loops.
+*   **Motion Design** // SVG geometry animations representing processing states.
 
 <br />
 
