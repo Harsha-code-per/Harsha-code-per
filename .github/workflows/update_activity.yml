@@ -27,6 +27,8 @@ jobs:
 
       - name: Generate Activity SVG
         run: python3 scripts/update_activity.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and Push Changes
         run: |

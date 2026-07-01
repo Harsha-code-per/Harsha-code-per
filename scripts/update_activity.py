@@ -17,6 +17,7 @@ def run_cmd(cmd):
 total_contributions = 311
 grid_commits = [[0]*7 for _ in range(15)]
 calendar_fetched = False
+token = os.environ.get("GITHUB_TOKEN")
 
 try:
     url = 'https://github.com/users/Harsha-code-per/contributions'
@@ -135,7 +136,10 @@ total_repo_commits = 0
 
 try:
     url = 'https://api.github.com/users/Harsha-code-per/events/public'
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as response:
         events = json.loads(response.read().decode('utf-8'))
         for event in events:
@@ -183,6 +187,19 @@ if not repo_commits:
         "Aura": 6
     }
     total_repo_commits = 24
+
+# Recent commits local Git fallback
+if not recent_commits:
+    try:
+        commit_lines = run_cmd('git log -n 3 --pretty=format:"%h|%s"').split('\n')
+        for line in commit_lines:
+            if "|" in line:
+                sha, msg = line.split("|", 1)
+                if len(msg) > 35:
+                    msg = msg[:32] + "..."
+                recent_commits.append((sha, msg))
+    except Exception:
+        pass
 
 if not recent_commits:
     recent_commits = [

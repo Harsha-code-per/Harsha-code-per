@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">311 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">314 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -133,10 +133,10 @@
     <polygon points="253.7,94.49999999999999 262.7,89.99999999999999 262.7,91.99999999999999 253.7,96.49999999999999" fill="#0b0d12" />
     <polygon points="253.7,85.49999999999999 262.7,89.99999999999999 253.7,94.49999999999999 244.7,89.99999999999999" fill="#161b22" />
   </g>
-  <g class="col-group c-0" style="--pulse-color: #006d32;">
-    <polygon points="234.9,89.79999999999998 243.9,94.29999999999998 243.9,106.29999999999998 234.9,101.79999999999998" fill="#004d23" />
-    <polygon points="243.9,94.29999999999998 252.9,89.79999999999998 252.9,101.79999999999998 243.9,106.29999999999998" fill="#003317" />
-    <polygon points="243.9,85.29999999999998 252.9,89.79999999999998 243.9,94.29999999999998 234.9,89.79999999999998" fill="#006d32" />
+  <g class="col-group c-0" style="--pulse-color: #26a641;">
+    <polygon points="234.9,83.79999999999998 243.9,88.29999999999998 243.9,106.29999999999998 234.9,101.79999999999998" fill="#1b752e" />
+    <polygon points="243.9,88.29999999999998 252.9,83.79999999999998 252.9,101.79999999999998 243.9,106.29999999999998" fill="#135220" />
+    <polygon points="243.9,79.29999999999998 252.9,83.79999999999998 243.9,88.29999999999998 234.9,83.79999999999998" fill="#26a641" />
   </g>
   <g class="col-group c-0" style="--pulse-color: #26a641;">
     <polygon points="225.1,93.6 234.1,98.1 234.1,116.1 225.1,111.6" fill="#1b752e" />
@@ -262,10 +262,10 @@
     <polygon points="361.1,74.69999999999999 370.1,70.19999999999999 370.1,82.19999999999999 361.1,86.69999999999999" fill="#003317" />
     <polygon points="361.1,65.69999999999999 370.1,70.19999999999999 361.1,74.69999999999999 352.1,70.19999999999999" fill="#006d32" />
   </g>
-  <g class="col-group c-4" style="--pulse-color: #006d32;">
-    <polygon points="342.3,80.0 351.3,84.5 351.3,96.5 342.3,92.0" fill="#004d23" />
-    <polygon points="351.3,84.5 360.3,80.0 360.3,92.0 351.3,96.5" fill="#003317" />
-    <polygon points="351.3,75.5 360.3,80.0 351.3,84.5 342.3,80.0" fill="#006d32" />
+  <g class="col-group c-4" style="--pulse-color: #26a641;">
+    <polygon points="342.3,74.0 351.3,78.5 351.3,96.5 342.3,92.0" fill="#1b752e" />
+    <polygon points="351.3,78.5 360.3,74.0 360.3,92.0 351.3,96.5" fill="#135220" />
+    <polygon points="351.3,69.5 360.3,74.0 351.3,78.5 342.3,74.0" fill="#26a641" />
   </g>
   <g class="col-group c-4" style="--pulse-color: #161b22;">
     <polygon points="332.5,99.8 341.5,104.3 341.5,106.3 332.5,101.8" fill="#0f131a" />
@@ -679,20 +679,20 @@
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[fc00fe6]</text>
-    <text x="65" y="8" class="commit-msg">Feat: Changes in profile designing</text>
+    <text x="15" y="8" class="commit-sha">[b058cf5]</text>
+    <text x="65" y="8" class="commit-msg">update python script</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[2889aa0]</text>
-    <text x="65" y="8" class="commit-msg">Feat:New Designs</text>
+    <text x="15" y="8" class="commit-sha">[02f0f7b]</text>
+    <text x="65" y="8" class="commit-msg">Redesign of Github activity</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[ad38ebf]</text>
-    <text x="65" y="8" class="commit-msg">add gamification</text>
+    <text x="15" y="8" class="commit-sha">[a5b99c2]</text>
+    <text x="65" y="8" class="commit-msg">Redesigning</text>
   </g>
 
   <!-- Technical border decorations -->
