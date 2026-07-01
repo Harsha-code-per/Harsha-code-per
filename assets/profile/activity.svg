@@ -657,22 +657,22 @@
   <!-- Timeline summary block -->
   <g transform="translate(35, 235)">
     <circle cx="8" cy="8" r="4" fill="#10b981" filter="drop-shadow(0 0 3px #10b981)" />
-    <text x="20" y="11" class="timeline-title">Created 25 commits in 3 repositories</text>
+    <text x="20" y="11" class="timeline-title">Created 26 commits in 3 repositories</text>
   </g>
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">Harsha-code-per</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="67" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">12 commits</text>
+  <rect x="230" y="258" width="70" height="6" rx="3" fill="#10b981" />
+  <text x="382" y="266" class="timeline-count" text-anchor="start">13 commits</text>
   <!-- Repo 2 Progress -->
   <text x="60" y="290" class="timeline-repo">Harshavardhan.portfolio</text>
   <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="282" width="39" height="6" rx="3" fill="#6366f1" />
+  <rect x="230" y="282" width="37" height="6" rx="3" fill="#6366f1" />
   <text x="382" y="290" class="timeline-count" text-anchor="start">7 commits</text>
   <!-- Repo 3 Progress -->
   <text x="60" y="314" class="timeline-repo">Aura</text>
   <rect x="230" y="306" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="306" width="33" height="6" rx="3" fill="#00f2fe" />
+  <rect x="230" y="306" width="32" height="6" rx="3" fill="#00f2fe" />
   <text x="382" y="314" class="timeline-count" text-anchor="start">6 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>

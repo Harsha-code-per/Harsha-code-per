@@ -158,10 +158,12 @@ except Exception as e:
 
 # Sibling folder local fallback for commits count
 if not repo_commits:
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    parent_dir = os.path.dirname(repo_root)
     paths = {
-        "Harsha-code-per": "/home/hk/Harsha-code-per",
-        "Harshavardhan.portfolio": "/home/hk/Harshavardhan.portfolio",
-        "aura": "/home/hk/aura"
+        "Harsha-code-per": repo_root,
+        "Harshavardhan.portfolio": os.path.join(parent_dir, "Harshavardhan.portfolio"),
+        "aura": os.path.join(parent_dir, "aura")
     }
     for name, path in paths.items():
         if os.path.exists(os.path.join(path, ".git")):
@@ -412,7 +414,9 @@ svg_borders = """
 
 final_svg = svg_content + "".join(cubes_svg) + svg_divider + "".join(timeline_svg) + svg_borders + svg_footer
 
-os.makedirs("/home/hk/Harsha-code-per/assets/profile", exist_ok=True)
-with open("/home/hk/Harsha-code-per/assets/profile/activity.svg", "w") as f:
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+out_dir = os.path.join(repo_root, "assets", "profile")
+os.makedirs(out_dir, exist_ok=True)
+with open(os.path.join(out_dir, "activity.svg"), "w") as f:
     f.write(final_svg)
 print("activity.svg written successfully!")
