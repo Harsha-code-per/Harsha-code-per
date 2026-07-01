@@ -11,7 +11,7 @@
 <font size="5">
 I am an undergraduate focused on building software that integrates machine learning models, robust backend systems, and responsive user interfaces into complete products. Instead of isolating models in experimental notebooks, I believe in deploying them into production workflows that solve real-world problems.
 
-
+<br/>
 My approach is grounded in learning by building. I believe clean code, structured APIs, and engineering discipline are just as critical to AI applications as the models themselves. I write code to explore how intelligent systems can be made robust, intuitive, and genuinely useful to people.
 </font>
 
