@@ -1,72 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" fill="none">
   <style>
     .grid { stroke: rgba(255, 255, 255, 0.015); stroke-width: 0.8; }
-    .panel {
+    
+    .panel-group {
+      cursor: pointer;
+      pointer-events: all;
+    }
+    
+    .panel-bg {
       fill: #050508;
-      stroke: rgba(255, 255, 255, 0.05);
+      stroke: rgba(255, 255, 255, 0.08);
       stroke-width: 1;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
-    .panel:hover {
-      stroke: var(--hover-stroke, #5e6ad2);
-      fill: rgba(94, 106, 210, 0.02);
-      filter: drop-shadow(0 0 8px rgba(94, 106, 210, 0.15));
-    }
-    .panel-cyan:hover {
-      stroke: #00f2fe;
-      fill: rgba(0, 242, 254, 0.02);
-      filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.15));
-    }
-    .panel-white:hover {
-      stroke: #ffffff;
-      fill: rgba(255, 255, 255, 0.02);
-      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
-    }
+    
     .title {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 11px;
       font-weight: bold;
-      fill: #71717a;
+      fill: #94a3b8;
       letter-spacing: 1px;
       transition: fill 0.3s ease;
+      pointer-events: none;
     }
-    .panel:hover .title {
-      fill: var(--hover-title, #ffffff);
-    }
+    
     .item {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 11px;
-      fill: #52525b;
-      transition: fill 0.3s ease, transform 0.3s ease;
-      cursor: pointer;
+      fill: #64748b;
+      transition: fill 0.2s ease, transform 0.2s ease;
+      pointer-events: all;
     }
-    .panel:hover .item {
-      fill: #e4e4e7;
-    }
-    .panel:hover .item:hover {
-      fill: var(--hover-item-glow, #00f2fe);
-      transform: translateX(3px);
-    }
+    
     .meta-text {
       font-family: ui-monospace, SFMono-Regular, monospace;
       font-size: 8px;
-      fill: rgba(255, 255, 255, 0.1);
+      fill: rgba(255, 255, 255, 0.15);
       transition: fill 0.3s ease;
+      pointer-events: none;
     }
-    .panel:hover .meta-text {
-      fill: rgba(255, 255, 255, 0.35);
+    
+    /* Hover states on the panel group */
+    .panel-group:hover .panel-bg {
+      stroke: var(--hover-stroke);
+      fill: rgba(255, 255, 255, 0.01);
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.05));
+    }
+    .panel-group:hover .title {
+      fill: var(--hover-title);
+    }
+    .panel-group:hover .item {
+      fill: #cbd5e1;
+    }
+    .panel-group:hover .meta-text {
+      fill: rgba(255, 255, 255, 0.4);
+    }
+    
+    /* Interactive individual items within active panels */
+    .item:hover {
+      fill: var(--hover-item-glow, #00f2fe) !important;
+      transform: translateX(4px);
     }
   </style>
 
-  <rect width="800" height="220" fill="#050508" stroke="rgba(255, 255, 255, 0.04)" rx="6" />
+  <rect width="800" height="220" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
   
   <line x1="200" y1="0" x2="200" y2="220" class="grid" stroke-dasharray="2 4" />
   <line x1="400" y1="0" x2="400" y2="220" class="grid" stroke-dasharray="2 4" />
   <line x1="600" y1="0" x2="600" y2="220" class="grid" stroke-dasharray="2 4" />
 
   <!-- Column 1: AI & INTELLIGENCE -->
-  <g>
-    <rect x="10" y="10" width="180" height="200" class="panel panel-cyan" rx="4" style="--hover-stroke: #00f2fe; --hover-title: #00f2fe; --hover-item-glow: #00f2fe;" />
+  <g class="panel-group" id="pg-ai" style="--hover-stroke: #00f2fe; --hover-title: #00f2fe; --hover-item-glow: #00f2fe;">
+    <rect x="10" y="10" width="180" height="200" class="panel-bg" rx="4" />
     <text x="25" y="38" class="title">01 // AI_SYSTEMS</text>
     <text x="25" y="70" class="item">• PyTorch</text>
     <text x="25" y="95" class="item">• Agentic Frameworks</text>
@@ -76,8 +81,8 @@
   </g>
 
   <!-- Column 2: BACKEND SYSTEMS -->
-  <g>
-    <rect x="210" y="10" width="180" height="200" class="panel" rx="4" style="--hover-stroke: #5e6ad2; --hover-title: #5e6ad2; --hover-item-glow: #5e6ad2;" />
+  <g class="panel-group" id="pg-backend" style="--hover-stroke: #6366f1; --hover-title: #6366f1; --hover-item-glow: #6366f1;">
+    <rect x="210" y="10" width="180" height="200" class="panel-bg" rx="4" />
     <text x="225" y="38" class="title">02 // BACKEND</text>
     <text x="225" y="70" class="item">• TypeScript / Node.js</text>
     <text x="225" y="95" class="item">• Python / FastAPI</text>
@@ -87,8 +92,8 @@
   </g>
 
   <!-- Column 3: SURFACES -->
-  <g>
-    <rect x="410" y="10" width="180" height="200" class="panel panel-white" rx="4" style="--hover-stroke: #ffffff; --hover-title: #ffffff; --hover-item-glow: #00f2fe;" />
+  <g class="panel-group" id="pg-ui" style="--hover-stroke: #ffffff; --hover-title: #ffffff; --hover-item-glow: #00f2fe;">
+    <rect x="410" y="10" width="180" height="200" class="panel-bg" rx="4" />
     <text x="425" y="38" class="title">03 // INTERFACES</text>
     <text x="425" y="70" class="item">• Next.js / React</text>
     <text x="425" y="95" class="item">• Three.js / WebGL</text>
@@ -98,8 +103,8 @@
   </g>
 
   <!-- Column 4: DATA LAYER -->
-  <g>
-    <rect x="610" y="10" width="180" height="200" class="panel" rx="4" style="--hover-stroke: #5e6ad2; --hover-title: #5e6ad2; --hover-item-glow: #5e6ad2;" />
+  <g class="panel-group" id="pg-infra" style="--hover-stroke: #6366f1; --hover-title: #6366f1; --hover-item-glow: #6366f1;">
+    <rect x="610" y="10" width="180" height="200" class="panel-bg" rx="4" />
     <text x="625" y="38" class="title">04 // INFRASTRUCTURE</text>
     <text x="625" y="70" class="item">• PostgreSQL</text>
     <text x="625" y="95" class="item">• Redis Caching</text>

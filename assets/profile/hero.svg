@@ -1,88 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none" class="hero-svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
   <style>
-    .grid { stroke: rgba(255, 255, 255, 0.015); stroke-width: 0.8; }
-    .blueprint-border { stroke: rgba(255, 255, 255, 0.06); stroke-width: 1; }
+    .grid { stroke: rgba(255, 255, 255, 0.03); stroke-width: 0.8; }
+    .blueprint-border { stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; }
+    
     .connection-line {
-      stroke: rgba(94, 106, 210, 0.2);
-      stroke-width: 1.5;
-      transition: stroke 0.3s ease, stroke-width 0.3s ease;
+      stroke: #334155;
+      stroke-width: 2;
+      transition: all 0.3s ease;
     }
+    
     .node-group {
       cursor: pointer;
     }
     .node-bg {
-      fill: #050508;
-      stroke: #27272a;
-      stroke-width: 1.5;
+      fill: #09090b;
+      stroke: #475569;
+      stroke-width: 2;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .node-label {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 10px;
       font-weight: bold;
-      fill: #71717a;
+      fill: #cbd5e1;
       text-anchor: middle;
       transition: fill 0.3s ease;
       pointer-events: none;
     }
     
-    /* Interactive States */
+    /* Dedicated tooltips inside the groups */
+    .info-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      fill: #00f2fe;
+      font-weight: bold;
+      text-anchor: middle;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      pointer-events: none;
+    }
+    
+    /* Interactive Hover States */
     .node-group:hover .node-bg {
       stroke: #00f2fe;
-      fill: rgba(0, 242, 254, 0.04);
-      filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.4));
+      fill: #00f2fe;
+      filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.8));
       transform: translateY(-3px);
     }
     .node-group:hover .node-label {
-      fill: #ffffff;
+      fill: #050508;
     }
     
-    /* Connection lines glow when adjacent nodes are hovered */
-    .hero-svg:has(#ng-ai:hover) .l-ab { stroke: #00f2fe; stroke-width: 2; }
-    .hero-svg:has(#ng-backend:hover) .l-ab { stroke: #00f2fe; stroke-width: 2; }
-    .hero-svg:has(#ng-backend:hover) .l-bc { stroke: #5e6ad2; stroke-width: 2; }
-    .hero-svg:has(#ng-db:hover) .l-bc { stroke: #5e6ad2; stroke-width: 2; }
-    .hero-svg:has(#ng-db:hover) .l-cd { stroke: #5e6ad2; stroke-width: 2; }
-    .hero-svg:has(#ng-ui:hover) .l-cd { stroke: #5e6ad2; stroke-width: 2; }
-    .hero-svg:has(#ng-ui:hover) .l-de { stroke: #00f2fe; stroke-width: 2; }
-    .hero-svg:has(#ng-motion:hover) .l-de { stroke: #00f2fe; stroke-width: 2; }
+    /* Display the custom info text when the group is hovered */
+    .node-group:hover .info-text {
+      opacity: 1;
+    }
     
-    /* Tooltip panel logic */
-    .info-panel {
+    /* Connection lines flow and glow when hovering adjacent groups */
+    /* To make lines highlight, we can target them via sibling hover rules */
+    #ng-ai:hover ~ .l-ab { stroke: #00f2fe; stroke-width: 3; }
+    #ng-backend:hover ~ .l-ab { stroke: #00f2fe; stroke-width: 3; }
+    #ng-backend:hover ~ .l-bc { stroke: #6366f1; stroke-width: 3; }
+    #ng-db:hover ~ .l-bc { stroke: #6366f1; stroke-width: 3; }
+    #ng-db:hover ~ .l-cd { stroke: #6366f1; stroke-width: 3; }
+    #ng-ui:hover ~ .l-cd { stroke: #6366f1; stroke-width: 3; }
+    #ng-ui:hover ~ .l-de { stroke: #00f2fe; stroke-width: 3; }
+    #ng-motion:hover ~ .l-de { stroke: #00f2fe; stroke-width: 3; }
+    
+    /* Default board text */
+    .info-text-default {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 11px;
-      fill: #52525b;
+      fill: #94a3b8;
       text-anchor: middle;
-      transition: opacity 0.2s ease, fill 0.2s ease;
-    }
-    .default-info {
       opacity: 1;
-      fill: #71717a;
-    }
-    .hover-info {
-      opacity: 0;
+      transition: opacity 0.2s ease;
       pointer-events: none;
-      font-weight: bold;
     }
     
-    /* Show specific tooltips when hovering over nodes */
-    .hero-svg:has(#ng-ai:hover) .default-info { opacity: 0; }
-    .hero-svg:has(#ng-ai:hover) #info-ai { opacity: 1; fill: #00f2fe; }
-    
-    .hero-svg:has(#ng-backend:hover) .default-info { opacity: 0; }
-    .hero-svg:has(#ng-backend:hover) #info-backend { opacity: 1; fill: #5e6ad2; }
-    
-    .hero-svg:has(#ng-db:hover) .default-info { opacity: 0; }
-    .hero-svg:has(#ng-db:hover) #info-db { opacity: 1; fill: #5e6ad2; }
-    
-    .hero-svg:has(#ng-ui:hover) .default-info { opacity: 0; }
-    .hero-svg:has(#ng-ui:hover) #info-ui { opacity: 1; fill: #ffffff; }
-    
-    .hero-svg:has(#ng-motion:hover) .default-info { opacity: 0; }
-    .hero-svg:has(#ng-motion:hover) #info-motion { opacity: 1; fill: #00f2fe; }
+    /* Hide the default description text when ANY group is hovered */
+    .node-group:hover ~ .info-text-default {
+      opacity: 0;
+    }
   </style>
 
-  <rect width="800" height="200" fill="#050508" stroke="rgba(255, 255, 255, 0.04)" rx="6" />
+  <rect width="800" height="200" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
 
   <!-- Graph grid background -->
   <g>
@@ -106,51 +108,53 @@
   <path d="M 8 192 L 20 192 M 8 192 L 8 180" class="blueprint-border" />
   <path d="M 792 192 L 780 192 M 792 192 L 792 180" class="blueprint-border" />
 
-  <!-- Connection Lines between nodes -->
-  <line x1="150" y1="70" x2="275" y2="70" class="connection-line l-ab" />
-  <line x1="275" y1="70" x2="400" y2="70" class="connection-line l-bc" />
-  <line x1="400" y1="70" x2="525" y2="70" class="connection-line l-cd" />
-  <line x1="525" y1="70" x2="650" y2="70" class="connection-line l-de" />
-
   <!-- Interactive Node Groups -->
   <!-- Node A: AI -->
   <g class="node-group" id="ng-ai" transform="translate(0, 0)">
     <circle cx="150" cy="70" r="22" class="node-bg" />
     <text x="150" y="74" class="node-label">AI</text>
+    <text x="400" y="160" class="info-text">&gt; AI: INTEGRATING TENSORS, MODEL CASCADE FALLBACKS, AND AGENT WORKFLOWS</text>
   </g>
 
   <!-- Node B: Backend -->
   <g class="node-group" id="ng-backend" transform="translate(0, 0)">
     <circle cx="275" cy="70" r="22" class="node-bg" />
     <text x="275" y="74" class="node-label">BACKEND</text>
+    <text x="400" y="160" class="info-text" fill="#6366f1">&gt; BACKEND: LOW-LATENCY REST, WEBSOCKET STREAMS, AND WEBRTC CHANNELS</text>
   </g>
 
   <!-- Node C: DB -->
   <g class="node-group" id="ng-db" transform="translate(0, 0)">
     <circle cx="400" cy="70" r="22" class="node-bg" />
     <text x="400" y="74" class="node-label">DATASTORE</text>
+    <text x="400" y="160" class="info-text" fill="#6366f1">&gt; DATASTORE: TRANSACTION SCALING, CACHE LAYERING, AND VECTOR DATABASES</text>
   </g>
 
   <!-- Node D: UI -->
   <g class="node-group" id="ng-ui" transform="translate(0, 0)">
     <circle cx="525" cy="70" r="22" class="node-bg" />
     <text x="525" y="74" class="node-label">SURFACE</text>
+    <text x="400" y="160" class="info-text" fill="#ffffff">&gt; SURFACE: NEXT.JS APP CHOREOGRAPHY, THREE.JS, AND WEBGL VIEWPORT SCENES</text>
   </g>
 
   <!-- Node E: Motion -->
   <g class="node-group" id="ng-motion" transform="translate(0, 0)">
     <circle cx="650" cy="70" r="22" class="node-bg" />
     <text x="650" y="74" class="node-label">MOTION</text>
+    <text x="400" y="160" class="info-text">&gt; MOTION: COMMUNICATIONS THROUGH EXPLAINABLE PHYSICS AND SYSTEM TRANSITIONS</text>
   </g>
 
-  <!-- Info Panel / Display Board -->
-  <rect x="150" y="140" width="500" height="32" fill="#050508" stroke="rgba(255, 255, 255, 0.04)" rx="4" />
-  
-  <text x="400" y="159" class="info-panel default-info">&gt; HOVER OVER ANY NODE TO INSPECT EXPERTISE PARAMETERS</text>
-  
-  <text x="400" y="159" class="info-panel hover-info" id="info-ai">&gt; AI: INTEGRATING TENSORS, MODEL CASCADE FALLBACKS, AND AGENT WORKFLOWS</text>
-  <text x="400" y="159" class="info-panel hover-info" id="info-backend">&gt; BACKEND: LOW-LATENCY REST, WEBSOCKET STREAMS, AND WEBRTC CHANNELS</text>
-  <text x="400" y="159" class="info-panel hover-info" id="info-db">&gt; DATASTORE: TRANSACTION SCALING, CACHE LAYERING, AND VECTOR DATABASES</text>
-  <text x="400" y="159" class="info-panel hover-info" id="info-ui">&gt; SURFACE: NEXT.JS APP CHOREOGRAPHY, THREE.JS, AND WEBGL VIEWPORT SCENES</text>
-  <text x="400" y="159" class="info-panel hover-info" id="info-motion">&gt; MOTION: COMMUNICATIONS THROUGH EXPLAINABLE PHYSICS AND SYSTEM TRANSITIONS</text>
+  <!-- Connection Lines (Placed after groups for sibling selector support) -->
+  <line x1="172" y1="70" x2="253" y2="70" class="connection-line l-ab" />
+  <line x1="297" y1="70" x2="378" y2="70" class="connection-line l-bc" />
+  <line x1="422" y1="70" x2="503" y2="70" class="connection-line l-cd" />
+  <line x1="547" y1="70" x2="628" y2="70" class="connection-line l-de" />
+
+  <!-- Info Panel Display Board and Default Text -->
+  <rect x="150" y="140" width="500" height="32" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="4" style="pointer-events: none;" />
+  <text x="400" y="160" class="info-text-default">&gt; HOVER OVER ANY NODE TO INSPECT EXPERTISE PARAMETERS</text>
+
+  <!-- Technical Details -->
+  <text x="20" y="196" font-family="ui-monospace, SFMono-Regular, monospace" font-size="8px" fill="rgba(255, 255, 255, 0.3)">LOC: 12.97° N, 80.24° E</text>
+  <text x="780" y="196" text-anchor="end" font-family="ui-monospace, SFMono-Regular, monospace" font-size="8px" fill="rgba(255, 255, 255, 0.3)">SYSTEM_STATE: STABLE</text>
 </svg>
