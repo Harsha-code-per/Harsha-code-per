@@ -16,35 +16,47 @@ My approach is grounded in learning by building. I believe clean code, structure
   <img src="assets/profile/telemetry.svg" width="800" alt="Animated Keyboard Telemetry Feed" />
 </p>
 
-## Current Focus <img src="assets/profile/header_focus.svg" height="20" />
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td width="60%" valign="top">
+      
+      <h2>Current Focus</h2>
+      
+      <h3>Billytics</h3>
+      <p>An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.</p>
 
-### Billytics
-An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.
+      <h3>SecureChat</h3>
+      <p>A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.</p>
 
-### SecureChat
-A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
+      <h2>Architectural Preferences &amp; Principles</h2>
 
-## Technical Stack <img src="assets/profile/header_stack.svg" height="20" />
+      <h3>Offline-First &amp; Sync</h3>
+      <p>Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.</p>
+
+      <h3>Security &amp; Privacy</h3>
+      <p>Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.</p>
+
+      <h3>Production-Ready AI</h3>
+      <p>Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.</p>
+
+      <h3>Simplicity &amp; Accessibility</h3>
+      <p>Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.</p>
+
+    </td>
+    <td width="40%" valign="top" align="right">
+      <br /><br />
+      <img src="assets/profile/system_intelligence.svg" width="280" alt="Telemetry Console" />
+    </td>
+  </tr>
+</table>
+
+## Technical Stack
 
 A visual map of the languages, frameworks, and tools I use to build systems:
 
 <p align="center">
   <img src="assets/profile/tech_grid.svg" width="800" alt="Harsha Interactive Tech Grid" />
 </p>
-
-## Architectural Preferences &amp; Principles <img src="assets/profile/header_principles.svg" height="20" />
-
-### Offline-First &amp; Sync
-Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.
-
-### Security &amp; Privacy
-Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.
-
-### Production-Ready AI
-Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.
-
-### Simplicity &amp; Accessibility
-Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
 
 ## GitHub Activity <img src="assets/profile/header_activity.svg" height="20" />
 
