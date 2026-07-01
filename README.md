@@ -4,7 +4,7 @@
 
 <br />
 
-## 01 // Engineering Philosophy
+## Engineering Philosophy
 
 I am an undergraduate focused on building software that integrates machine learning models, robust backend systems, and responsive user interfaces into complete products. Instead of isolating models in experimental notebooks, I believe in deploying them into production workflows that solve real-world problems.
 
@@ -32,9 +32,8 @@ My approach is grounded in learning by building. I believe clean code, structure
 
 ## Current Focus
 
-*   **Billytics** // An AI-assisted business operation system. Standard business dashboards are often passive. I am building Billytics to explore how active machine learning models can dynamically analyze and forecast operational data to help teams make decisions, rather than just displaying static charts.
-*   **DeV** // A sandboxed AI development workspace. Most coding assistants are simple chat wrappers with no execution access. I am building DeV to provide a secure local environment where AI agents can safely run commands, manage state, and maintain long-term memory to solve actual programming tasks.
-*   **Future Explorations** // Researching local vector database indexing for edge devices, structured output routing for LLMs, and secure sandboxing mechanisms for autonomous agents.
+*   **Billytics** // An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.
+*   **SecureChat** // A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
 
 <br />
 
@@ -62,13 +61,12 @@ A visual map of the languages, frameworks, and tools I use to build systems:
 
 <br />
 
-## Current Interests
+## Architectural Preferences &amp; Principles
 
-*   **AI Agents &amp; ML Systems** // Structuring memory, execution loops, and reliability pipelines for autonomous workflows.
-*   **Backend &amp; Distributed Systems** // Building reliable APIs, state management systems, and local development database architectures.
-*   **Developer Experience (DX)** // Designing sandboxed playgrounds, terminal-based tools, and robust automation pipelines.
-*   **Human-Computer Interaction (HCI)** // Creating clean, lightweight user interfaces that make complex data easily understandable.
-*   **Cloud Deployment** // Packaging applications securely using containerization and managing local vector database infrastructure.
+*   **Offline-First &amp; Sync** // Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.
+*   **Security &amp; Privacy** // Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.
+*   **Production-Ready AI** // Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.
+*   **Simplicity &amp; Accessibility** // Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
 
 <br />
 
