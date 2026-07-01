@@ -82,45 +82,9 @@ Overview of core systems, frameworks, and deployment tools in my stack:
 
 <br />
 
-<table width="100%" style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td width="50%" align="center" style="border: none; background: transparent;">
-      <img height="150" src="https://github-readme-stats.vercel.app/api?username=Harsha-code-per&show_icons=true&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&icon_color=00f2fe&include_all_commits=true" alt="GitHub activity summary" />
-    </td>
-    <td width="50%" align="center" style="border: none; background: transparent;">
-      <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harsha-code-per&layout=compact&hide_title=true&hide_border=true&theme=transparent&text_color=a1a1aa&title_color=5e6ad2&langs_count=6" alt="Most used languages" />
-    </td>
-  </tr>
-</table>
-
-<br />
-
 <p align="center">
-  <img src="assets/profile/divider.svg" width="800" alt="divider" />
+  <img src="assets/profile/activity.svg" width="420" height="510" alt="Harsha GitHub Activity Console" />
 </p>
-
-<br />
-
-## Connect
-
-<br />
-
-<table width="100%" style="border-collapse: collapse; border: none; font-family: monospace;">
-  <tr style="border: none;">
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="https://www.harshavardhan-k.me/" style="color: #00f2fe; text-decoration: none; font-weight: bold; letter-spacing: 1px;">// PORTFOLIO</a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="https://www.linkedin.com/in/harshavardhan-20-k/" style="color: #5e6ad2; text-decoration: none; font-weight: bold; letter-spacing: 1px;">// LINKEDIN</a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="mailto:harshavardhan3259@gmail.com" style="color: #10b981; text-decoration: none; font-weight: bold; letter-spacing: 1px;">// EMAIL</a>
-    </td>
-    <td align="center" style="border: none; padding: 10px;">
-      <a href="https://drive.google.com/file/d/1g_EyEwvtG9v5GpdyEqVUg9QedIlSW678/view?usp=sharing" style="color: #a1a1aa; text-decoration: none; font-weight: bold; letter-spacing: 1px;">// RESUME</a>
-    </td>
-  </tr>
-</table>
 
 <br />
 <br />
