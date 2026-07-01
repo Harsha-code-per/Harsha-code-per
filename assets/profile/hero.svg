@@ -1,8 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" fill="none">
   <style>
+  <![CDATA[
     .grid { stroke: rgba(255, 255, 255, 0.015); stroke-width: 0.8; }
     .blueprint-border { stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; }
     
+    /* Name color shifting and glow */
+    .glowing-name {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      text-anchor: middle;
+      fill: #00f2fe;
+      animation: name-color-shift 12s infinite alternate;
+      filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4));
+    }
+    
+    @keyframes name-color-shift {
+      0% { fill: #00f2fe; filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.5)); }
+      33% { fill: #6366f1; filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.5)); }
+      66% { fill: #d946ef; filter: drop-shadow(0 0 10px rgba(217, 70, 239, 0.5)); }
+      100% { fill: #10b981; filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.5)); }
+    }
+
+    /* Role text transition styles */
+    .role-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      fill: #94a3b8;
+      letter-spacing: 4px;
+      text-anchor: middle;
+      opacity: 0;
+    }
+    
+    .role-1 { animation: slide-fade-1 9s infinite; }
+    .role-2 { animation: slide-fade-2 9s infinite; }
+    .role-3 { animation: slide-fade-3 9s infinite; }
+
+    @keyframes slide-fade-1 {
+      0% { opacity: 0; transform: translateY(8px); }
+      5%, 28% { opacity: 1; transform: translateY(0); }
+      33%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes slide-fade-2 {
+      0%, 33% { opacity: 0; transform: translateY(8px); }
+      38%, 61% { opacity: 1; transform: translateY(0); }
+      66%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes slide-fade-3 {
+      0%, 66% { opacity: 0; transform: translateY(8px); }
+      71%, 94% { opacity: 1; transform: translateY(0); }
+      99%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+
     .connection-path {
       stroke: #1e293b;
       stroke-width: 1.5;
@@ -170,76 +221,92 @@
       60%, 98% { stroke: #00f2fe; stroke-width: 2.2; }
       100% { stroke: #1e293b; stroke-width: 1.5; }
     }
+  ]]>
   </style>
 
-  <rect width="800" height="200" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
+  <rect width="800" height="340" fill="#050508" stroke="rgba(255, 255, 255, 0.08)" rx="6" />
 
   <!-- Graph grid background -->
   <g>
-    <line x1="100" y1="0" x2="100" y2="200" class="grid" />
-    <line x1="200" y1="0" x2="200" y2="200" class="grid" />
-    <line x1="300" y1="0" x2="300" y2="200" class="grid" />
-    <line x1="400" y1="0" x2="400" y2="200" class="grid" />
-    <line x1="500" y1="0" x2="500" y2="200" class="grid" />
-    <line x1="600" y1="0" x2="600" y2="200" class="grid" />
-    <line x1="700" y1="0" x2="700" y2="200" class="grid" />
+    <line x1="100" y1="0" x2="100" y2="340" class="grid" />
+    <line x1="200" y1="0" x2="200" y2="340" class="grid" />
+    <line x1="300" y1="0" x2="300" y2="340" class="grid" />
+    <line x1="400" y1="0" x2="400" y2="340" class="grid" />
+    <line x1="500" y1="0" x2="500" y2="340" class="grid" />
+    <line x1="600" y1="0" x2="600" y2="340" class="grid" />
+    <line x1="700" y1="0" x2="700" y2="340" class="grid" />
     
     <line x1="0" y1="40" x2="800" y2="40" class="grid" />
     <line x1="0" y1="80" x2="800" y2="80" class="grid" />
     <line x1="0" y1="120" x2="800" y2="120" class="grid" />
     <line x1="0" y1="160" x2="800" y2="160" class="grid" />
+    <line x1="0" y1="200" x2="800" y2="200" class="grid" />
+    <line x1="0" y1="240" x2="800" y2="240" class="grid" />
+    <line x1="0" y1="280" x2="800" y2="280" class="grid" />
   </g>
 
   <!-- Technical sketch borders -->
   <path d="M 8 8 L 20 8 M 8 8 L 8 20" class="blueprint-border" />
   <path d="M 792 8 L 780 8 M 792 8 L 792 20" class="blueprint-border" />
-  <path d="M 8 192 L 20 192 M 8 192 L 8 180" class="blueprint-border" />
-  <path d="M 792 192 L 780 192 M 792 192 L 792 180" class="blueprint-border" />
+  <path d="M 8 332 L 20 332 M 8 332 L 8 320" class="blueprint-border" />
+  <path d="M 792 332 L 780 332 M 792 332 L 792 320" class="blueprint-border" />
 
+  <!-- SECTION 1: NAME BANNER (y=0 to y=110) -->
+  <text x="400" y="52" class="glowing-name">HARSHAVARDHAN K</text>
+  <g>
+    <text x="400" y="84" class="role-text role-1">AI ENGINEER</text>
+    <text x="400" y="84" class="role-text role-2">FULL-STACK ARCHITECT</text>
+    <text x="400" y="84" class="role-text role-3">SYSTEMS BUILDER</text>
+  </g>
+
+  <!-- Section Divider Line -->
+  <line x1="12" y1="110" x2="788" y2="110" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" stroke-dasharray="2 4" />
+
+  <!-- SECTION 2: SYSTEMS FLOW DIAGRAM (y=110 to y=330, offset by 120px) -->
   <!-- Connection Paths (Splitting and Merging Architecture) -->
-  <path d="M 180 100 Q 220 100, 220 58 T 260 58" class="connection-path path-ai-pipe" />
-  <path d="M 180 100 Q 220 100, 220 142 T 260 142" class="connection-path path-ai-db" />
-  <path d="M 380 58 Q 420 58, 420 100 T 460 100" class="connection-path path-pipe-ui" />
-  <path d="M 380 142 Q 420 142, 420 100 T 460 100" class="connection-path path-db-ui" />
-  <path d="M 580 100 L 640 100" class="connection-path path-ui-motion" />
+  <path d="M 180 220 Q 220 220, 220 178 T 260 178" class="connection-path path-ai-pipe" />
+  <path d="M 180 220 Q 220 220, 220 262 T 260 262" class="connection-path path-ai-db" />
+  <path d="M 380 178 Q 420 178, 420 220 T 460 220" class="connection-path path-pipe-ui" />
+  <path d="M 380 262 Q 420 262, 420 220 T 460 220" class="connection-path path-db-ui" />
+  <path d="M 580 220 L 640 220" class="connection-path path-ui-motion" />
 
   <!-- Node 1: Intelligence (AI) -->
-  <g class="node-group" id="ng-ai" style="transform-origin: 120px 100px;">
-    <rect x="60" y="82" width="120" height="36" class="node-box bg-ai" />
-    <text x="120" y="103" class="node-label lbl-ai">INTELLIGENCE</text>
+  <g class="node-group" id="ng-ai" style="transform-origin: 120px 220px;">
+    <rect x="60" y="202" width="120" height="36" class="node-box bg-ai" />
+    <text x="120" y="223" class="node-label lbl-ai">INTELLIGENCE</text>
   </g>
 
   <!-- Node 2: Pipeline (Backend) -->
-  <g class="node-group" id="ng-pipe" style="transform-origin: 320px 58px;">
-    <rect x="260" y="40" width="120" height="36" class="node-box bg-pipe" />
-    <text x="320" y="61" class="node-label lbl-pipe">PIPELINE</text>
+  <g class="node-group" id="ng-pipe" style="transform-origin: 320px 178px;">
+    <rect x="260" y="160" width="120" height="36" class="node-box bg-pipe" />
+    <text x="320" y="181" class="node-label lbl-pipe">PIPELINE</text>
   </g>
 
   <!-- Node 3: Datastore (DB) -->
-  <g class="node-group" id="ng-db" style="transform-origin: 320px 142px;">
-    <rect x="260" y="124" width="120" height="36" class="node-box bg-db" />
-    <text x="320" y="145" class="node-label lbl-db">DATASTORE</text>
+  <g class="node-group" id="ng-db" style="transform-origin: 320px 262px;">
+    <rect x="260" y="244" width="120" height="36" class="node-box bg-db" />
+    <text x="320" y="265" class="node-label lbl-db">DATASTORE</text>
   </g>
 
   <!-- Node 4: Surface (UI) -->
-  <g class="node-group" id="ng-ui" style="transform-origin: 520px 100px;">
-    <rect x="460" y="82" width="120" height="36" class="node-box bg-ui" />
-    <text x="520" y="103" class="node-label lbl-ui">SURFACE</text>
+  <g class="node-group" id="ng-ui" style="transform-origin: 520px 220px;">
+    <rect x="460" y="202" width="120" height="36" class="node-box bg-ui" />
+    <text x="520" y="223" class="node-label lbl-ui">SURFACE</text>
   </g>
 
   <!-- Node 5: Motion -->
-  <g class="node-group" id="ng-motion" style="transform-origin: 690px 100px;">
-    <rect x="640" y="82" width="100" height="36" class="node-box bg-motion" />
-    <text x="690" y="103" class="node-label lbl-motion">MOTION</text>
+  <g class="node-group" id="ng-motion" style="transform-origin: 690px 220px;">
+    <rect x="640" y="202" width="100" height="36" class="node-box bg-motion" />
+    <text x="690" y="223" class="node-label lbl-motion">MOTION</text>
   </g>
 
   <!-- Info Panel Display Board and Text Sequences -->
-  <rect x="100" y="180" width="600" height="15" fill="#050508" stroke="none" style="pointer-events: none;" />
+  <rect x="100" y="300" width="600" height="15" fill="#050508" stroke="none" style="pointer-events: none;" />
   
-  <text x="400" y="190" class="info-text txt-ai" fill="#00f2fe">&gt; INTELLIGENCE: INTEGRATING TENSORS, CASCADE FALLBACKS, AND MODEL AGENT WORKFLOWS</text>
-  <text x="400" y="190" class="info-text txt-pipe" fill="#6366f1">&gt; PIPELINE: LOW-LATENCY WEBSOCKET STREAMS, SERVER WORKERS, AND WEBRTC AUDIO NETWORKS</text>
-  <text x="400" y="190" class="info-text txt-db" fill="#6366f1">&gt; DATASTORE: HIGH-THROUGHPUT CACHING, HYBRID RELATIONAL SCALING, AND VECTOR SEARCHES</text>
-  <text x="400" y="190" class="info-text txt-ui" fill="#ffffff">&gt; SURFACE: NEXT.JS SERVER CHOREOGRAPHY, THREE.JS CANVASES, AND WEBGL VIEWPORT SCENES</text>
-  <text x="400" y="190" class="info-text txt-motion" fill="#00f2fe">&gt; MOTION: SYSTEM STATES REVEALED THROUGH DYNAMIC SCHEMATICS AND PHYSICS LAYERS</text>
+  <text x="400" y="310" class="info-text txt-ai" fill="#00f2fe">&gt; INTELLIGENCE: INTEGRATING TENSORS, CASCADE FALLBACKS, AND MODEL AGENT WORKFLOWS</text>
+  <text x="400" y="310" class="info-text txt-pipe" fill="#6366f1">&gt; PIPELINE: LOW-LATENCY WEBSOCKET STREAMS, SERVER WORKERS, AND WEBRTC AUDIO NETWORKS</text>
+  <text x="400" y="310" class="info-text txt-db" fill="#6366f1">&gt; DATASTORE: HIGH-THROUGHPUT CACHING, HYBRID RELATIONAL SCALING, AND VECTOR SEARCHES</text>
+  <text x="400" y="310" class="info-text txt-ui" fill="#ffffff">&gt; SURFACE: NEXT.JS SERVER CHOREOGRAPHY, THREE.JS CANVASES, AND WEBGL VIEWPORT SCENES</text>
+  <text x="400" y="310" class="info-text txt-motion" fill="#00f2fe">&gt; MOTION: SYSTEM STATES REVEALED THROUGH DYNAMIC SCHEMATICS AND PHYSICS LAYERS</text>
 
 </svg>

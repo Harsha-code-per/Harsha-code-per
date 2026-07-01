@@ -1,10 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2" viewBox="0 0 800 2" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="10" viewBox="0 0 800 10" fill="none">
+  <style>
+  <![CDATA[
+    .track {
+      stroke: rgba(255, 255, 255, 0.05);
+      stroke-width: 1;
+    }
+    .glowing-segment {
+      stroke: url(#glow-grad);
+      stroke-width: 2;
+      stroke-linecap: round;
+      animation: sweep 6s ease-in-out infinite alternate;
+      filter: drop-shadow(0 0 4px #00f2fe);
+    }
+    @keyframes sweep {
+      0% {
+        transform: translateX(-150px);
+      }
+      100% {
+        transform: translateX(800px);
+      }
+    }
+  ]]>
+  </style>
   <defs>
-    <linearGradient id="fade-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#5e6ad2" stop-opacity="0" />
+    <!-- Gradual fade on both edges for the light streak -->
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+      <stop offset="30%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="70%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <line x1="0" y1="1" x2="800" y2="1" stroke="url(#fade-grad)" stroke-width="1" />
+  <!-- Background track line -->
+  <line x1="0" y1="5" x2="800" y2="5" class="track" />
+  <!-- Glowing sweeping segment -->
+  <line x1="0" y1="5" x2="150" y2="5" class="glowing-segment" />
 </svg>

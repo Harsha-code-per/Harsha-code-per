@@ -1,16 +1,14 @@
 <p align="center">
-  <img src="assets/profile/hero.svg" width="800" alt="Harsha Systems Blueprint Hero" />
+  <img src="assets/profile/hero.svg" width="800" alt="Harshavardhan K Systems Console" />
 </p>
 
 <br />
 
-<p align="center">
-  <img src="assets/profile/name_banner.svg" width="800" alt="Harshavardhan K Header" />
-</p>
+## 01 // Executive Summary &amp; Architectural Focus
 
-I build systems where machine learning models, distributed backends, and user interfaces merge into a single experience. I focus on taking AI models from experimental notebooks and scaling them into production-grade applications that are fast, reliable, and built to last.
+I build systems where machine learning models, distributed backends, and user interfaces operate as a single experience. I focus on taking AI models from experimental research notebooks and scaling them into production-grade pipelines that are fast, reliable, and built to last.
 
-This workspace details the systems I explore, my active development pipelines, and the engineering principles I use to build low-latency software.
+This workspace is a live window into my active development loop. I use it to explore complex topologies, test distributed state flows, and build systems that adapt to human behavior.
 
 <br />
 
