@@ -19,85 +19,246 @@ This workspace details the systems I explore, my active development pipelines, a
 
 <br />
 
-## Interactive System Sandbox // Signal Router
+## Interactive System Sandbox // Tic-Tac-Toe
 
-Click Node Beta below to try routing an incoming model inference request through the system. Keep execution latency under 20ms to decrypt the telemetry payload.
+Take a break and play a game of Tic-Tac-Toe directly in my workspace (Player 1 vs Player 2). Click `X` or `O` on any cell to place a mark, and use the Reset button to start over. Fully built in pure HTML/CSS with zero JavaScript.
 
 <br />
 
-<div style="border: 1px solid rgba(255,255,255,0.06); padding: 16px; border-radius: 6px; background: #050508; font-family: monospace; font-size: 12px; color: #a1a1aa; line-height: 1.6;">
+<form style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; border: 1px solid rgba(255,255,255,0.06); padding: 24px; border-radius: 8px; background: #050508; max-width: 280px; margin: 0 auto;">
+  <!-- Inputs Cell 1 -->
+  <input type="radio" id="c1-e" name="c1" checked style="display:none;" />
+  <input type="radio" id="c1-x" name="c1" style="display:none;" />
+  <input type="radio" id="c1-o" name="c1" style="display:none;" />
 
-  <p style="color: #00f2fe; font-weight: bold; margin-top: 0;">&gt; SYS_ROUTING_SIMULATOR v1.0.0</p>
-  <p>&gt; STATUS: INCOMING UNROUTED INFERENCE PACKET</p>
-  <p>&gt; BUDGET_CONSTRAINT: LATENCY &lt; 20ms</p>
-  <p style="color: #71717a;">Route the incoming signal through your architecture to resolve the execution loop.</p>
-  
-  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.06); margin: 12px 0;" />
+  <!-- Inputs Cell 2 -->
+  <input type="radio" id="c2-e" name="c2" checked style="display:none;" />
+  <input type="radio" id="c2-x" name="c2" style="display:none;" />
+  <input type="radio" id="c2-o" name="c2" style="display:none;" />
 
-  <!-- Root Choices -->
-  <details>
-    <summary style="cursor: pointer; color: #ffffff; font-weight: bold;">[ ROUTE ] // Model Node Alpha (Direct Vector Store Query)</summary>
-    <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(255,255,255,0.06);">
-      <p style="color: #ef4444;">[WARN] Cold start query triggered.</p>
-      <p style="color: #ef4444;">[ERROR] Connection Timed Out. Vector index unbuilt or query timed out (> 120ms).</p>
-      <p style="color: #71717a;">&gt; Action: Close this node to return to root and try another routing path.</p>
+  <!-- Inputs Cell 3 -->
+  <input type="radio" id="c3-e" name="c3" checked style="display:none;" />
+  <input type="radio" id="c3-x" name="c3" style="display:none;" />
+  <input type="radio" id="c3-o" name="c3" style="display:none;" />
+
+  <!-- Inputs Cell 4 -->
+  <input type="radio" id="c4-e" name="c4" checked style="display:none;" />
+  <input type="radio" id="c4-x" name="c4" style="display:none;" />
+  <input type="radio" id="c4-o" name="c4" style="display:none;" />
+
+  <!-- Inputs Cell 5 -->
+  <input type="radio" id="c5-e" name="c5" checked style="display:none;" />
+  <input type="radio" id="c5-x" name="c5" style="display:none;" />
+  <input type="radio" id="c5-o" name="c5" style="display:none;" />
+
+  <!-- Inputs Cell 6 -->
+  <input type="radio" id="c6-e" name="c6" checked style="display:none;" />
+  <input type="radio" id="c6-x" name="c6" style="display:none;" />
+  <input type="radio" id="c6-o" name="c6" style="display:none;" />
+
+  <!-- Inputs Cell 7 -->
+  <input type="radio" id="c7-e" name="c7" checked style="display:none;" />
+  <input type="radio" id="c7-x" name="c7" style="display:none;" />
+  <input type="radio" id="c7-o" name="c7" style="display:none;" />
+
+  <!-- Inputs Cell 8 -->
+  <input type="radio" id="c8-e" name="c8" checked style="display:none;" />
+  <input type="radio" id="c8-x" name="c8" style="display:none;" />
+  <input type="radio" id="c8-o" name="c8" style="display:none;" />
+
+  <!-- Inputs Cell 9 -->
+  <input type="radio" id="c9-e" name="c9" checked style="display:none;" />
+  <input type="radio" id="c9-x" name="c9" style="display:none;" />
+  <input type="radio" id="c9-o" name="c9" style="display:none;" />
+
+  <style>
+    .ttt-board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      width: 220px;
+      height: 220px;
+    }
+    .ttt-cell {
+      background: #09090b;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+    }
+    .x-marker, .o-marker {
+      display: none;
+      font-size: 28px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+    .x-marker { color: #00f2fe; text-shadow: 0 0 6px rgba(0, 242, 254, 0.4); }
+    .o-marker { color: #6366f1; text-shadow: 0 0 6px rgba(99, 102, 241, 0.4); }
+    
+    .cell-controls {
+      display: flex;
+      gap: 4px;
+    }
+    .play-x, .play-o {
+      cursor: pointer;
+      padding: 4px 6px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 4px;
+      color: #52525b;
+      font-size: 10px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    .play-x:hover { color: #00f2fe; border-color: #00f2fe; background: rgba(0, 242, 254, 0.05); }
+    .play-o:hover { color: #6366f1; border-color: #6366f1; background: rgba(99, 102, 241, 0.05); }
+
+    .ttt-reset {
+      margin-top: 8px;
+      cursor: pointer;
+      padding: 6px 14px;
+      background: #09090b;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      color: #94a3b8;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 11px;
+      transition: all 0.2s ease;
+      font-weight: bold;
+    }
+    .ttt-reset:hover {
+      border-color: #00f2fe;
+      color: #ffffff;
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* Target state selections */
+    #c1-x:checked ~ .ttt-board #tc-1 .x-marker { display: block; }
+    #c1-x:checked ~ .ttt-board #tc-1 .cell-controls { display: none; }
+    #c1-o:checked ~ .ttt-board #tc-1 .o-marker { display: block; }
+    #c1-o:checked ~ .ttt-board #tc-1 .cell-controls { display: none; }
+
+    #c2-x:checked ~ .ttt-board #tc-2 .x-marker { display: block; }
+    #c2-x:checked ~ .ttt-board #tc-2 .cell-controls { display: none; }
+    #c2-o:checked ~ .ttt-board #tc-2 .o-marker { display: block; }
+    #c2-o:checked ~ .ttt-board #tc-2 .cell-controls { display: none; }
+
+    #c3-x:checked ~ .ttt-board #tc-3 .x-marker { display: block; }
+    #c3-x:checked ~ .ttt-board #tc-3 .cell-controls { display: none; }
+    #c3-o:checked ~ .ttt-board #tc-3 .o-marker { display: block; }
+    #c3-o:checked ~ .ttt-board #tc-3 .cell-controls { display: none; }
+
+    #c4-x:checked ~ .ttt-board #tc-4 .x-marker { display: block; }
+    #c4-x:checked ~ .ttt-board #tc-4 .cell-controls { display: none; }
+    #c4-o:checked ~ .ttt-board #tc-4 .o-marker { display: block; }
+    #c4-o:checked ~ .ttt-board #tc-4 .cell-controls { display: none; }
+
+    #c5-x:checked ~ .ttt-board #tc-5 .x-marker { display: block; }
+    #c5-x:checked ~ .ttt-board #tc-5 .cell-controls { display: none; }
+    #c5-o:checked ~ .ttt-board #tc-5 .o-marker { display: block; }
+    #c5-o:checked ~ .ttt-board #tc-5 .cell-controls { display: none; }
+
+    #c6-x:checked ~ .ttt-board #tc-6 .x-marker { display: block; }
+    #c6-x:checked ~ .ttt-board #tc-6 .cell-controls { display: none; }
+    #c6-o:checked ~ .ttt-board #tc-6 .o-marker { display: block; }
+    #c6-o:checked ~ .ttt-board #tc-6 .cell-controls { display: none; }
+
+    #c7-x:checked ~ .ttt-board #tc-7 .x-marker { display: block; }
+    #c7-x:checked ~ .ttt-board #tc-7 .cell-controls { display: none; }
+    #c7-o:checked ~ .ttt-board #tc-7 .o-marker { display: block; }
+    #c7-o:checked ~ .ttt-board #tc-7 .cell-controls { display: none; }
+
+    #c8-x:checked ~ .ttt-board #tc-8 .x-marker { display: block; }
+    #c8-x:checked ~ .ttt-board #tc-8 .cell-controls { display: none; }
+    #c8-o:checked ~ .ttt-board #tc-8 .o-marker { display: block; }
+    #c8-o:checked ~ .ttt-board #tc-8 .cell-controls { display: none; }
+
+    #c9-x:checked ~ .ttt-board #tc-9 .x-marker { display: block; }
+    #c9-x:checked ~ .ttt-board #tc-9 .cell-controls { display: none; }
+    #c9-o:checked ~ .ttt-board #tc-9 .o-marker { display: block; }
+    #c9-o:checked ~ .ttt-board #tc-9 .cell-controls { display: none; }
+  </style>
+
+  <div class="ttt-board">
+    <div class="ttt-cell" id="tc-1">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c1-x" class="play-x">X</label>
+        <label for="c1-o" class="play-o">O</label>
+      </div>
     </div>
-  </details>
-
-  <details style="margin-top: 8px;">
-    <summary style="cursor: pointer; color: #ffffff; font-weight: bold;">[ ROUTE ] // Model Node Beta (FastAPI Model Cascade)</summary>
-    <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(255,255,255,0.06);">
-      <p style="color: #10b981;">[OK] Model handshake verified.</p>
-      <p>&gt; Processing inference weights. Local Latency: 4.8ms. Select next destination:</p>
-      
-      <br />
-      
-      <!-- Option 2A: Write-through cache -->
-      <details>
-        <summary style="cursor: pointer; color: #00f2fe; font-weight: bold;">[ ROUTE ] // Database Node B1 (Write-Through Redis Cache)</summary>
-        <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(0,242,254,0.1);">
-          <p style="color: #10b981;">[OK] Cache write success.</p>
-          <p>&gt; Syncing state. Local Latency: 2.1ms (Cumulative: 6.9ms). Route to client surface:</p>
-          
-          <br />
-          
-          <!-- Option 2A1: WebGL Canvas -->
-          <details>
-            <summary style="cursor: pointer; color: #10b981; font-weight: bold;">[ ROUTE ] // Surface Node S1 (WebGL Canvas Client)</summary>
-            <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(16,185,129,0.1);">
-              <p style="color: #10b981;">[SUCCESS] Render pipeline resolved at 60 FPS.</p>
-              <p style="color: #10b981;">[SUCCESS] Output delivered. Total Latency: 16.9ms (Success target: &lt; 20ms).</p>
-              <p style="color: #ffffff; background: rgba(0, 242, 254, 0.05); padding: 8px; border-radius: 4px; border: 1px solid rgba(0, 242, 254, 0.1);">
-                <b>&gt; DECRYPTED_SIGNAL</b><br />
-                "Welcome to the workspace. Harshavardhan K engineers systems where intelligence and interaction become one seamless experience. Portfolio: https://www.harshavardhan-k.me"
-              </p>
-            </div>
-          </details>
-
-          <!-- Option 2A2: DOM Refresh -->
-          <details style="margin-top: 8px;">
-            <summary style="cursor: pointer; color: #ef4444; font-weight: bold;">[ ROUTE ] // Surface Node S2 (Standard DOM Refresh Loop)</summary>
-            <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(239,68,68,0.1);">
-              <p style="color: #ef4444;">[WARN] Frame dropped. Heavy layout thrashing detected.</p>
-              <p style="color: #ef4444;">[ERROR] Client crash. Main thread blocked. Total Latency: 24.1ms.</p>
-              <p style="color: #71717a;">&gt; Action: Close this node to return and choose a different surface.</p>
-            </div>
-          </details>
-        </div>
-      </details>
-
-      <!-- Option 2B: Direct Disk write -->
-      <details style="margin-top: 8px;">
-        <summary style="cursor: pointer; color: #ef4444; font-weight: bold;">[ ROUTE ] // Database Node B2 (PostgreSQL Raw Insert)</summary>
-        <div style="padding-left: 16px; margin: 8px 0; border-left: 1px solid rgba(239,68,68,0.1);">
-          <p style="color: #ef4444;">[WARN] Thread lock detected on connection pool.</p>
-          <p style="color: #ef4444;">[ERROR] Transaction aborted. Local Latency: 84.2ms (Exceeded budget of 20ms).</p>
-          <p style="color: #71717a;">&gt; Action: Close this node to return and choose a cache strategy.</p>
-        </div>
-      </details>
+    <div class="ttt-cell" id="tc-2">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c2-x" class="play-x">X</label>
+        <label for="c2-o" class="play-o">O</label>
+      </div>
     </div>
-  </details>
-</div>
+    <div class="ttt-cell" id="tc-3">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c3-x" class="play-x">X</label>
+        <label for="c3-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-4">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c4-x" class="play-x">X</label>
+        <label for="c4-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-5">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c5-x" class="play-x">X</label>
+        <label for="c5-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-6">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c6-x" class="play-x">X</label>
+        <label for="c6-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-7">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c7-x" class="play-x">X</label>
+        <label for="c7-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-8">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c8-x" class="play-x">X</label>
+        <label for="c8-o" class="play-o">O</label>
+      </div>
+    </div>
+    <div class="ttt-cell" id="tc-9">
+      <div class="x-marker">X</div>
+      <div class="o-marker">O</div>
+      <div class="cell-controls">
+        <label for="c9-x" class="play-x">X</label>
+        <label for="c9-o" class="play-o">O</label>
+      </div>
+    </div>
+  </div>
+
+  <input type="reset" value="Reset Game" class="ttt-reset" />
+</form>
 
 <br />
 
@@ -122,6 +283,8 @@ Click Node Beta below to try routing an incoming model inference request through
 <br />
 
 ## Active Tech Matrix
+
+Overview of core systems, frameworks, and deployment tools in my stack:
 
 <br />
 
