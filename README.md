@@ -32,8 +32,11 @@ My approach is grounded in learning by building. I believe clean code, structure
 
 ## Current Focus
 
-*   **Billytics** // An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.
-*   **SecureChat** // A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
+### Billytics
+An AI-powered Business Operating System (BusinessOS) tailored for Indian SMBs, especially in Tier-2/3 cities. I am building Billytics as an offline-first, multilingual platform that integrates billing, UPI payments, and inventory management, using a conversational voice assistant (Billy AI) to help non-technical owners make data-driven decisions.
+
+### SecureChat
+A secure real-time communication platform. Having established the initial MVP, I am focusing on scaling the system, optimizing WebSocket routing for lower latency, and implementing robust end-to-end encryption to guarantee data privacy.
 
 <br />
 
@@ -63,10 +66,17 @@ A visual map of the languages, frameworks, and tools I use to build systems:
 
 ## Architectural Preferences &amp; Principles
 
-*   **Offline-First &amp; Sync** // Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.
-*   **Security &amp; Privacy** // Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.
-*   **Production-Ready AI** // Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.
-*   **Simplicity &amp; Accessibility** // Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
+### Offline-First &amp; Sync
+Designing local databases and synchronization layers that function in zero-connectivity areas and reconcile state seamlessly once online.
+
+### Security &amp; Privacy
+Prioritizing end-to-end encryption, secure token routing, and sandboxed execution rather than delegating security to third-party endpoints.
+
+### Production-Ready AI
+Structuring low-footprint, specialized inference engines that provide structured data output without system bloat.
+
+### Simplicity &amp; Accessibility
+Designing lightweight user interfaces that are fast, intuitive, and accessible to users regardless of their technical background.
 
 <br />
 
@@ -89,5 +99,5 @@ A visual map of the languages, frameworks, and tools I use to build systems:
 
 <p align="right">
   <img src="assets/profile/signature.svg" width="200" alt="Harsha Signature" /><br />
-  <font size="1" face="monospace" color="#71717a">END TRANSMISSION // HANDSHAKE_RESOLVED</font>
+  <font size="2" face="monospace" color="#71717a">Harshavardhan K // systems &amp; software</font>
 </p>
