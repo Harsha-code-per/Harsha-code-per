@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">330 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">331 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -632,10 +632,10 @@
     <polygon points="536.5,131.3 545.5,126.80000000000001 545.5,150.8 536.5,155.3" fill="#1c6829" />
     <polygon points="536.5,122.30000000000001 545.5,126.80000000000001 536.5,131.3 527.5,126.80000000000001" fill="#39d353" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #161b22;">
-    <polygon points="517.7,158.60000000000002 526.7,163.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#0f131a" />
-    <polygon points="526.7,163.10000000000002 535.7,158.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#0b0d12" />
-    <polygon points="526.7,154.10000000000002 535.7,158.60000000000002 526.7,163.10000000000002 517.7,158.60000000000002" fill="#161b22" />
+  <g class="col-group c-14" style="--pulse-color: #0e4429;">
+    <polygon points="517.7,154.60000000000002 526.7,159.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#0a301d" />
+    <polygon points="526.7,159.10000000000002 535.7,154.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#072214" />
+    <polygon points="526.7,150.10000000000002 535.7,154.60000000000002 526.7,159.10000000000002 517.7,154.60000000000002" fill="#0e4429" />
   </g>
   <g class="col-group c-14" style="--pulse-color: #161b22;">
     <polygon points="507.9,168.4 516.9,172.9 516.9,174.9 507.9,170.4" fill="#0f131a" />
@@ -662,31 +662,31 @@
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">Harsha-code-per</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="135" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">29 commits</text>
+  <rect x="230" y="258" width="130" height="6" rx="3" fill="#10b981" />
+  <text x="382" y="266" class="timeline-count" text-anchor="start">28 commits</text>
   <!-- Repo 2 Progress -->
   <text x="60" y="290" class="timeline-repo">Harshavardhan.portfolio</text>
   <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="282" width="4" height="6" rx="3" fill="#6366f1" />
-  <text x="382" y="290" class="timeline-count" text-anchor="start">1 commit</text>
+  <rect x="230" y="282" width="9" height="6" rx="3" fill="#6366f1" />
+  <text x="382" y="290" class="timeline-count" text-anchor="start">2 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[87f80d7]</text>
+    <text x="15" y="8" class="commit-sha">[2233415]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[b0165e7]</text>
+    <text x="15" y="8" class="commit-sha">[87f80d7]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[89ae566]</text>
+    <text x="15" y="8" class="commit-sha">[b0165e7]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
 
