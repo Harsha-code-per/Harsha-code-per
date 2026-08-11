@@ -657,41 +657,41 @@
   <!-- Timeline summary block -->
   <g transform="translate(35, 235)">
     <circle cx="8" cy="8" r="4" fill="#10b981" filter="drop-shadow(0 0 3px #10b981)" />
-    <text x="20" y="11" class="timeline-title">Created 26 commits in 3 repositories</text>
+    <text x="20" y="11" class="timeline-title">Created 24 commits in 3 repositories</text>
   </g>
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">StadiumOS</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="107" height="6" rx="3" fill="#10b981" />
+  <rect x="230" y="258" width="116" height="6" rx="3" fill="#10b981" />
   <text x="382" y="266" class="timeline-count" text-anchor="start">20 commits</text>
   <!-- Repo 2 Progress -->
   <text x="60" y="290" class="timeline-repo">Buildfest-26</text>
   <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="282" width="16" height="6" rx="3" fill="#6366f1" />
+  <rect x="230" y="282" width="17" height="6" rx="3" fill="#6366f1" />
   <text x="382" y="290" class="timeline-count" text-anchor="start">3 commits</text>
   <!-- Repo 3 Progress -->
   <text x="60" y="314" class="timeline-repo">OdooX2026</text>
   <rect x="230" y="306" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="306" width="16" height="6" rx="3" fill="#00f2fe" />
-  <text x="382" y="314" class="timeline-count" text-anchor="start">3 commits</text>
+  <rect x="230" y="306" width="5" height="6" rx="3" fill="#00f2fe" />
+  <text x="382" y="314" class="timeline-count" text-anchor="start">1 commit</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[d50a0fd]</text>
+    <text x="15" y="8" class="commit-sha">[e2f3522]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[ede29ec]</text>
+    <text x="15" y="8" class="commit-sha">[d50a0fd]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[fd04962]</text>
+    <text x="15" y="8" class="commit-sha">[ede29ec]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
 
