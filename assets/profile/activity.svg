@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">455 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">467 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -632,10 +632,10 @@
     <polygon points="536.5,143.3 545.5,138.8 545.5,150.8 536.5,155.3" fill="#003317" />
     <polygon points="536.5,134.3 545.5,138.8 536.5,143.3 527.5,138.8" fill="#006d32" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #006d32;">
-    <polygon points="517.7,148.60000000000002 526.7,153.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#004d23" />
-    <polygon points="526.7,153.10000000000002 535.7,148.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#003317" />
-    <polygon points="526.7,144.10000000000002 535.7,148.60000000000002 526.7,153.10000000000002 517.7,148.60000000000002" fill="#006d32" />
+  <g class="col-group c-14" style="--pulse-color: #39d353;">
+    <polygon points="517.7,136.60000000000002 526.7,141.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#28943a" />
+    <polygon points="526.7,141.10000000000002 535.7,136.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#1c6829" />
+    <polygon points="526.7,132.10000000000002 535.7,136.60000000000002 526.7,141.10000000000002 517.7,136.60000000000002" fill="#39d353" />
   </g>
   <g class="col-group c-14" style="--pulse-color: #161b22;">
     <polygon points="507.9,168.4 516.9,172.9 516.9,174.9 507.9,170.4" fill="#0f131a" />
@@ -674,19 +674,19 @@
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[7e6a66c]</text>
+    <text x="15" y="8" class="commit-sha">[c5f8030]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[bc4a79a]</text>
+    <text x="15" y="8" class="commit-sha">[7e6a66c]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[c6021b5]</text>
+    <text x="15" y="8" class="commit-sha">[bc4a79a]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
 
