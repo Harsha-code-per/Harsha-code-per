@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">693 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">749 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -195,10 +195,10 @@
     <polygon points="312.3,80.7 321.3,76.2 321.3,82.2 312.3,86.7" fill="#072214" />
     <polygon points="312.3,71.7 321.3,76.2 312.3,80.7 303.3,76.2" fill="#0e4429" />
   </g>
-  <g class="col-group c-2" style="--pulse-color: #39d353;">
-    <polygon points="293.5,68.0 302.5,72.5 302.5,96.5 293.5,92.0" fill="#28943a" />
-    <polygon points="302.5,72.5 311.5,68.0 311.5,92.0 302.5,96.5" fill="#1c6829" />
-    <polygon points="302.5,63.5 311.5,68.0 302.5,72.5 293.5,68.0" fill="#39d353" />
+  <g class="col-group c-2" style="--pulse-color: #006d32;">
+    <polygon points="293.5,80.0 302.5,84.5 302.5,96.5 293.5,92.0" fill="#004d23" />
+    <polygon points="302.5,84.5 311.5,80.0 311.5,92.0 302.5,96.5" fill="#003317" />
+    <polygon points="302.5,75.5 311.5,80.0 302.5,84.5 293.5,80.0" fill="#006d32" />
   </g>
   <g class="col-group c-2" style="--pulse-color: #0e4429;">
     <polygon points="283.7,95.8 292.7,100.3 292.7,106.3 283.7,101.8" fill="#0a301d" />
@@ -288,10 +288,10 @@
     <polygon points="312.1,124.7 321.1,129.2 312.1,133.7 303.1,129.2" fill="#161b22" />
   </g>
   <!-- Column 5 -->
-  <g class="col-group c-5" style="--pulse-color: #26a641;">
-    <polygon points="381.4,59.3 390.4,63.8 390.4,81.8 381.4,77.3" fill="#1b752e" />
-    <polygon points="390.4,63.8 399.4,59.3 399.4,77.3 390.4,81.8" fill="#135220" />
-    <polygon points="390.4,54.8 399.4,59.3 390.4,63.8 381.4,59.3" fill="#26a641" />
+  <g class="col-group c-5" style="--pulse-color: #006d32;">
+    <polygon points="381.4,65.3 390.4,69.8 390.4,81.8 381.4,77.3" fill="#004d23" />
+    <polygon points="390.4,69.8 399.4,65.3 399.4,77.3 390.4,81.8" fill="#003317" />
+    <polygon points="390.4,60.8 399.4,65.3 390.4,69.8 381.4,65.3" fill="#006d32" />
   </g>
   <g class="col-group c-5" style="--pulse-color: #0e4429;">
     <polygon points="371.6,81.1 380.6,85.6 380.6,91.6 371.6,87.1" fill="#0a301d" />
@@ -462,10 +462,10 @@
     <polygon points="419.4,144.4 428.4,139.9 428.4,145.9 419.4,150.4" fill="#072214" />
     <polygon points="419.4,135.4 428.4,139.9 419.4,144.4 410.4,139.9" fill="#0e4429" />
   </g>
-  <g class="col-group c-9" style="--pulse-color: #26a641;">
-    <polygon points="400.6,137.7 409.6,142.2 409.6,160.2 400.6,155.7" fill="#1b752e" />
-    <polygon points="409.6,142.2 418.6,137.7 418.6,155.7 409.6,160.2" fill="#135220" />
-    <polygon points="409.6,133.2 418.6,137.7 409.6,142.2 400.6,137.7" fill="#26a641" />
+  <g class="col-group c-9" style="--pulse-color: #006d32;">
+    <polygon points="400.6,143.7 409.6,148.2 409.6,160.2 400.6,155.7" fill="#004d23" />
+    <polygon points="409.6,148.2 418.6,143.7 418.6,155.7 409.6,160.2" fill="#003317" />
+    <polygon points="409.6,139.2 418.6,143.7 409.6,148.2 400.6,143.7" fill="#006d32" />
   </g>
   <!-- Column 10 -->
   <g class="col-group c-10" style="--pulse-color: #0e4429;">
@@ -545,10 +545,10 @@
     <polygon points="526.9,114.1 535.9,109.6 535.9,111.6 526.9,116.1" fill="#0b0d12" />
     <polygon points="526.9,105.1 535.9,109.6 526.9,114.1 517.9,109.6" fill="#161b22" />
   </g>
-  <g class="col-group c-12" style="--pulse-color: #26a641;">
-    <polygon points="508.1,103.4 517.1,107.9 517.1,125.9 508.1,121.4" fill="#1b752e" />
-    <polygon points="517.1,107.9 526.1,103.4 526.1,121.4 517.1,125.9" fill="#135220" />
-    <polygon points="517.1,98.9 526.1,103.4 517.1,107.9 508.1,103.4" fill="#26a641" />
+  <g class="col-group c-12" style="--pulse-color: #006d32;">
+    <polygon points="508.1,109.4 517.1,113.9 517.1,125.9 508.1,121.4" fill="#004d23" />
+    <polygon points="517.1,113.9 526.1,109.4 526.1,121.4 517.1,125.9" fill="#003317" />
+    <polygon points="517.1,104.9 526.1,109.4 517.1,113.9 508.1,109.4" fill="#006d32" />
   </g>
   <g class="col-group c-12" style="--pulse-color: #0e4429;">
     <polygon points="498.3,125.19999999999999 507.3,129.7 507.3,135.7 498.3,131.2" fill="#0a301d" />
@@ -560,15 +560,15 @@
     <polygon points="497.5,139.5 506.5,135.0 506.5,141.0 497.5,145.5" fill="#072214" />
     <polygon points="497.5,130.5 506.5,135.0 497.5,139.5 488.5,135.0" fill="#0e4429" />
   </g>
-  <g class="col-group c-12" style="--pulse-color: #26a641;">
-    <polygon points="478.7,132.8 487.7,137.3 487.7,155.3 478.7,150.8" fill="#1b752e" />
-    <polygon points="487.7,137.3 496.7,132.8 496.7,150.8 487.7,155.3" fill="#135220" />
-    <polygon points="487.7,128.3 496.7,132.8 487.7,137.3 478.7,132.8" fill="#26a641" />
+  <g class="col-group c-12" style="--pulse-color: #006d32;">
+    <polygon points="478.7,138.8 487.7,143.3 487.7,155.3 478.7,150.8" fill="#004d23" />
+    <polygon points="487.7,143.3 496.7,138.8 496.7,150.8 487.7,155.3" fill="#003317" />
+    <polygon points="487.7,134.3 496.7,138.8 487.7,143.3 478.7,138.8" fill="#006d32" />
   </g>
-  <g class="col-group c-12" style="--pulse-color: #39d353;">
-    <polygon points="468.9,136.6 477.9,141.1 477.9,165.1 468.9,160.6" fill="#28943a" />
-    <polygon points="477.9,141.1 486.9,136.6 486.9,160.6 477.9,165.1" fill="#1c6829" />
-    <polygon points="477.9,132.1 486.9,136.6 477.9,141.1 468.9,136.6" fill="#39d353" />
+  <g class="col-group c-12" style="--pulse-color: #006d32;">
+    <polygon points="468.9,148.6 477.9,153.1 477.9,165.1 468.9,160.6" fill="#004d23" />
+    <polygon points="477.9,153.1 486.9,148.6 486.9,160.6 477.9,165.1" fill="#003317" />
+    <polygon points="477.9,144.1 486.9,148.6 477.9,153.1 468.9,148.6" fill="#006d32" />
   </g>
   <g class="col-group c-12" style="--pulse-color: #161b22;">
     <polygon points="459.1,168.4 468.1,172.9 468.1,174.9 459.1,170.4" fill="#0f131a" />
@@ -581,20 +581,20 @@
     <polygon points="546.4,119.0 555.4,114.5 555.4,116.5 546.4,121.0" fill="#0b0d12" />
     <polygon points="546.4,110.0 555.4,114.5 546.4,119.0 537.4,114.5" fill="#161b22" />
   </g>
-  <g class="col-group c-13" style="--pulse-color: #26a641;">
-    <polygon points="527.6,108.30000000000001 536.6,112.80000000000001 536.6,130.8 527.6,126.30000000000001" fill="#1b752e" />
-    <polygon points="536.6,112.80000000000001 545.6,108.30000000000001 545.6,126.30000000000001 536.6,130.8" fill="#135220" />
-    <polygon points="536.6,103.80000000000001 545.6,108.30000000000001 536.6,112.80000000000001 527.6,108.30000000000001" fill="#26a641" />
-  </g>
-  <g class="col-group c-13" style="--pulse-color: #39d353;">
-    <polygon points="517.8,112.1 526.8,116.6 526.8,140.6 517.8,136.1" fill="#28943a" />
-    <polygon points="526.8,116.6 535.8,112.1 535.8,136.1 526.8,140.6" fill="#1c6829" />
-    <polygon points="526.8,107.6 535.8,112.1 526.8,116.6 517.8,112.1" fill="#39d353" />
+  <g class="col-group c-13" style="--pulse-color: #006d32;">
+    <polygon points="527.6,114.30000000000001 536.6,118.80000000000001 536.6,130.8 527.6,126.30000000000001" fill="#004d23" />
+    <polygon points="536.6,118.80000000000001 545.6,114.30000000000001 545.6,126.30000000000001 536.6,130.8" fill="#003317" />
+    <polygon points="536.6,109.80000000000001 545.6,114.30000000000001 536.6,118.80000000000001 527.6,114.30000000000001" fill="#006d32" />
   </g>
   <g class="col-group c-13" style="--pulse-color: #26a641;">
-    <polygon points="508.0,127.9 517.0,132.4 517.0,150.4 508.0,145.9" fill="#1b752e" />
-    <polygon points="517.0,132.4 526.0,127.9 526.0,145.9 517.0,150.4" fill="#135220" />
-    <polygon points="517.0,123.4 526.0,127.9 517.0,132.4 508.0,127.9" fill="#26a641" />
+    <polygon points="517.8,118.1 526.8,122.6 526.8,140.6 517.8,136.1" fill="#1b752e" />
+    <polygon points="526.8,122.6 535.8,118.1 535.8,136.1 526.8,140.6" fill="#135220" />
+    <polygon points="526.8,113.6 535.8,118.1 526.8,122.6 517.8,118.1" fill="#26a641" />
+  </g>
+  <g class="col-group c-13" style="--pulse-color: #006d32;">
+    <polygon points="508.0,133.9 517.0,138.4 517.0,150.4 508.0,145.9" fill="#004d23" />
+    <polygon points="517.0,138.4 526.0,133.9 526.0,145.9 517.0,150.4" fill="#003317" />
+    <polygon points="517.0,129.4 526.0,133.9 517.0,138.4 508.0,133.9" fill="#006d32" />
   </g>
   <g class="col-group c-13" style="--pulse-color: #0e4429;">
     <polygon points="498.2,149.70000000000002 507.2,154.20000000000002 507.2,160.20000000000002 498.2,155.70000000000002" fill="#0a301d" />
@@ -617,35 +617,35 @@
     <polygon points="565.9,123.9 574.9,119.4 574.9,121.4 565.9,125.9" fill="#0b0d12" />
     <polygon points="565.9,114.9 574.9,119.4 565.9,123.9 556.9,119.4" fill="#161b22" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #26a641;">
-    <polygon points="547.1,113.20000000000002 556.1,117.70000000000002 556.1,135.70000000000002 547.1,131.20000000000002" fill="#1b752e" />
-    <polygon points="556.1,117.70000000000002 565.1,113.20000000000002 565.1,131.20000000000002 556.1,135.70000000000002" fill="#135220" />
-    <polygon points="556.1,108.70000000000002 565.1,113.20000000000002 556.1,117.70000000000002 547.1,113.20000000000002" fill="#26a641" />
+  <g class="col-group c-14" style="--pulse-color: #006d32;">
+    <polygon points="547.1,119.20000000000002 556.1,123.70000000000002 556.1,135.70000000000002 547.1,131.20000000000002" fill="#004d23" />
+    <polygon points="556.1,123.70000000000002 565.1,119.20000000000002 565.1,131.20000000000002 556.1,135.70000000000002" fill="#003317" />
+    <polygon points="556.1,114.70000000000002 565.1,119.20000000000002 556.1,123.70000000000002 547.1,119.20000000000002" fill="#006d32" />
   </g>
   <g class="col-group c-14" style="--pulse-color: #0e4429;">
     <polygon points="537.3,135.0 546.3,139.5 546.3,145.5 537.3,141.0" fill="#0a301d" />
     <polygon points="546.3,139.5 555.3,135.0 555.3,141.0 546.3,145.5" fill="#072214" />
     <polygon points="546.3,130.5 555.3,135.0 546.3,139.5 537.3,135.0" fill="#0e4429" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #26a641;">
-    <polygon points="527.5,132.8 536.5,137.3 536.5,155.3 527.5,150.8" fill="#1b752e" />
-    <polygon points="536.5,137.3 545.5,132.8 545.5,150.8 536.5,155.3" fill="#135220" />
-    <polygon points="536.5,128.3 545.5,132.8 536.5,137.3 527.5,132.8" fill="#26a641" />
-  </g>
   <g class="col-group c-14" style="--pulse-color: #006d32;">
-    <polygon points="517.7,148.60000000000002 526.7,153.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#004d23" />
-    <polygon points="526.7,153.10000000000002 535.7,148.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#003317" />
-    <polygon points="526.7,144.10000000000002 535.7,148.60000000000002 526.7,153.10000000000002 517.7,148.60000000000002" fill="#006d32" />
+    <polygon points="527.5,138.8 536.5,143.3 536.5,155.3 527.5,150.8" fill="#004d23" />
+    <polygon points="536.5,143.3 545.5,138.8 545.5,150.8 536.5,155.3" fill="#003317" />
+    <polygon points="536.5,134.3 545.5,138.8 536.5,143.3 527.5,138.8" fill="#006d32" />
+  </g>
+  <g class="col-group c-14" style="--pulse-color: #0e4429;">
+    <polygon points="517.7,154.60000000000002 526.7,159.10000000000002 526.7,165.10000000000002 517.7,160.60000000000002" fill="#0a301d" />
+    <polygon points="526.7,159.10000000000002 535.7,154.60000000000002 535.7,160.60000000000002 526.7,165.10000000000002" fill="#072214" />
+    <polygon points="526.7,150.10000000000002 535.7,154.60000000000002 526.7,159.10000000000002 517.7,154.60000000000002" fill="#0e4429" />
   </g>
   <g class="col-group c-14" style="--pulse-color: #0e4429;">
     <polygon points="507.9,164.4 516.9,168.9 516.9,174.9 507.9,170.4" fill="#0a301d" />
     <polygon points="516.9,168.9 525.9,164.4 525.9,170.4 516.9,174.9" fill="#072214" />
     <polygon points="516.9,159.9 525.9,164.4 516.9,168.9 507.9,164.4" fill="#0e4429" />
   </g>
-  <g class="col-group c-14" style="--pulse-color: #006d32;">
-    <polygon points="498.1,168.20000000000002 507.1,172.70000000000002 507.1,184.70000000000002 498.1,180.20000000000002" fill="#004d23" />
-    <polygon points="507.1,172.70000000000002 516.1,168.20000000000002 516.1,180.20000000000002 507.1,184.70000000000002" fill="#003317" />
-    <polygon points="507.1,163.70000000000002 516.1,168.20000000000002 507.1,172.70000000000002 498.1,168.20000000000002" fill="#006d32" />
+  <g class="col-group c-14" style="--pulse-color: #39d353;">
+    <polygon points="498.1,156.20000000000002 507.1,160.70000000000002 507.1,184.70000000000002 498.1,180.20000000000002" fill="#28943a" />
+    <polygon points="507.1,160.70000000000002 516.1,156.20000000000002 516.1,180.20000000000002 507.1,184.70000000000002" fill="#1c6829" />
+    <polygon points="507.1,151.70000000000002 516.1,156.20000000000002 507.1,160.70000000000002 498.1,156.20000000000002" fill="#39d353" />
   </g>
 
   <!-- Section Divider Line -->
@@ -657,36 +657,31 @@
   <!-- Timeline summary block -->
   <g transform="translate(35, 235)">
     <circle cx="8" cy="8" r="4" fill="#10b981" filter="drop-shadow(0 0 3px #10b981)" />
-    <text x="20" y="11" class="timeline-title">Created 19 commits in 2 repositories</text>
+    <text x="20" y="11" class="timeline-title">Created 7 commits in 1 repositories</text>
   </g>
   <!-- Repo 1 Progress -->
-  <text x="60" y="266" class="timeline-repo">SIH-2026</text>
+  <text x="60" y="266" class="timeline-repo">StockSense</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="258" width="117" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">16 commits</text>
-  <!-- Repo 2 Progress -->
-  <text x="60" y="290" class="timeline-repo">StockSense</text>
-  <rect x="230" y="282" width="140" height="6" rx="3" fill="#161622" />
-  <rect x="230" y="282" width="22" height="6" rx="3" fill="#6366f1" />
-  <text x="382" y="290" class="timeline-count" text-anchor="start">3 commits</text>
+  <rect x="230" y="258" width="140" height="6" rx="3" fill="#10b981" />
+  <text x="382" y="266" class="timeline-count" text-anchor="start">7 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[e823e80]</text>
+    <text x="15" y="8" class="commit-sha">[b53c9e0]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[2dcee04]</text>
+    <text x="15" y="8" class="commit-sha">[e823e80]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[823152e]</text>
+    <text x="15" y="8" class="commit-sha">[2dcee04]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
 
