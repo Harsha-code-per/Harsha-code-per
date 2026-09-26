@@ -95,7 +95,7 @@
 
   <!-- SECTION 1: 3D ISOMETRIC CONTRIBUTION GRID -->
   <text x="35" y="32" class="tech-header">CONTRIBUTION LANDSCAPE</text>
-  <text x="35" y="44" class="tech-sub">749 CONTRIBUTIONS IN THE LAST YEAR</text>
+  <text x="35" y="44" class="tech-sub">753 CONTRIBUTIONS IN THE LAST YEAR</text>
 
   <!-- Grid Legend -->
   <g transform="translate(620, 24)">
@@ -252,10 +252,10 @@
     <polygon points="292.6,119.80000000000001 301.6,124.30000000000001 292.6,128.8 283.6,124.30000000000001" fill="#161b22" />
   </g>
   <!-- Column 4 -->
-  <g class="col-group c-4" style="--pulse-color: #006d32;">
-    <polygon points="361.9,60.39999999999999 370.9,64.89999999999999 370.9,76.89999999999999 361.9,72.39999999999999" fill="#004d23" />
-    <polygon points="370.9,64.89999999999999 379.9,60.39999999999999 379.9,72.39999999999999 370.9,76.89999999999999" fill="#003317" />
-    <polygon points="370.9,55.89999999999999 379.9,60.39999999999999 370.9,64.89999999999999 361.9,60.39999999999999" fill="#006d32" />
+  <g class="col-group c-4" style="--pulse-color: #0e4429;">
+    <polygon points="361.9,66.39999999999999 370.9,70.89999999999999 370.9,76.89999999999999 361.9,72.39999999999999" fill="#0a301d" />
+    <polygon points="370.9,70.89999999999999 379.9,66.39999999999999 379.9,72.39999999999999 370.9,76.89999999999999" fill="#072214" />
+    <polygon points="370.9,61.89999999999999 379.9,66.39999999999999 370.9,70.89999999999999 361.9,66.39999999999999" fill="#0e4429" />
   </g>
   <g class="col-group c-4" style="--pulse-color: #161b22;">
     <polygon points="352.1,80.19999999999999 361.1,84.69999999999999 361.1,86.69999999999999 352.1,82.19999999999999" fill="#0f131a" />
@@ -586,10 +586,10 @@
     <polygon points="536.6,118.80000000000001 545.6,114.30000000000001 545.6,126.30000000000001 536.6,130.8" fill="#003317" />
     <polygon points="536.6,109.80000000000001 545.6,114.30000000000001 536.6,118.80000000000001 527.6,114.30000000000001" fill="#006d32" />
   </g>
-  <g class="col-group c-13" style="--pulse-color: #26a641;">
-    <polygon points="517.8,118.1 526.8,122.6 526.8,140.6 517.8,136.1" fill="#1b752e" />
-    <polygon points="526.8,122.6 535.8,118.1 535.8,136.1 526.8,140.6" fill="#135220" />
-    <polygon points="526.8,113.6 535.8,118.1 526.8,122.6 517.8,118.1" fill="#26a641" />
+  <g class="col-group c-13" style="--pulse-color: #006d32;">
+    <polygon points="517.8,124.1 526.8,128.6 526.8,140.6 517.8,136.1" fill="#004d23" />
+    <polygon points="526.8,128.6 535.8,124.1 535.8,136.1 526.8,140.6" fill="#003317" />
+    <polygon points="526.8,119.6 535.8,124.1 526.8,128.6 517.8,124.1" fill="#006d32" />
   </g>
   <g class="col-group c-13" style="--pulse-color: #006d32;">
     <polygon points="508.0,133.9 517.0,138.4 517.0,150.4 508.0,145.9" fill="#004d23" />
@@ -657,31 +657,31 @@
   <!-- Timeline summary block -->
   <g transform="translate(35, 235)">
     <circle cx="8" cy="8" r="4" fill="#10b981" filter="drop-shadow(0 0 3px #10b981)" />
-    <text x="20" y="11" class="timeline-title">Created 7 commits in 1 repositories</text>
+    <text x="20" y="11" class="timeline-title">Created 10 commits in 1 repositories</text>
   </g>
   <!-- Repo 1 Progress -->
   <text x="60" y="266" class="timeline-repo">StockSense</text>
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#161622" />
   <rect x="230" y="258" width="140" height="6" rx="3" fill="#10b981" />
-  <text x="382" y="266" class="timeline-count" text-anchor="start">7 commits</text>
+  <text x="382" y="266" class="timeline-count" text-anchor="start">10 commits</text>
   <!-- Commit List Header -->
   <text x="480" y="246" class="timeline-title">// LATEST LOGGED MISSIONS</text>
   <!-- Commit 1 -->
   <g transform="translate(480, 262)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[b53c9e0]</text>
+    <text x="15" y="8" class="commit-sha">[6dd85a4]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 2 -->
   <g transform="translate(480, 286)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[e823e80]</text>
+    <text x="15" y="8" class="commit-sha">[b53c9e0]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
   <!-- Commit 3 -->
   <g transform="translate(480, 310)">
     <circle cx="5" cy="5" r="2.5" fill="#52525b" />
-    <text x="15" y="8" class="commit-sha">[2dcee04]</text>
+    <text x="15" y="8" class="commit-sha">[e823e80]</text>
     <text x="65" y="8" class="commit-msg">Auto-update profile activity stats</text>
   </g>
 
