@@ -1,14 +1,15 @@
-name: Update Profile Activity
+name: Daily Profile SVG Update
 
 on:
   schedule:
-    - cron: '0 * * * *' # Run hourly to sync cross-repo contributions
-  workflow_dispatch:     # Allows manual triggering from Actions UI
+    - cron: '0 0 * * *' # daily, 05:30 IST
+  workflow_dispatch:
   push:
     branches:
       - main
     paths-ignore:
-      - 'assets/profile/activity.svg'
+      - 'dark_mode.svg'
+      - 'light_mode.svg'
 
 jobs:
   update:
@@ -16,24 +17,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Fetch all history for accurate commit count
+      - uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
-      - name: Generate Activity SVG
-        run: python3 scripts/update_activity.py
+      - name: Refresh uptime + GitHub stats
+        run: python3 today.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: Harsha-code-per
 
-      - name: Commit and Push Changes
+      - name: Commit and push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/profile/activity.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update profile activity stats" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git diff --staged --quiet || (git commit -m "Update profile stats" && git push)
