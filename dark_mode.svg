@@ -1772,7 +1772,7 @@ text, tspan {white-space: pre;}
 <g fill="#c9d1d9">
 <text x="400" y="30.0" textLength="514.8">harsha@workstation -----------------------------------------------</text>
 <text x="400" y="48.5" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">Windows 11, Android 16, Linux (Arch)</tspan></text>
-<text x="400" y="67.0" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ............................ </tspan><tspan class="value" id="age_data">20 years, 11 months, 6 days</tspan></text>
+<text x="400" y="67.0" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ............................ </tspan><tspan class="value" id="age_data">20 years, 11 months, 7 days</tspan></text>
 <text x="400" y="85.5" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">R.M.K. CET, B.Tech (Class of 2028)</tspan></text>
 <text x="400" y="104.0" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">AI Intern @ Sennovate</tspan></text>
 <text x="400" y="122.5" textLength="514.8"><tspan class="cc">. </tspan><tspan class="key">Previously</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">AI Intern @ Zensphere, ResPro Labs</tspan></text>
